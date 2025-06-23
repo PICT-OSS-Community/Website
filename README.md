@@ -91,13 +91,6 @@ The official website for OSS Community - a beginner-friendly open source communi
 | `npm run start` | Start production server                 |
 | `npm run lint`  | Run ESLint                              |
 
-### Development Features
-
--   **Hot Reload**: Instant updates during development
--   **Turbopack**: Ultra-fast bundler for development
--   **TypeScript**: Full type checking and IntelliSense
--   **ESLint**: Code quality and consistency
--   **Path Aliases**: Clean imports with `@/` prefix
 
 ## About OSS Community
 
@@ -122,21 +115,6 @@ We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) f
 ## License
 
 This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENSE) file for details.
-
-## Deployment
-
-### Vercel (Recommended)
-
-1. Push your code to GitHub
-2. Connect your repository to [Vercel](https://vercel.com)
-3. Deploy automatically on every push
-
-### Manual Deployment
-
-```bash
-npm run build
-npm run start
-```
 
 ## Support
 
