@@ -1,0 +1,68 @@
+name: Bug Report
+description: Report an issue or unexpected behavior in the PICT OSS website
+title: "[Bug] <short description>"
+labels: ["bug"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Thanks for helping improve the PICT OSS website!
+        Please fill out the following details so we can fix the issue faster.
+
+  - type: input
+    id: bug-summary
+    attributes:
+      label: Bug Summary
+      description: Short description of the issue.
+      placeholder: e.g. "Navbar doesn't collapse on mobile"
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce
+      description: What steps should we follow to see the bug?
+      placeholder: |
+        1. Go to '...'
+        2. Click on '...'
+        3. See error
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior
+      description: What should have happened?
+      placeholder: e.g. "Navbar should collapse into a hamburger menu on small screens"
+    validations:
+      required: true
+
+  - type: textarea
+    id: screenshot
+    attributes:
+      label: Screenshots (Optional)
+      description: Upload a screenshot/gif if available.
+
+  - type: dropdown
+    id: device
+    attributes:
+      label: Device & Browser
+      description: On which device and browser did you face this issue?
+      options:
+        - Desktop - Chrome
+        - Desktop - Firefox
+        - Mobile - Chrome
+        - Mobile - Safari
+        - Other (Mention in comments)
+    validations:
+      required: false
+
+  - type: input
+    id: additional
+    attributes:
+      label: Additional Info
+      description: Anything else we should know? (Optional)

@@ -1,0 +1,50 @@
+name: Feature Request
+description: Suggest a new feature or improvement
+title: "[Feature] <short description>"
+labels: ["enhancement"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Got an idea? Let’s make the PICT OSS website better
+
+  - type: input
+    id: feature-summary
+    attributes:
+      label: Feature Summary
+      description: Short and clear summary of the feature.
+      placeholder: e.g. "Add dark mode toggle"
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or Need
+      description: What problem does this solve or what need does it address?
+      placeholder: e.g. "Users find it hard to use the site at night."
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Describe the Solution
+      description: What would you like to see happen?
+      placeholder: e.g. "Add a toggle button in the navbar to switch between dark and light mode."
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives Considered (Optional)
+      description: Any other ways you thought of solving it?
+
+  - type: input
+    id: additional-info
+    attributes:
+      label: Additional Info or References (Optional)
+      description: Add links, mockups, or anything helpful.
