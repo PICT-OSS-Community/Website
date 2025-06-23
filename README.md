@@ -99,7 +99,7 @@ The official website for OSS Community - a beginner-friendly open source communi
 -   **ESLint**: Code quality and consistency
 -   **Path Aliases**: Clean imports with `@/` prefix
 
-## About PICT OSS Community
+## About OSS Community
 
 OSS Community is a thriving open source community:
 
@@ -140,7 +140,7 @@ npm run start
 
 ## Support
 
--   Create an [issue](https://github.com/your-username/Website/issues) for bug reports
+-   Create an [issue](https://github.com/PICT-OSS-Community/Website/issues) for bug reports
 -   Follow us on [Twitter](https://twitter.com/@pict_osse) for updates
 -   Read our articles on [FOSSible Medium Publication](https://medium.com/fossible)
 -   Check the [Contributing Guide](CONTRIBUTING.md) for development help
