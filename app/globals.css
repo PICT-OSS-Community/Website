@@ -1,0 +1,136 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Custom Pixel Art Styles */
+@layer components {
+  .pixelated-border {
+    border: 4px solid currentColor;
+    border-image: url("data:image/svg+xml;charset=utf-8,%3csvg width='100' height='100' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='m25 0h50v25h25v50h-25v25h-50v-25h-25v-50h25z' fill='%23000'/%3e%3c/svg%3e") 25;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+  }
+  
+  .pixel-font {
+    font-family: 'Courier New', monospace;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+  }
+}
+
+/* Custom animations */
+@keyframes pixel-glow {
+  0%, 100% { 
+    box-shadow: 0 0 0 0 rgba(255, 0, 0, 0.4);
+  }
+  50% { 
+    box-shadow: 0 0 0 8px rgba(255, 0, 0, 0);
+  }
+}
+
+@keyframes pixel-pulse {
+  0%, 100% { 
+    transform: scale(1);
+  }
+  50% { 
+    transform: scale(1.05);
+  }
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Ensure crisp pixel rendering */
+* {
+  image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: crisp-edges;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #000;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #333;
+}
+
+/* Responsive font sizes */
+@media (max-width: 640px) {
+  .font-mono {
+    font-size: clamp(0.75rem, 2vw, 1rem);
+  }
+}
+
+/* Accessibility improvements */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .pixelated-border {
+    border-width: 6px;
+  }
+  
+  .text-gray-600 {
+    color: #000 !important;
+  }
+  
+  .text-gray-300 {
+    color: #fff !important;
+  }
+}
+
+/* Print styles */
+@media print {
+  .pixelated-border {
+    border: 2px solid #000 !important;
+  }
+  
+  .bg-red-500, .bg-blue-500, .bg-green-500, .bg-yellow-500 {
+    background-color: #000 !important;
+    color: #fff !important;
+  }
+}
