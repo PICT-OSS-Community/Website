@@ -1,4 +1,4 @@
-# OSS Community Website
+# OSS Website
 
 The official website for OSS Community - a beginner-friendly open source community with 650+ passionate developers from Pune Institute of Computer Technology. Built with Next.js 15, TypeScript, and Tailwind CSS, featuring a pixel-art inspired design that showcases our community, projects, and initiatives.
 
@@ -141,8 +141,7 @@ npm run start
 ## Support
 
 -   Create an [issue](https://github.com/your-username/Website/issues) for bug reports
--   Join our [Discord server](https://discord.gg/pict-oss) for community discussions
--   Follow us on [Twitter](https://twitter.com/pictosse) for updates
+-   Follow us on [Twitter](https://twitter.com/@pict_osse) for updates
 -   Read our articles on [FOSSible Medium Publication](https://medium.com/fossible)
 -   Check the [Contributing Guide](CONTRIBUTING.md) for development help
 
