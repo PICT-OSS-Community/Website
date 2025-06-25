@@ -1,0 +1,171 @@
+{
+  "projects": {
+    "React": {
+      "name": "React",
+      "logo": "https://img.logo.dev/react.dev?token=pk_HJOUYljnSYebdIrq5WdAcg&size=40&format=png",
+      "description": "A JavaScript library for building user interfaces with component-based architecture.",
+      "longDescription": "React makes it painless to create interactive UIs. Design simple views for each state in your application, and React will efficiently update and render just the right components when your data changes. Declarative views make your code more predictable and easier to debug.",
+      "category": "Frontend Framework",
+      "language": "JavaScript",
+      "stars": 223000,
+      "forks": 45700,
+      "githubUrl": "https://github.com/facebook/react",
+      "websiteUrl": "https://reactjs.org",
+      "features": [
+        "Component-Based Architecture",
+        "Virtual DOM for Performance",
+        "JSX Syntax",
+        "Unidirectional Data Flow",
+        "Rich Ecosystem & Community"
+      ]
+    },
+    "Vue": {
+      "name": "Vue.js",
+      "logo": "https://img.logo.dev/vuejs.org?token=pk_HJOUYljnSYebdIrq5WdAcg&size=40&format=png",
+      "description": "The Progressive JavaScript Framework for building modern web applications.",
+      "longDescription": "Vue is a progressive framework for building user interfaces. It is designed from the ground up to be incrementally adoptable, and can easily scale between a library and a framework depending on different use cases.",
+      "category": "Frontend Framework",
+      "language": "JavaScript",
+      "stars": 207000,
+      "forks": 33600,
+      "githubUrl": "https://github.com/vuejs/vue",
+      "websiteUrl": "https://vuejs.org",
+      "features": [
+        "Progressive Framework",
+        "Template Syntax",
+        "Two-Way Data Binding",
+        "Component System",
+        "Vue CLI & DevTools"
+      ]
+    },
+    "Docker": {
+      "name": "Docker",
+      "logo": "https://img.logo.dev/docker.com?token=pk_HJOUYljnSYebdIrq5WdAcg&size=40&format=png",
+      "description": "Platform for developing, shipping, and running applications using containerization.",
+      "longDescription": "Docker is a set of platform as a service products that use OS-level virtualization to deliver software in packages called containers. Containers are isolated from one another and bundle their own software, libraries and configuration files.",
+      "category": "DevOps & Infrastructure",
+      "language": "Go",
+      "stars": 68500,
+      "forks": 18700,
+      "githubUrl": "https://github.com/docker/docker-ce",
+      "websiteUrl": "https://docker.com",
+      "features": [
+        "Containerization Technology",
+        "Image Management",
+        "Cross-Platform Support",
+        "Microservices Architecture",
+        "DevOps Integration"
+      ]
+    },
+    "Kubernetes": {
+      "name": "Kubernetes",
+      "logo": "https://img.logo.dev/kubernetes.io?token=pk_HJOUYljnSYebdIrq5WdAcg&size=40&format=png",
+      "description": "Open-source system for automating deployment, scaling, and management of containerized applications.",
+      "longDescription": "Kubernetes is a portable, extensible, open-source platform for managing containerized workloads and services, that facilitates both declarative configuration and automation. It has a large, rapidly growing ecosystem.",
+      "category": "Container Orchestration",
+      "language": "Go",
+      "stars": 109000,
+      "forks": 39200,
+      "githubUrl": "https://github.com/kubernetes/kubernetes",
+      "websiteUrl": "https://kubernetes.io",
+      "features": [
+        "Container Orchestration",
+        "Auto-scaling",
+        "Service Discovery",
+        "Load Balancing",
+        "Rolling Updates"
+      ]
+    },
+    "Node.js": {
+      "name": "Node.js",
+      "logo": "https://img.logo.dev/nodejs.org?token=pk_HJOUYljnSYebdIrq5WdAcg&size=40&format=png",
+      "description": "JavaScript runtime built on Chrome's V8 JavaScript engine for server-side development.",
+      "longDescription": "Node.js is designed to build scalable network applications. It uses an event-driven, non-blocking I/O model that makes it lightweight and efficient, perfect for data-intensive real-time applications.",
+      "category": "Runtime Environment",
+      "language": "JavaScript",
+      "stars": 106000,
+      "forks": 28900,
+      "githubUrl": "https://github.com/nodejs/node",
+      "websiteUrl": "https://nodejs.org",
+      "features": [
+        "Event-Driven Architecture",
+        "Non-blocking I/O",
+        "NPM Package Manager",
+        "Cross-Platform",
+        "Large Community"
+      ]
+    },
+    "Express": {
+      "name": "Express.js",
+      "logo": "https://img.logo.dev/expressjs.com?token=pk_HJOUYljnSYebdIrq5WdAcg&size=40&format=png",
+      "description": "Fast, unopinionated, minimalist web framework for Node.js applications.",
+      "longDescription": "Express is a minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications. It's the de facto standard server framework for Node.js.",
+      "category": "Web Framework",
+      "language": "JavaScript",
+      "stars": 65000,
+      "forks": 15400,
+      "githubUrl": "https://github.com/expressjs/express",
+      "websiteUrl": "https://expressjs.com",
+      "features": [
+        "Minimalist Framework",
+        "Middleware Support",
+        "Routing System",
+        "Template Engines",
+        "HTTP Utilities"
+      ]
+    },
+    "MongoDB": {
+      "name": "MongoDB",
+      "logo": "https://img.logo.dev/mongodb.com?token=pk_HJOUYljnSYebdIrq5WdAcg&size=40&format=png",
+      "description": "Document-oriented NoSQL database for modern applications with flexible schemas.",
+      "longDescription": "MongoDB is a document database with the scalability and flexibility that you want with the querying and indexing that you need. It stores data in flexible, JSON-like documents.",
+      "category": "Database",
+      "language": "C++",
+      "stars": 26000,
+      "forks": 5700,
+      "githubUrl": "https://github.com/mongodb/mongo",
+      "websiteUrl": "https://mongodb.com",
+      "features": [
+        "Document-Based Storage",
+        "Flexible Schema",
+        "Horizontal Scaling",
+        "Rich Query Language",
+        "Aggregation Framework"
+      ]
+    },
+    "PostgreSQL": {
+      "name": "PostgreSQL",
+      "logo": "https://img.logo.dev/postgresql.org?token=pk_HJOUYljnSYebdIrq5WdAcg&size=40&format=png",
+      "description": "Advanced open source relational database with strong ACID compliance.",
+      "longDescription": "PostgreSQL is a powerful, open source object-relational database system with over 30 years of active development that has earned it a strong reputation for reliability, feature robustness, and performance.",
+      "category": "Database",
+      "language": "C",
+      "stars": 15800,
+      "forks": 4200,
+      "githubUrl": "https://github.com/postgres/postgres",
+      "websiteUrl": "https://postgresql.org",
+      "features": [
+        "ACID Compliance",
+        "Advanced SQL Features",
+        "Extensible Architecture",
+        "JSON Support",
+        "Multi-Version Concurrency"
+      ]
+    }
+  },
+  "defaultProjectTemplate": {
+    "description": "{name} is an innovative open source project making waves in the developer community.",
+    "longDescription": "This project demonstrates cutting-edge technology and best practices in software development. {name} offers powerful features and has gained significant traction among developers worldwide.",
+    "category": "Open Source Project",
+    "languages": ["JavaScript", "Python", "Go", "Rust", "TypeScript", "Java", "C++"],
+    "features": [
+      "Modern Architecture",
+      "High Performance",
+      "Developer Friendly",
+      "Well Documented",
+      "Active Community"
+    ],
+    "starRange": [5000, 100000],
+    "forkRange": [1000, 20000]
+  }
+} 
