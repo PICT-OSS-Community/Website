@@ -1,9 +1,10 @@
 import React from 'react';
 import { Code, Users, Zap, BookOpen } from 'lucide-react';
+import Cube3D from './Cube3D';
 
 const Hero = () => {
   return (
-    <section className="bg-white py-16 lg:py-24 relative overflow-hidden">
+    <section className="bg-white py-16 lg:py-12 relative overflow-hidden">
       {/* Decorative Clouds */}
       <div className="absolute top-10 left-10 opacity-20">
         <PixelCloud />
@@ -15,43 +16,71 @@ const Hero = () => {
         <PixelCloud />
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h1
-  className="font-mono font-bold text-black mb-8 tracking-wider leading-tight
-             flex flex-col items-start   /* left-align the three lines */
-             w-fit mx-auto               /* shrink to content & centre the block */
-">
-  <span className="text-xl  sm:text-2xl lg:text-3xl">PICT</span>
-
-  <span className="text-6xl sm:text-8xl lg:text-[10rem]">OSS</span>
-
-  <span className="text-xl  sm:text-2xl lg:text-3xl
-                   bg-black text-white px-3 py-1 pixelated-border">
-    COMMUNITY
-  </span>
-</h1>
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Main Hero Content with Cube */}
+        <div className="flex flex-col lg:flex-row items-center lg:items-center justify-center gap-4 lg:gap-4 mb-32">
           
-          <p className="text-xl sm:text-2xl font-mono text-gray-700 mb-12 max-w-4xl mx-auto leading-relaxed">
-            A Beginner friendly community of<br />
-            passionate developers building the<br />
-            future with Open-Source
-          </p>
+          {/* Text Content - On Left */}
+          <div className="flex-shrink-0 text-center lg:text-left lg:pr-2 lg:pl-4">
+            <h1
+              className="font-mono font-bold text-black mb-8 tracking-wider leading-tight
+                         flex flex-col items-start   /* left-align the three lines */
+                         w-fit mx-auto lg:mx-0 lg:mt-12     /* centre on mobile, left on desktop */
+            ">
+              <span className="text-xl  sm:text-2xl lg:text-3xl">PICT</span>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <CTAButton color="red" size="large">
-              <Users className="mr-2" size={20} />
-              JOIN COMMUNITY
-            </CTAButton>
-            <CTAButton color="green" size="large" variant="outline">
-              <Code className="mr-2" size={20} />
-              EXPLORE PROJECTS
-            </CTAButton>
+              <span className="text-6xl sm:text-8xl lg:text-[8rem] xl:text-[10rem]">OSS</span>
+
+              <span className="text-xl  sm:text-2xl lg:text-3xl
+                               bg-black text-white px-3 py-1 pixelated-border">
+                COMMUNITY
+              </span>
+            </h1>
+            
+            <p className="text-lg sm:text-xl lg:text-2xl font-mono text-gray-700 mb-8 max-w-lg mx-auto lg:mx-0 leading-relaxed">
+              A Beginner friendly community of<br />
+              passionate developers building the<br />
+              future with Open-Source
+            </p>
+
+            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center">
+              <CTAButton color="red" size="large">
+                <Users className="mr-2" size={20} />
+                JOIN COMMUNITY
+              </CTAButton>
+              <CTAButton color="green" size="large" variant="outline">
+                <Code className="mr-2" size={20} />
+                EXPLORE PROJECTS
+              </CTAButton>
+            </div>
+          </div>
+
+          {/* 3D Cube - Centered next to title */}
+          <div className="hidden lg:flex lg:flex-shrink-0 lg:items-center lg:justify-center">
+            <div className="relative">
+              {/* Cube Container with Background Effect */}
+              <div className="relative p-4 lg:p-6 bg-gradient-to-br from-gray-50 to-gray-100 rounded-2xl shadow-lg border border-gray-200">
+                <div className="absolute inset-0 bg-black opacity-5 rounded-2xl pixelated-border"></div>
+                <div className="relative z-10">
+                  <Cube3D />
+                  <p className="text-center mt-3 font-mono text-xs text-gray-600 leading-tight">
+                    Hover & Click to explore<br />
+                    <span className="font-bold">54 open source projects</span>
+                  </p>
+                </div>
+              </div>
+              
+              {/* Decorative Elements */}
+              <div className="absolute -top-2 -right-2 w-4 h-4 bg-blue-500 pixelated-border animate-pulse"></div>
+              <div className="absolute -bottom-2 -left-2 w-4 h-4 bg-red-500 pixelated-border animate-pulse"></div>
+              <div className="absolute top-1/2 -left-3 w-3 h-3 bg-green-500 pixelated-border opacity-60"></div>
+              <div className="absolute top-1/4 -right-3 w-3 h-3 bg-yellow-500 pixelated-border opacity-60"></div>
+            </div>
           </div>
         </div>
 
-        {/* Feature Icons */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-20">
+        {/* Feature Icons - Hidden initially */}
+        <div className="hidden grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-20">
           <FeatureCard
             icon={<BookOpen size={40} />}
             title="FOSSIBLE"
