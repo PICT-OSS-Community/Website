@@ -24,8 +24,8 @@ const Community = () => {
           {/* Row 1 - Mobile: 3, Medium: 4, Large: 5 */}
           <div className="flex justify-center gap-6 lg:gap-8">
             <Character name="ANISH"    color="emerald" message="git commit -m 'YOLO 🌱'" />
-            <Character name="ANSHUL"   color="sky"     message="npm run build && vibe" />
-            <Character name="ANURAG"   color="emerald" message="AI agents everywhere! 🤖" />
+            <Character name="ANSHUL"   color="sky"     message="i have a team of testers, they're called users" />
+            <Character name="ANURAG"   color="emerald" message="I only test in production 🤖" />
             <div className="hidden md:block">
               <Character name="ARYAN"    color="indigo"  message="I use Arch BTW… in Docker 😁" />
             </div>
