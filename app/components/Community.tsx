@@ -18,20 +18,110 @@ const Community = () => {
           </p>
         </div>
 
-        {/* Character Grid */}
-        <div className="grid grid-cols-3 md:grid-cols-4 gap-8 mb-16">
-        <Character name="ANISH"    color="emerald" message="git commit -m 'YOLO 🌱'" />
-<Character name="ANSHUL"   color="sky"     message="npm run build && vibe" />
-<Character name="ASWATHI"  color="rose"    message="Ping me only for merge conflicts 🛠️" />
-<Character name="CHIRAG"   color="violet"  message="0 bugs, 0 enemies, life sorted." />
-<Character name="SAMIR"    color="orange"  message="Livestreaming Stack Overflow searches 🎥" />
-<Character name="TRUPTI"   color="cyan"    message="sudo make me a sandwich 🥪" />
-<Character name="ARYAN"    color="indigo"  message="I use Arch BTW… in Docker 😁" />
-<Character name="KSHITIJ"  color="amber"   message="99 bugs in the code, take one down…" />
-<Character name="SAKSHAM"  color="pink"    message="Currently cd-ing into /dev/null" />
-<Character name="SHANTANU" color="teal"    message="Deploying on Friday, wish me luck 🚀" />
-<Character name="SUJAL"    color="lime"    message="⌛ compiling witty status…" />
-<Character name="VEDANT"   color="purple"  message="sudo apt-get coffee && learn" />
+        {/* Character Pyramid Layout - Alphabetical Order */}
+        <div className="mb-16 space-y-6">
+          
+          {/* Row 1 - Mobile: 3, Medium: 4, Large: 5 */}
+          <div className="flex justify-center gap-6 lg:gap-8">
+            <Character name="ANISH"    color="emerald" message="git commit -m 'YOLO 🌱'" />
+            <Character name="ANSHUL"   color="sky"     message="npm run build && vibe" />
+            <Character name="ANURAG"   color="emerald" message="AI agents everywhere! 🤖" />
+            <div className="hidden md:block">
+              <Character name="ARYAN"    color="indigo"  message="I use Arch BTW… in Docker 😁" />
+            </div>
+            <div className="hidden lg:block">
+              <Character name="ASWATHI"  color="rose"    message="Ping me only for merge conflicts 🛠️" />
+            </div>
+          </div>
+
+          {/* Row 2 - Mobile: 3, Medium: 3, Large: 4 */}
+          <div className="flex justify-center gap-6 lg:gap-8">
+            <div className="block md:hidden">
+              <Character name="ARYAN"    color="indigo"  message="I use Arch BTW… in Docker 😁" />
+            </div>
+            <div className="block md:hidden">
+              <Character name="ASWATHI"  color="rose"    message="Ping me only for merge conflicts 🛠️" />
+            </div>
+            <div className="block md:hidden">
+              <Character name="CHIRAG"   color="violet"  message="0 bugs, 0 enemies, life sorted." />
+            </div>
+            <div className="hidden md:block lg:hidden">
+              <Character name="ASWATHI"  color="rose"    message="Ping me only for merge conflicts 🛠️" />
+            </div>
+            <div className="hidden md:block">
+              <Character name="CHIRAG"   color="violet"  message="0 bugs, 0 enemies, life sorted." />
+            </div>
+            <div className="hidden md:block">
+              <Character name="KSHITIJ"  color="amber"   message="99 bugs in the code, take one down…" />
+            </div>
+            <div className="hidden lg:block">
+              <Character name="SAKSHAM"  color="pink"    message="Currently cd-ing into /dev/null" />
+            </div>
+            <div className="hidden lg:block">
+              <Character name="SAMIR"    color="orange"  message="Livestreaming Stack Overflow searches 🎥" />
+            </div>
+          </div>
+
+          {/* Row 3 - Mobile: 3, Medium: 3, Large: 4 */}
+          <div className="flex justify-center gap-6 lg:gap-8">
+            <div className="block md:hidden">
+              <Character name="KSHITIJ"  color="amber"   message="99 bugs in the code, take one down…" />
+            </div>
+            <div className="block md:hidden">
+              <Character name="SAKSHAM"  color="pink"    message="Currently cd-ing into /dev/null" />
+            </div>
+            <div className="block md:hidden">
+              <Character name="SAMIR"    color="orange"  message="Livestreaming Stack Overflow searches 🎥" />
+            </div>
+            <div className="hidden md:block lg:hidden">
+              <Character name="SAKSHAM"  color="pink"    message="Currently cd-ing into /dev/null" />
+            </div>
+            <div className="hidden md:block lg:hidden">
+              <Character name="SAMIR"    color="orange"  message="Livestreaming Stack Overflow searches 🎥" />
+            </div>
+            <div className="hidden md:block lg:hidden">
+              <Character name="SHANTANU" color="teal"    message="Deploying on Friday, wish me luck 🚀" />
+            </div>
+            <div className="hidden lg:block">
+              <Character name="SHANTANU" color="teal"    message="Deploying on Friday, wish me luck 🚀" />
+            </div>
+            <div className="hidden lg:block">
+              <Character name="SUJAL"    color="lime"    message="⌛ compiling witty status…" />
+            </div>
+            <div className="hidden lg:block">
+              <Character name="TRUPTI"   color="cyan"    message="sudo make me a sandwich 🥪" />
+            </div>
+            <div className="hidden lg:block">
+              <Character name="VEDANT"   color="purple"  message="sudo apt-get coffee && learn" />
+            </div>
+          </div>
+
+          {/* Row 4 - Mobile: 3, Medium: 3, Large: hidden */}
+          <div className="flex justify-center gap-6 lg:gap-8 lg:hidden">
+            <div className="block md:hidden">
+              <Character name="SHANTANU" color="teal"    message="Deploying on Friday, wish me luck 🚀" />
+            </div>
+            <div className="block md:hidden">
+              <Character name="SUJAL"    color="lime"    message="⌛ compiling witty status…" />
+            </div>
+            <div className="block md:hidden">
+              <Character name="TRUPTI"   color="cyan"    message="sudo make me a sandwich 🥪" />
+            </div>
+            <div className="hidden md:block">
+              <Character name="SUJAL"    color="lime"    message="⌛ compiling witty status…" />
+            </div>
+            <div className="hidden md:block">
+              <Character name="TRUPTI"   color="cyan"    message="sudo make me a sandwich 🥪" />
+            </div>
+            <div className="hidden md:block">
+              <Character name="VEDANT"   color="purple"  message="sudo apt-get coffee && learn" />
+            </div>
+          </div>
+
+          {/* Row 5 - Mobile: 1, Medium: hidden, Large: hidden */}
+          <div className="flex justify-center gap-6 md:hidden">
+            <Character name="VEDANT"   color="purple"  message="sudo apt-get coffee && learn" />
+          </div>
 
         </div>
 
