@@ -16,9 +16,18 @@ export const metadata: Metadata = {
   title: "OSS community",
   description: "Official website of the OSS community",
   icons: {
-    icon: "/oss-favicon.png",
+    icon: [
+      { url: "/oss-favicon.png", sizes: "32x32", type: "image/png" },
+      { url: "/oss-favicon.png", sizes: "16x16", type: "image/png" },
+    ],
     shortcut: "/oss-favicon.png",
     apple: "/oss-favicon.png",
+    other: [
+      {
+        rel: "icon",
+        url: "/oss-favicon.png",
+      },
+    ],
   },
 };
 
