@@ -1,7 +1,7 @@
 import React from 'react';
-import { ExternalLink, Star, GitFork } from 'lucide-react';
+import { ExternalLink, Calendar, Clock } from 'lucide-react';
 
-const Projects = () => {
+const Blogs = () => {
   return (
     <section className="bg-white py-16 lg:py-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -10,61 +10,61 @@ const Projects = () => {
             FEATURED
             <br />
             <span className="bg-blue-500 text-white px-4 py-2 pixelated-border inline-block">
-              PROJECTS
+              BLOGS
             </span>
           </h2>
           <p className="text-xl font-mono text-gray-600 max-w-3xl mx-auto">
-            Amazing open source projects built by our community
+            Insightful articles and tutorials from our community writers
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <ProjectCard
-            title="PIXEL EDITOR"
-            description="A web-based pixel art editor with collaborative features"
-            language="JavaScript"
-            stars={245}
-            forks={67}
+          <BlogCard
+            title="NEHA NARKHEDE'S JOURNEY"
+            description="Open Source Innovation to Global Enterprise"
+            author="Anish Dabhane"
+            date="Jun 20"
+            readTime="5 min read"
             color="red"
           />
-          <ProjectCard
-            title="CODE RUNNER"
-            description="Execute code snippets in multiple programming languages"
-            language="Python"
-            stars={432}
-            forks={89}
+          <BlogCard
+            title="HOW OPEN SOURCE TEACHES YOU"
+            description="To Write Code for People, Not Just Machines"
+            author="Sujal Bhor"
+            date="May 12"
+            readTime="5 min read"
             color="green"
           />
-          <ProjectCard
-            title="TASK TRACKER"
-            description="Minimalist task management with team collaboration"
-            language="TypeScript"
-            stars={178}
-            forks={34}
+          <BlogCard
+            title="A2A+MCP: PART 2"
+            description="A Practical guide to the future of AI agent workflows"
+            author="Anshul Kalbande"
+            date="Jun 18"
+            readTime="12 min read"
             color="blue"
           />
-          <ProjectCard
-            title="API DOCS GEN"
-            description="Automatic API documentation generator for REST APIs"
-            language="Go"
-            stars={356}
-            forks={91}
+          <BlogCard
+            title="AUTOMATING HTTPS"
+            description="With Docker, Nginx & Certbot for web projects"
+            author="Samir Wankhede"
+            date="Jun 14"
+            readTime="7 min read"
             color="yellow"
           />
-          <ProjectCard
-            title="CHAT BOT AI"
-            description="Open source chatbot with natural language processing"
-            language="Python"
-            stars={523}
-            forks={145}
+          <BlogCard
+            title="WHY VULKAN IS BETTER"
+            description="But You Might Want OpenGL Anyway for game engines"
+            author="Kshitijaucharmal"
+            date="Jun 8"
+            readTime="5 min read"
             color="red"
           />
-          <ProjectCard
-            title="WEB SCRAPER"
-            description="Ethical web scraping toolkit with rate limiting"
-            language="JavaScript"
-            stars={289}
-            forks={76}
+          <BlogCard
+            title="A2A + MCP: PART 1"
+            description="A practical guide to the future of AI agent workflows"
+            author="Anurag Mandke"
+            date="May 13"
+            readTime="10 min read"
             color="green"
           />
         </div>
@@ -72,7 +72,7 @@ const Projects = () => {
         <div className="text-center mt-16">
           <button className="bg-black text-white font-mono font-bold px-8 py-4 text-xl pixelated-border hover:scale-105 transition-all duration-200 flex items-center justify-center mx-auto">
             <ExternalLink className="mr-2" size={20} />
-            VIEW ALL PROJECTS
+            VIEW ALL BLOGS
           </button>
         </div>
       </div>
@@ -80,19 +80,19 @@ const Projects = () => {
   );
 };
 
-const ProjectCard = ({ 
+const BlogCard = ({ 
   title, 
   description, 
-  language, 
-  stars, 
-  forks, 
+  author, 
+  date, 
+  readTime, 
   color 
 }: {
   title: string;
   description: string;
-  language: string;
-  stars: number;
-  forks: number;
+  author: string;
+  date: string;
+  readTime: string;
   color: 'red' | 'blue' | 'green' | 'yellow';
 }) => {
   const colorClasses = {
@@ -124,17 +124,17 @@ const ProjectCard = ({
       <div className="flex items-center justify-between text-sm font-mono">
         <div className="flex items-center space-x-1">
           <div className={`w-3 h-3 ${dotColorClasses[color]} rounded-full`}></div>
-          <span className="text-gray-700">{language}</span>
+          <span className="text-gray-700">{author}</span>
         </div>
         
         <div className="flex items-center space-x-4 text-gray-600">
           <div className="flex items-center space-x-1">
-            <Star size={14} />
-            <span>{stars}</span>
+            <Calendar size={14} />
+            <span>{date}</span>
           </div>
           <div className="flex items-center space-x-1">
-            <GitFork size={14} />
-            <span>{forks}</span>
+            <Clock size={14} />
+            <span>{readTime}</span>
           </div>
         </div>
       </div>
@@ -145,4 +145,4 @@ const ProjectCard = ({
   );
 };
 
-export default Projects;
+export default Blogs;

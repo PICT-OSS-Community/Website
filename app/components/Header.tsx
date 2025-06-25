@@ -19,11 +19,11 @@ const Header = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-1">
-            <NavButton href="#home" color="red">HOME</NavButton>
+            {/* <NavButton href="#home" color="red">HOME</NavButton>
             <NavButton href="#projects" color="blue">PROJECTS</NavButton>
             <NavButton href="#sessions" color="yellow">SESSIONS</NavButton>
             <NavButton href="#fossible" color="red">FOSSible</NavButton>
-            <NavButton href="#about" color="green">ABOUT</NavButton>
+            <NavButton href="#about" color="green">ABOUT</NavButton> */}
           </nav>
 
           {/* Social Links */}
@@ -47,11 +47,11 @@ const Header = () => {
         {isMenuOpen && (
           <div className="md:hidden py-4 border-t-4 border-black">
             <div className="flex flex-col space-y-2">
-              <NavButton href="#home" color="red" mobile>HOME</NavButton>
+              {/* <NavButton href="#home" color="red" mobile>HOME</NavButton>
               <NavButton href="#projects" color="blue" mobile>PROJECTS</NavButton>
               <NavButton href="#sessions" color="yellow" mobile>SESSIONS</NavButton>
               <NavButton href="#fossible" color="red" mobile>FOSSible</NavButton>
-              <NavButton href="#about" color="green" mobile>ABOUT</NavButton>
+              <NavButton href="#about" color="green" mobile>ABOUT</NavButton> */}
             </div>
             <div className="flex justify-center space-x-2 mt-4">
               <SocialIcon href="#" icon={Github} color="blue" />
