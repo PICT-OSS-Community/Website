@@ -1,6 +1,7 @@
 "use client"
 import React, { useState } from 'react';
-import { Menu, X, Github, Twitter, Disc as Discord, BookOpen } from 'lucide-react';
+import Link from 'next/link';
+import { Menu, X, Github, Twitter, Linkedin, Instagram } from 'lucide-react';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -28,10 +29,10 @@ const Header = () => {
 
           {/* Social Links */}
           <div className="hidden md:flex items-center space-x-2">
-            <SocialIcon href="#" icon={Github} color="blue" />
-            <SocialIcon href="#" icon={BookOpen} color="red" />
-            <SocialIcon href="#" icon={Twitter} color="yellow" />
-            <SocialIcon href="#" icon={Discord} color="green" />
+            <SocialIcon href="https://github.com/PICT-OSS-Community" icon={Github} color="blue" />
+            <SocialIcon href="https://x.com/pict_oss" icon={Twitter} color="yellow" />
+            <SocialIcon href="https://www.linkedin.com/company/oss-community/posts/?feedView=all" icon={Linkedin} color="red" />
+            <SocialIcon href="https://www.instagram.com/oss__community" icon={Instagram} color="green" />
           </div>
 
           {/* Mobile Menu Button */}
@@ -54,10 +55,10 @@ const Header = () => {
               <NavButton href="#about" color="green" mobile>ABOUT</NavButton> */}
             </div>
             <div className="flex justify-center space-x-2 mt-4">
-              <SocialIcon href="#" icon={Github} color="blue" />
-              <SocialIcon href="#" icon={BookOpen} color="red" />
-              <SocialIcon href="#" icon={Twitter} color="yellow" />
-              <SocialIcon href="#" icon={Discord} color="green" />
+              <SocialIcon href="https://github.com/PICT-OSS-Community" icon={Github} color="blue" />
+              <SocialIcon href="https://x.com/pict_oss" icon={Twitter} color="yellow" />
+              <SocialIcon href="https://www.linkedin.com/company/oss-community/posts/?feedView=all" icon={Linkedin} color="red" />
+              <SocialIcon href="https://www.instagram.com/oss__community" icon={Instagram} color="green" />
             </div>
           </div>
         )}
@@ -107,15 +108,17 @@ const SocialIcon = ({ href, icon: Icon, color }: {
   };
 
   return (
-    <a
+    <Link
       href={href}
+      target="_blank"
+      rel="noopener noreferrer"
       className={`
         ${colorClasses[color]} 
         text-white p-2 pixelated-border hover:scale-110 transition-all duration-200
       `}
     >
       <Icon size={16} />
-    </a>
+    </Link>
   );
 };
 

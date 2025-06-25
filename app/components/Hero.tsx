@@ -1,6 +1,7 @@
 import React from 'react';
 import { Code, Users, Zap, BookOpen } from 'lucide-react';
 import Cube3D from './Cube3D';
+import Link from 'next/link';
 
 const Hero = () => {
   return (
@@ -25,7 +26,7 @@ const Hero = () => {
             <h1
               className="font-mono font-bold text-black mb-8 tracking-wider leading-tight
                          flex flex-col items-start   /* left-align the three lines */
-                         w-fit mx-auto lg:mx-0 lg:mt-12     /* centre on mobile, left on desktop */
+                         w-fit mx-auto lg:mx-0 lg:mt-12      /* centre on mobile, left on desktop */
             ">
               <span className="text-xl  sm:text-2xl lg:text-3xl">PICT</span>
 
@@ -44,14 +45,19 @@ const Hero = () => {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center">
+                <Link href="https://chat.whatsapp.com/DIMjrXdU26y3JEHbK3bNjQ" >
               <CTAButton color="red" size="large">
                 <Users className="mr-2" size={20} />
                 JOIN COMMUNITY
               </CTAButton>
+                </Link>
+                <Link href="https://medium.com/fossible" >
+
               <CTAButton color="green" size="large" variant="outline">
                 <Code className="mr-2" size={20} />
-                EXPLORE PROJECTS
+                EXPLORE BLOGS
               </CTAButton>
+              </Link>
             </div>
           </div>
 
@@ -149,6 +155,7 @@ const CTAButton = ({
       font-mono font-bold pixelated-border 
       hover:scale-105 transition-all duration-200 
       flex items-center justify-center
+      cursor-pointer
     `}>
       {children}
     </button>

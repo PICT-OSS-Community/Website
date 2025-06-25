@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import { ExternalLink, Calendar, Clock } from 'lucide-react';
 
 const Blogs = () => {
@@ -26,6 +27,7 @@ const Blogs = () => {
             date="Jun 20"
             readTime="5 min read"
             color="red"
+            href="https://medium.com/fossible/neha-narkhedes-journey-open-source-innovation-to-global-enterprise-f7f07a85c9cb"
           />
           <BlogCard
             title="HOW OPEN SOURCE TEACHES YOU"
@@ -34,6 +36,7 @@ const Blogs = () => {
             date="May 12"
             readTime="5 min read"
             color="green"
+            href="https://medium.com/fossible/how-open-source-teaches-you-to-write-code-for-people-not-just-machines-f43000c4bf34"
           />
           <BlogCard
             title="A2A+MCP: PART 2"
@@ -42,6 +45,7 @@ const Blogs = () => {
             date="Jun 18"
             readTime="12 min read"
             color="blue"
+            href="https://medium.com/fossible/part-2-a2a-mcp-a-practical-guide-to-the-future-of-ai-agent-workflows-7ab38a013f02"
           />
           <BlogCard
             title="AUTOMATING HTTPS"
@@ -50,6 +54,7 @@ const Blogs = () => {
             date="Jun 14"
             readTime="7 min read"
             color="yellow"
+            href="https://medium.com/fossible/automating-https-with-docker-nginx-certbot-c4c406409f32"
           />
           <BlogCard
             title="WHY VULKAN IS BETTER"
@@ -58,6 +63,7 @@ const Blogs = () => {
             date="Jun 8"
             readTime="5 min read"
             color="red"
+            href="https://medium.com/fossible/why-vulkan-is-better-but-you-might-want-opengl-anyway-f797cf9cfaea"
           />
           <BlogCard
             title="A2A + MCP: PART 1"
@@ -66,14 +72,20 @@ const Blogs = () => {
             date="May 13"
             readTime="10 min read"
             color="green"
+            href="https://medium.com/fossible/part-1-a2a-mcp-a-practical-guide-to-the-future-of-ai-agent-workflows-f8052aa6e126"
           />
         </div>
 
         <div className="text-center mt-16">
-          <button className="bg-black text-white font-mono font-bold px-8 py-4 text-xl pixelated-border hover:scale-105 transition-all duration-200 flex items-center justify-center mx-auto">
+          <Link 
+            href="https://medium.com/fossible" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="bg-black text-white font-mono font-bold px-8 py-4 text-xl pixelated-border hover:scale-105 transition-all duration-200 flex items-center justify-center mx-auto w-fit"
+          >
             <ExternalLink className="mr-2" size={20} />
             VIEW ALL BLOGS
-          </button>
+          </Link>
         </div>
       </div>
     </section>
@@ -86,7 +98,8 @@ const BlogCard = ({
   author, 
   date, 
   readTime, 
-  color 
+  color,
+  href 
 }: {
   title: string;
   description: string;
@@ -94,6 +107,7 @@ const BlogCard = ({
   date: string;
   readTime: string;
   color: 'red' | 'blue' | 'green' | 'yellow';
+  href?: string;
 }) => {
   const colorClasses = {
     red: 'border-red-500',
@@ -109,7 +123,7 @@ const BlogCard = ({
     yellow: 'bg-yellow-500'
   };
 
-  return (
+  const CardContent = () => (
     <div className={`
       bg-white border-4 ${colorClasses[color]} p-6 
       hover:scale-105 transition-all duration-200 cursor-pointer
@@ -143,6 +157,16 @@ const BlogCard = ({
       <div className="absolute inset-0 hover:bg-gray-200 bg-opacity-5 opacity-0 group-hover:opacity-10 transition-opacity duration-200"></div>
     </div>
   );
+
+  if (href) {
+    return (
+      <Link href={href} target="_blank" rel="noopener noreferrer">
+        <CardContent />
+      </Link>
+    );
+  }
+
+  return <CardContent />;
 };
 
 export default Blogs;
