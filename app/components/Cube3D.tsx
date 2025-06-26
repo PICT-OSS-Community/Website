@@ -263,7 +263,7 @@ const Cube3D = () => {
         >
           <img
             src={project.logo}
-            alt={project.name}
+            alt={`${project.name} logo`}
             className={styles.faceImage}
             style={{
               filter: isClicked 

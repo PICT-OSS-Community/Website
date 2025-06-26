@@ -17,12 +17,12 @@ const Hero = () => {
         <PixelCloud />
       </div>
 
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Main Hero Content with Cube */}
-        <div className="flex flex-col lg:flex-row items-center lg:items-center justify-center gap-4 lg:gap-4 mb-32">
+        <div className="flex flex-col lg:flex-row items-center lg:justify-between gap-8 lg:gap-16 mb-32">
           
           {/* Text Content - On Left */}
-          <div className="flex-shrink-0 text-center lg:text-left lg:pr-2 lg:pl-4">
+          <div className="lg:w-1/2 flex-shrink-0 text-center lg:text-left">
             <h1
               className="font-mono font-bold text-black mb-8 tracking-wider leading-tight
                          flex flex-col items-start   /* left-align the three lines */
@@ -30,7 +30,7 @@ const Hero = () => {
             ">
               <span className="text-xl  sm:text-2xl lg:text-3xl">PICT</span>
 
-              <span className="text-6xl sm:text-8xl lg:text-[8rem] xl:text-[10rem]">OSS</span>
+              <span className="text-6xl sm:text-8xl lg:text-[8rem] xl:text-[10rem] -ml-2">OSS</span>
 
               <span className="text-xl  sm:text-2xl lg:text-3xl
                                bg-black text-white px-3 py-1 pixelated-border">
@@ -61,12 +61,11 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* 3D Cube - Centered next to title */}
-          <div className="hidden lg:flex lg:flex-shrink-0 lg:items-center lg:justify-center">
-            <div className="relative">
-              {/* Cube Container with Background Effect */}
-              <div className="relative p-4 lg:p-6 bg-gradient-to-br from-gray-50 to-gray-100 rounded-2xl shadow-lg border border-gray-200">
-                <div className="absolute inset-0 bg-black opacity-5 rounded-2xl pixelated-border"></div>
+          {/* 3D Cube - Larger and moved to the right */}
+          <div className="hidden lg:flex lg:w-1/2 items-center justify-center">
+            <div className="relative transform scale-125 mt-12">
+              {/* Cube Container with Background Effect REMOVED */}
+              <div className="relative p-4 lg:p-6">
                 <div className="relative z-10">
                   <Cube3D />
                   <p className="text-center mt-3 font-mono text-xs text-gray-600 leading-tight">
