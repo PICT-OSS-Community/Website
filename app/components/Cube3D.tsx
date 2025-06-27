@@ -172,16 +172,20 @@ const Cube3D = () => {
       };
     }
 
-    // Generate default project info using template
-    const randomLanguage = defaultProjectTemplate.languages[
-      Math.floor(Math.random() * defaultProjectTemplate.languages.length)
-    ];
-    const randomStars = Math.floor(
-      Math.random() * (defaultProjectTemplate.starRange[1] - defaultProjectTemplate.starRange[0])
-    ) + defaultProjectTemplate.starRange[0];
-    const randomForks = Math.floor(
-      Math.random() * (defaultProjectTemplate.forkRange[1] - defaultProjectTemplate.forkRange[0])
-    ) + defaultProjectTemplate.forkRange[0];
+    // Generate deterministic "random" values based on project name to avoid hydration issues
+    const hash = projectName.split('').reduce((a, b) => {
+      a = ((a << 5) - a) + b.charCodeAt(0);
+      return a & a;
+    }, 0);
+    
+    const languageIndex = Math.abs(hash) % defaultProjectTemplate.languages.length;
+    const randomLanguage = defaultProjectTemplate.languages[languageIndex];
+    
+    const starRange = defaultProjectTemplate.starRange[1] - defaultProjectTemplate.starRange[0];
+    const randomStars = (Math.abs(hash * 7) % starRange) + defaultProjectTemplate.starRange[0];
+    
+    const forkRange = defaultProjectTemplate.forkRange[1] - defaultProjectTemplate.forkRange[0];
+    const randomForks = (Math.abs(hash * 13) % forkRange) + defaultProjectTemplate.forkRange[0];
 
     return {
       name: projectName,
