@@ -32,20 +32,11 @@ const Blogs = () => {
           <BlogCard
             title="HOW OPEN SOURCE TEACHES YOU"
             description="To Write Code for People, Not Just Machines"
-            author="Sujal Bhor"
+            author="Sujal Bhor" 
             date="May 12"
             readTime="5 min read"
             color="green"
             href="https://medium.com/fossible/how-open-source-teaches-you-to-write-code-for-people-not-just-machines-f43000c4bf34"
-          />
-          <BlogCard
-            title="A2A+MCP: PART 2"
-            description="A Practical guide to the future of AI agent workflows"
-            author="Anshul Kalbande"
-            date="Jun 18"
-            readTime="12 min read"
-            color="blue"
-            href="https://medium.com/fossible/part-2-a2a-mcp-a-practical-guide-to-the-future-of-ai-agent-workflows-7ab38a013f02"
           />
           <BlogCard
             title="AUTOMATING HTTPS"

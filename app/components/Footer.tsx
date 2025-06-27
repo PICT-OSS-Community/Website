@@ -21,10 +21,10 @@ const Footer = () => {
               innovation, and community-driven development. Join our 650+ members!
             </p>
             <div className="flex space-x-2">
-              <SocialIcon href="#" icon={Github} color="blue" />
-              <SocialIcon href="#" icon={BookOpen} color="red" />
-              <SocialIcon href="#" icon={Twitter} color="yellow" />
-              <SocialIcon href="#" icon={Discord} color="green" />
+              <SocialIcon href="https://github.com/PICT-OSS-Community" icon={Github} color="blue" />
+              <SocialIcon href="" icon={BookOpen} color="red" />
+              <SocialIcon href="" icon={Twitter} color="yellow" />
+              <SocialIcon href="https://discord.gg/zgGmkFSr" icon={Discord} color="green" />
               <SocialIcon href="#" icon={Mail} color="blue" />
             </div>
           </div>
@@ -96,6 +96,7 @@ const SocialIcon = ({ href, icon: Icon, color }: {
         ${colorClasses[color]} 
         text-white p-3 pixelated-border hover:scale-110 transition-all duration-200
       `}
+      target="_blank"
     >
       <Icon size={20} />
     </a>
