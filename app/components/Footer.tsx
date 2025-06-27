@@ -1,6 +1,7 @@
 import React from 'react';
 import { Github, Twitter, Disc as Discord, Mail, Heart, BookOpen } from 'lucide-react';
-import PixelArt from './PixelArt';
+import dynamic from 'next/dynamic';
+const PixelArt = dynamic(() => import("./PixelArt"), {ssr: false}) 
 
 const Footer = () => {
   return (
