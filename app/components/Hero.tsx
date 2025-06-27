@@ -30,7 +30,7 @@ const Hero = () => {
             ">
               <span className="text-xl  sm:text-2xl lg:text-3xl">PICT</span>
 
-              <span className="text-6xl sm:text-8xl lg:text-[8rem] xl:text-[10rem] -ml-2">OSS</span>
+              <span className="text-5xl sm:text-6xl md:text-7xl lg:text-[6rem] xl:text-[7rem]">OSS</span>
 
               <span className="text-xl  sm:text-2xl lg:text-3xl
                                bg-black text-white px-3 py-1 pixelated-border">
@@ -61,11 +61,11 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* 3D Cube - Larger and moved to the right */}
+          {/* 3D Cube - Adjusted for mobile responsiveness */}
           <div className="hidden lg:flex lg:w-1/2 items-center justify-center">
-            <div className="relative transform scale-125 mt-12">
-              {/* Cube Container with Background Effect REMOVED */}
-              <div className="relative p-4 lg:p-6">
+            <div className="relative transform scale-125 mt-12 w-fit">
+              {/* Cube Container with proper bounds */}
+              <div className="relative p-4 lg:p-6 w-fit">
                 <div className="relative z-10">
                   <Cube3D />
                   <p className="text-center mt-3 font-mono text-xs text-gray-600 leading-tight">
@@ -75,11 +75,11 @@ const Hero = () => {
                 </div>
               </div>
               
-              {/* Decorative Elements */}
-              <div className="absolute -top-2 -right-2 w-4 h-4 bg-blue-500 pixelated-border animate-pulse"></div>
-              <div className="absolute -bottom-2 -left-2 w-4 h-4 bg-red-500 pixelated-border animate-pulse"></div>
-              <div className="absolute top-1/2 -left-3 w-3 h-3 bg-green-500 pixelated-border opacity-60"></div>
-              <div className="absolute top-1/4 -right-3 w-3 h-3 bg-yellow-500 pixelated-border opacity-60"></div>
+              {/* Decorative Elements - Positioned safely within bounds */}
+              <div className="absolute top-0 right-0 w-4 h-4 bg-blue-500 pixelated-border animate-pulse"></div>
+              <div className="absolute bottom-0 left-0 w-4 h-4 bg-red-500 pixelated-border animate-pulse"></div>
+              <div className="absolute top-1/2 left-1 w-3 h-3 bg-green-500 pixelated-border opacity-60"></div>
+              <div className="absolute top-1/4 right-1 w-3 h-3 bg-yellow-500 pixelated-border opacity-60"></div>
             </div>
           </div>
         </div>

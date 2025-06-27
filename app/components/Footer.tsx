@@ -65,17 +65,9 @@ const Footer = () => {
               <p className="font-mono text-gray-400 flex items-center justify-center">
                 Made with <Heart size={16} className="mx-2 text-red-500" /> by OSS Community
               </p>
-              <p className="font-mono text-gray-500 text-sm mt-1">
-                © 2024 OSS Community. All rights reserved.
-              </p>
+              
             </div>
 
-            {/* Additional Links */}
-            <div className="flex justify-center md:justify-end space-x-4 font-mono text-sm">
-              <FooterLink href="#privacy">Privacy</FooterLink>
-              <FooterLink href="#terms">Terms</FooterLink>
-              <FooterLink href="#license">License</FooterLink>
-            </div>
           </div>
         </div>
       </div>
