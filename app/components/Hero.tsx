@@ -62,7 +62,7 @@ const Hero = () => {
           </div>
 
           {/* 3D Cube - Adjusted for mobile responsiveness */}
-          <div className="hidden lg:flex lg:w-1/2 items-center justify-center">
+          <div className="lg:flex lg:w-1/2 items-center justify-center mt-32 lg:mt-0 scale-60 md:scale-75 lg:scale-100">
             <div className="relative transform scale-125 mt-12 w-fit">
               {/* Cube Container with proper bounds */}
               <div className="relative p-4 lg:p-6 w-fit">
