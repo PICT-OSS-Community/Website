@@ -1,0 +1,6 @@
+# Allow all user-agents to crawl the entire site
+User-agent: *
+Allow: /
+
+# Point to the sitemap (we can add this later)
+# Sitemap: https://oss-community.social/sitemap.xml 
