@@ -39,6 +39,15 @@ const Blogs = () => {
             href="https://medium.com/fossible/how-open-source-teaches-you-to-write-code-for-people-not-just-machines-f43000c4bf34"
           />
           <BlogCard
+            title="A2A+MCP: PART 2"
+            description="A Practical guide to the future of AI agent workflows"
+            author="banshul K"
+            date="Jun 18"
+            readTime="12 min read"
+            color="blue"
+            href="https://medium.com/fossible/part-2-a2a-mcp-a-practical-guide-to-the-future-of-ai-agent-workflows-7ab38a013f02"
+          />
+          <BlogCard
             title="AUTOMATING HTTPS"
             description="With Docker, Nginx & Certbot for web projects"
             author="Samir Wankhede"
