@@ -41,7 +41,9 @@ const Blogs = () => {
           <BlogCard
             title="A2A+MCP: PART 2"
             description="A Practical guide to the future of AI agent workflows"
-            author="banshul K"
+
+            author="Anshul K"
+
             date="Jun 18"
             readTime="12 min read"
             color="blue"
