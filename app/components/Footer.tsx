@@ -2,7 +2,8 @@
 import React from 'react';
 import { Github, Twitter, Disc as Discord, Mail, Heart, BookOpen } from 'lucide-react';
 import dynamic from 'next/dynamic';
-const PixelArt = dynamic(() => import("./PixelArt"), {ssr: false}) 
+
+const PixelArt = dynamic(() => import("./PixelArt"), { ssr: false });
 
 const Footer = () => {
   return (
@@ -115,7 +116,5 @@ const FooterLink = ({ href, children }: {
     {children}
   </a>
 );
-
-
 
 export default Footer;
