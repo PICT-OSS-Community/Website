@@ -28,11 +28,11 @@ const Hero = () => {
                          flex flex-col items-start   /* left-align the three lines */
                          w-fit mx-auto lg:mx-0 lg:mt-12      /* centre on mobile, left on desktop */
             ">
-              <span className="text-xl  sm:text-2xl lg:text-3xl">PICT</span>
+              <span className="text-3xl">PICT</span>
 
-              <span className="text-5xl sm:text-6xl md:text-7xl lg:text-[6rem] xl:text-[7rem]">OSS</span>
+              <span className="text-7xl lg:text-[6rem] xl:text-[7rem]">OSS</span>
 
-              <span className="text-xl  sm:text-2xl lg:text-3xl
+              <span className="text-3xl
                                bg-black text-white px-3 py-1 pixelated-border">
                 COMMUNITY
               </span>
@@ -46,15 +46,15 @@ const Hero = () => {
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center">
                 <Link href="https://chat.whatsapp.com/DIMjrXdU26y3JEHbK3bNjQ" >
-              <CTAButton color="red" size="large">
-                <Users className="mr-2" size={20} />
+              <CTAButton className="mr-2" color="red" size="large">
+                <Users size={20} />
                 JOIN COMMUNITY
               </CTAButton>
                 </Link>
                 <Link href="https://medium.com/fossible" >
 
-              <CTAButton color="green" size="large" variant="outline">
-                <Code className="mr-2" size={20} />
+              <CTAButton className="mr-2" color="green" size="large" variant="outline">
+                <Code size={20} />
                 EXPLORE BLOGS
               </CTAButton>
               </Link>
@@ -120,12 +120,14 @@ const CTAButton = ({
   children, 
   color, 
   size = 'medium', 
-  variant = 'solid' 
+  variant = 'solid',
+  className = '',
 }: {
   children: React.ReactNode;
   color: 'red' | 'blue' | 'green' | 'yellow';
   size?: 'medium' | 'large';
   variant?: 'solid' | 'outline';
+  className?: string;
 }) => {
   const colorClasses = {
     red: variant === 'solid' 
@@ -143,14 +145,15 @@ const CTAButton = ({
   };
 
   const sizeClasses = {
-    medium: 'px-6 py-3 text-lg',
-    large: 'px-8 py-4 text-xl'
+    medium: 'px-4 py-2 text-lg',
+    large: 'px-6 py-3 text-xl'
   };
 
   return (
     <button className={`
       ${colorClasses[color]} 
       ${sizeClasses[size]}
+      ${className}
       font-mono font-bold pixelated-border 
       hover:scale-105 transition-all duration-200 
       flex items-center justify-center
