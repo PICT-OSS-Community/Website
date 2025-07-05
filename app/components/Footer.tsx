@@ -1,3 +1,4 @@
+"use client"
 import React from 'react';
 import { Github, Twitter, Disc as Discord, Mail, Heart, BookOpen } from 'lucide-react';
 import dynamic from 'next/dynamic';
