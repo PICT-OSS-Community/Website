@@ -39,6 +39,14 @@ html {
     image-rendering: -moz-crisp-edges;
     image-rendering: crisp-edges;
   }
+
+  .pixelated-border-white {
+    border: 4px solid currentColor;
+    border-image: url("data:image/svg+xml;charset=utf-8,%3csvg width='100' height='100' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='m25 0h50v25h25v50h-25v25h-50v-25h-25v-50h25z' fill='%23ffffff'/%3e%3c/svg%3e") 25;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+  }
   
   .pixel-font {
     font-family: 'Courier New', monospace;
