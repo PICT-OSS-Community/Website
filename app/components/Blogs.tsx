@@ -118,7 +118,7 @@ const BlogCard = ({
     yellow: 'border-yellow-500'
   };
 
-  const dotColorClasses = {
+  const accentColorClasses = {
     red: 'bg-red-500',
     blue: 'bg-blue-500',
     green: 'bg-green-500',
@@ -130,26 +130,30 @@ const BlogCard = ({
       bg-white border-4 ${colorClasses[color]} p-6 
       hover:scale-105 transition-all duration-200 cursor-pointer
       group relative overflow-hidden
+      flex flex-col h-full
     `}>
       {/* Decorative Corner */}
-      <div className={`absolute top-0 right-0 w-8 h-8 ${dotColorClasses[color]} opacity-20`}></div>
+      <div className={`absolute top-0 left-0 right-0 h-1 ${accentColorClasses[color]}`}></div>
+      <div className={`absolute top-0 right-0 w-6 h-6 ${accentColorClasses[color]} opacity-20`}></div>
       
-      <h3 className="font-mono text-xl font-bold text-black mb-3">{title}</h3>
-      <p className="text-gray-600 font-mono text-sm mb-4 leading-relaxed">{description}</p>
+      <h3 className="font-mono text-xl font-bold text-black mb-2 sm:mb-3 leading-tight">{title}</h3>
+      <p className="text-gray-600 font-mono text-sm mb-3 sm:mb-4 leading-relaxed line-clamp-2">{description}</p>
       
-      <div className="flex items-center justify-between text-sm font-mono">
-        <div className="flex items-center space-x-1">
-          <div className={`w-3 h-3 ${dotColorClasses[color]} rounded-full`}></div>
-          <span className="text-gray-700">{author}</span>
+      <div className="flex-grow"></div>
+
+      <div className="space-y-2 pt-2 border-t border-gray-200">
+        <div className="flex items-center space-x-1.5">
+          <div className={`w-3 h-3 ${accentColorClasses[color]} rounded-full flex-shrink-0`}></div>
+          <span className="text-gray-700 font-mono text-sm font-medium truncate">{author}</span>
         </div>
         
-        <div className="flex items-center space-x-4 text-gray-600">
+        <div className="flex items-center justify-between text-gray-500 font-mono" style={{ fontSize: '12px' }}>
           <div className="flex items-center space-x-1">
-            <Calendar size={14} />
+            <Calendar size={12} />
             <span>{date}</span>
           </div>
           <div className="flex items-center space-x-1">
-            <Clock size={14} />
+            <Clock size={12} />
             <span>{readTime}</span>
           </div>
         </div>
