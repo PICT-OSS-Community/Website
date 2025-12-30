@@ -1,0 +1,275 @@
+{
+  "year": 2025,
+  "growthDays": [
+    {
+      "date": "2024-10-04",
+      "newMembers": 313
+    },
+    {
+      "date": "2024-10-03",
+      "newMembers": 82
+    },
+    {
+      "date": "2025-06-11",
+      "newMembers": 76
+    },
+    {
+      "date": "2024-10-28",
+      "newMembers": 60
+    },
+    {
+      "date": "2024-10-07",
+      "newMembers": 56
+    },
+    {
+      "date": "2024-10-27",
+      "newMembers": 45
+    },
+    {
+      "date": "2024-10-06",
+      "newMembers": 42
+    },
+    {
+      "date": "2025-11-30",
+      "newMembers": 26
+    },
+    {
+      "date": "2025-01-15",
+      "newMembers": 18
+    },
+    {
+      "date": "2025-06-23",
+      "newMembers": 18
+    }
+  ],
+  "totalMessages": 5926,
+  "topPolls": [
+    {
+      "date": "2024-10-04",
+      "question": "What's ur UG Year ?",
+      "totalVotes": 136
+    },
+    {
+      "date": "2025-06-13",
+      "question": "How many of you guys know what vim/neovim is?",
+      "totalVotes": 70
+    },
+    {
+      "date": "2025-06-11",
+      "question": "Most voted topic releases first.",
+      "totalVotes": 65
+    },
+    {
+      "date": "2025-11-30",
+      "question": "Which year?",
+      "totalVotes": 65
+    },
+    {
+      "date": "2025-04-05",
+      "question": "Demographic check!",
+      "totalVotes": 54
+    }
+  ],
+  "engagementStats": {
+    "totalQuestions": 365,
+    "questionRatio": 0.077,
+    "repliesToQuestions": 306,
+    "topHelpers": [
+      {
+        "name": "Anish Dabhane",
+        "count": 55
+      },
+      {
+        "name": "Vedant Jadhav",
+        "count": 34
+      },
+      {
+        "name": "Kshitij Aucharmal",
+        "count": 28
+      },
+      {
+        "name": "Chirag Dave",
+        "count": 13
+      },
+      {
+        "name": "Anshul_Kalbande",
+        "count": 13
+      }
+    ],
+    "topAskers": [
+      {
+        "name": "Vedant Jadhav",
+        "count": 83
+      },
+      {
+        "name": "Anish Dabhane",
+        "count": 82
+      },
+      {
+        "name": "Shantanu Wable",
+        "count": 22
+      },
+      {
+        "name": "Kshitij Aucharmal",
+        "count": 19
+      },
+      {
+        "name": "Chirag Dave",
+        "count": 8
+      },
+      {
+        "name": "Anshul_Kalbande",
+        "count": 7
+      }
+    ]
+  },
+  "contentStats": {
+    "topSharedDomains": [
+      {
+        "domain": "youtu.be",
+        "count": 73
+      },
+      {
+        "domain": "github.com",
+        "count": 57
+      },
+      {
+        "domain": "x.com",
+        "count": 40
+      },
+      {
+        "domain": "www.linkedin.com",
+        "count": 29
+      },
+      {
+        "domain": "medium.com",
+        "count": 17
+      },
+      {
+        "domain": "www.youtube.com",
+        "count": 13
+      },
+      {
+        "domain": "www.instagram.com",
+        "count": 12
+      },
+      {
+        "domain": "chat.whatsapp.com",
+        "count": 8
+      },
+      {
+        "domain": "youtube.com",
+        "count": 8
+      },
+      {
+        "domain": "share.google",
+        "count": 7
+      }
+    ],
+    "topics": {
+      "overallKeywords": [
+        "media",
+        "message",
+        "like",
+        "omitted",
+        "edited",
+        "open",
+        "yeah",
+        "one",
+        "use",
+        "also",
+        "dont",
+        "option",
+        "deleted",
+        "source",
+        "get"
+      ]
+    }
+  },
+  "socialMediaFollowers": {
+    "linkedin": 357,
+    "x": 50,
+    "github": 38,
+    "instagram": 130
+  },
+  "minutesThatMattered": {
+    "totalMinutes": 1240,
+    "totalMeetings": 12,
+    "topMeetings": [
+      {
+        "name": "OSS Community Kickoff",
+        "date": "2024-10-04",
+        "minutes": 90
+      },
+      {
+        "name": "Open Source Workshop",
+        "date": "2024-11-15",
+        "minutes": 120
+      },
+      {
+        "name": "Contributor Meetup",
+        "date": "2025-01-20",
+        "minutes": 75
+      }
+    ]
+  },
+  "prsThatLanded": {
+    "totalPRs": 156,
+    "topContributors": [
+      {
+        "name": "Anish Dabhane",
+        "prs": 23
+      },
+      {
+        "name": "Kshitij Aucharmal",
+        "prs": 18
+      },
+      {
+        "name": "Vedant Jadhav",
+        "prs": 15
+      },
+      {
+        "name": "Chirag Dave",
+        "prs": 12
+      },
+      {
+        "name": "Anshul_Kalbande",
+        "prs": 10
+      }
+    ]
+  },
+  "theBiggestRoom": {
+    "eventName": "OSS Community Launch Event",
+    "date": "2024-10-04",
+    "attendance": 313,
+    "description": "The biggest gathering of the year with record-breaking attendance"
+  },
+  "theMaintainersCircle": [
+    {
+      "name": "Anish Dabhane",
+      "role": "Core Maintainer"
+    },
+    {
+      "name": "Anshul_Kalbande",
+      "role": "Core Maintainer"
+    },
+    {
+      "name": "Kshitij Aucharmal",
+      "role": "Maintainer"
+    },
+    {
+      "name": "Chirag Dave",
+      "role": "Maintainer"
+    },
+    {
+      "name": "Vedant Jadhav",
+      "role": "Maintainer"
+    },
+    {
+      "name": "Shantanu Wable",
+      "role": "Maintainer"
+    }
+  ]
+}
+
+
