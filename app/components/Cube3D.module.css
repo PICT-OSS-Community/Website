@@ -56,7 +56,6 @@
   border-color: #fff;
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
   filter: brightness(1.2);
-  transform: scale(1.05);
 }
 
 .clicked {
@@ -71,7 +70,6 @@
 }
 
 .clicked:hover {
-  transform: scale(1.1);
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.9);
 }
 
