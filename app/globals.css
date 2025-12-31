@@ -1,5 +1,18 @@
 @import "tailwindcss";
 
+@keyframes jiggle {
+  0% { transform: scale(1); }
+  25% { transform: scale(1.1) rotate(-3deg); }
+  50% { transform: scale(1.1) rotate(3deg); }
+  75% { transform: scale(1.1) rotate(-3deg); }
+  100% { transform: scale(1) rotate(0); }
+}
+
+.animate-jiggle {
+  animation: jiggle 0.6s ease-in-out infinite;
+}
+
+
 :root {
   --background: #ffffff;
   --foreground: #171717;

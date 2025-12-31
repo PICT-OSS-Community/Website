@@ -20,7 +20,7 @@ const Hero = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Main Hero Content with Cube */}
         <div className="flex flex-col lg:flex-row items-center lg:justify-between gap-8 lg:gap-16 mb-32">
-          
+
           {/* Text Content - On Left */}
           <div className="lg:w-1/2 flex-shrink-0 text-center lg:text-left">
             <h1
@@ -37,7 +37,7 @@ const Hero = () => {
                 COMMUNITY
               </span>
             </h1>
-            
+
             <p className="text-lg sm:text-xl lg:text-2xl font-mono text-gray-700 mb-8 max-w-lg mx-auto lg:mx-0 leading-relaxed">
               A Beginner friendly community of<br />
               passionate developers building the<br />
@@ -45,18 +45,22 @@ const Hero = () => {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center">
-                <Link href="https://chat.whatsapp.com/DIMjrXdU26y3JEHbK3bNjQ" >
-              <CTAButton className="mr-2" color="red" size="large">
-                <Users size={20} />
-                JOIN COMMUNITY
-              </CTAButton>
-                </Link>
-                <Link href="https://medium.com/fossible" >
-
-              <CTAButton className="mr-2" color="green" size="large" variant="outline">
-                <Code size={20} />
-                EXPLORE BLOGS
-              </CTAButton>
+              <Link href="https://chat.whatsapp.com/DIMjrXdU26y3JEHbK3bNjQ" >
+                <CTAButton className="mr-2" color="red" size="large">
+                  <Users size={20} />
+                  JOIN COMMUNITY
+                </CTAButton>
+              </Link>
+              <Link href="/wrapped">
+                <CTAButton
+                  className="mr-2 animate-jiggle bg-gradient-to-r from-red-500 to-green-500 text-white border-none hover:scale-110 shadow-lg"
+                  color="green"
+                  size="large"
+                  variant="solid"
+                >
+                  <BookOpen size={20} className="mr-2" />
+                  VIEW WRAPPED 2025
+                </CTAButton>
               </Link>
             </div>
           </div>
@@ -74,7 +78,7 @@ const Hero = () => {
                   </p>
                 </div>
               </div>
-              
+
               {/* Decorative Elements - Positioned safely within bounds */}
               <div className="absolute top-0 right-0 w-4 h-4 bg-blue-500 pixelated-border animate-pulse"></div>
               <div className="absolute bottom-0 left-0 w-4 h-4 bg-red-500 pixelated-border animate-pulse"></div>
@@ -116,10 +120,10 @@ const Hero = () => {
   );
 };
 
-const CTAButton = ({ 
-  children, 
-  color, 
-  size = 'medium', 
+const CTAButton = ({
+  children,
+  color,
+  size = 'medium',
   variant = 'solid',
   className = '',
 }: {
@@ -130,17 +134,17 @@ const CTAButton = ({
   className?: string;
 }) => {
   const colorClasses = {
-    red: variant === 'solid' 
-      ? 'bg-red-500 hover:bg-red-600 text-white border-red-700' 
+    red: variant === 'solid'
+      ? 'bg-red-500 hover:bg-red-600 text-white border-red-700'
       : 'border-red-500 text-red-500 hover:bg-red-500 hover:text-white',
-    blue: variant === 'solid' 
-      ? 'bg-blue-500 hover:bg-blue-600 text-white border-blue-700' 
+    blue: variant === 'solid'
+      ? 'bg-blue-500 hover:bg-blue-600 text-white border-blue-700'
       : 'border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white',
-    green: variant === 'solid' 
-      ? 'bg-green-500 hover:bg-green-600 text-white border-green-700' 
+    green: variant === 'solid'
+      ? 'bg-green-500 hover:bg-green-600 text-white border-green-700'
       : 'border-green-500 text-green-500 hover:bg-green-500 hover:text-white',
-    yellow: variant === 'solid' 
-      ? 'bg-yellow-500 hover:bg-yellow-600 text-white border-yellow-700' 
+    yellow: variant === 'solid'
+      ? 'bg-yellow-500 hover:bg-yellow-600 text-white border-yellow-700'
       : 'border-yellow-500 text-yellow-500 hover:bg-yellow-500 hover:text-white'
   };
 
@@ -164,11 +168,11 @@ const CTAButton = ({
   );
 };
 
-const FeatureCard = ({ 
-  icon, 
-  title, 
-  description, 
-  color 
+const FeatureCard = ({
+  icon,
+  title,
+  description,
+  color
 }: {
   icon: React.ReactNode;
   title: string;

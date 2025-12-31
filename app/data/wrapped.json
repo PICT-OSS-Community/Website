@@ -2,11 +2,11 @@
   "year": 2025,
   "growthDays": [
     {
-      "date": "2024-10-04",
-      "newMembers": 313
+      "date": "2025-10-04",
+      "newMembers": 101
     },
     {
-      "date": "2024-10-03",
+      "date": "2025-10-03",
       "newMembers": 82
     },
     {
@@ -14,19 +14,19 @@
       "newMembers": 76
     },
     {
-      "date": "2024-10-28",
+      "date": "2025-10-28",
       "newMembers": 60
     },
     {
-      "date": "2024-10-07",
+      "date": "2025-10-07",
       "newMembers": 56
     },
     {
-      "date": "2024-10-27",
+      "date": "2025-10-27",
       "newMembers": 45
     },
     {
-      "date": "2024-10-06",
+      "date": "2025-10-06",
       "newMembers": 42
     },
     {
@@ -45,7 +45,7 @@
   "totalMessages": 5926,
   "topPolls": [
     {
-      "date": "2024-10-04",
+      "date": "2025-10-04",
       "question": "What's ur UG Year ?",
       "totalVotes": 136
     },
@@ -92,7 +92,7 @@
         "count": 13
       },
       {
-        "name": "Anshul_Kalbande",
+        "name": "Anshul Kalbande",
         "count": 13
       }
     ],
@@ -118,7 +118,7 @@
         "count": 8
       },
       {
-        "name": "Anshul_Kalbande",
+        "name": "Anshul Kalbande",
         "count": 7
       }
     ]
@@ -193,23 +193,33 @@
     "instagram": 130
   },
   "minutesThatMattered": {
-    "totalMinutes": 1240,
-    "totalMeetings": 12,
+    "totalMinutes": 272,
+    "totalMeetings": 5,
     "topMeetings": [
       {
-        "name": "OSS Community Kickoff",
-        "date": "2024-10-04",
-        "minutes": 90
+        "name": "Cracking Adobe: From Intern to Full-Time | By Shubham Shinde",
+        "date": "2025-12-20",
+        "minutes": 64
       },
       {
-        "name": "Open Source Workshop",
-        "date": "2024-11-15",
-        "minutes": 120
+        "name": "Hack the Issue - Live OSS Website Bug Fix Session",
+        "date": "2025-06-15",
+        "minutes": 65
       },
       {
-        "name": "Contributor Meetup",
-        "date": "2025-01-20",
-        "minutes": 75
+        "name": "HACK THE SUMMER - Open Source Programs",
+        "date": "2025-07-10",
+        "minutes": 53
+      },
+      {
+        "name": "Open Source Contributions 101 - A Starter Session",
+        "date": "2025-06-20",
+        "minutes": 48
+      },
+      {
+        "name": "Your Linux Launchpad - From Zero to Installed",
+        "date": "2025-06-25",
+        "minutes": 42
       }
     ]
   },
@@ -233,16 +243,16 @@
         "prs": 12
       },
       {
-        "name": "Anshul_Kalbande",
+        "name": "Anshul Kalbande",
         "prs": 10
       }
     ]
   },
   "theBiggestRoom": {
-    "eventName": "OSS Community Launch Event",
-    "date": "2024-10-04",
-    "attendance": 313,
-    "description": "The biggest gathering of the year with record-breaking attendance"
+    "eventName": "OSS Senior Session ~  Aarya Bhave",
+    "date": "2025-11-21",
+    "attendance": 100,
+    "description": "How I landed a Full-time Offer at Google"
   },
   "theMaintainersCircle": [
     {
@@ -250,7 +260,7 @@
       "role": "Core Maintainer"
     },
     {
-      "name": "Anshul_Kalbande",
+      "name": "Anshul Kalbande",
       "role": "Core Maintainer"
     },
     {
@@ -271,5 +281,3 @@
     }
   ]
 }
-
-
