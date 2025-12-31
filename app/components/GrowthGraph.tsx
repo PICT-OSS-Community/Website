@@ -85,7 +85,7 @@ const GrowthGraph: React.FC<GrowthGraphProps> = ({ onComplete }) => {
         `}>
                     <h2 className="font-mono text-xl sm:text-2xl text-gray-400 mb-1 animate-fadeIn uppercase tracking-widest">Community Growth</h2>
                     <div className={`flex items-baseline justify-center gap-2 transition-transform duration-300 ${beat ? 'scale-110' : ''}`}>
-                        <div className="text-7xl sm:text-8xl md:text-9xl font-bold font-mono text-black tracking-tighter">
+                        <div className="text-8xl sm:text-9xl md:text-[10rem] font-bold font-mono text-black tracking-tighter">
                             {showCounter && <CountUp value={801} duration={6000} />}
                         </div>
                     </div>
@@ -93,8 +93,8 @@ const GrowthGraph: React.FC<GrowthGraphProps> = ({ onComplete }) => {
                     <p className="font-mono text-lg text-gray-400 mt-1">Active Members</p>
                 </div>
 
-                {/* Full Screen Graph - Lower Z-Index */}
-                <div className="w-full h-full absolute inset-0 z-10 px-4 py-8 sm:px-12 sm:py-16">
+                {/* Full Screen Graph - Restricted height on mobile to prevent distortion */}
+                <div className="w-full h-[60%] sm:h-full absolute bottom-0 left-0 z-10 px-4 pb-12 sm:px-12 sm:py-16">
                     <svg viewBox="0 0 100 100" className="w-full h-full" preserveAspectRatio="none">
                         {/* Axes */}
                         <line x1="5" y1="5" x2="5" y2="95" stroke="#e5e7eb" strokeWidth="0.5" /> {/* Y Axis */}
@@ -151,7 +151,7 @@ const GrowthGraph: React.FC<GrowthGraphProps> = ({ onComplete }) => {
                          Our path goes roughly +X so this aligns. 
                          Triangle pointing right.
                      */}
-                            <path d="M -2,-2 L 2,0 L -2,2 Z" fill="#ef4444" transform="scale(0.8)" />
+                            <path d="M -2,-2 L 2,0 L -2,2 Z" fill="#ef4444" transform="scale(1.5)" />
                         </g>
 
                     </svg>

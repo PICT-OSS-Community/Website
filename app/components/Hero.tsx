@@ -1,5 +1,6 @@
 import React from 'react';
 import { Code, Users, Zap, BookOpen } from 'lucide-react';
+import Image from 'next/image';
 import Cube3D from './Cube3D';
 import Link from 'next/link';
 
@@ -23,25 +24,24 @@ const Hero = () => {
 
           {/* Text Content - On Left */}
           <div className="lg:w-1/2 flex-shrink-0 text-center lg:text-left">
-            <h1
-              className="font-mono font-bold text-black mb-8 tracking-wider leading-tight
-                         flex flex-col items-start   /* left-align the three lines */
-                         w-fit mx-auto lg:mx-0 lg:mt-12      /* centre on mobile, left on desktop */
-            ">
-              <span className="text-3xl">PICT</span>
-
-              <span className="text-7xl lg:text-[6rem] xl:text-[7rem]">OSS</span>
-
-              <span className="text-3xl
-                               bg-black text-white px-3 py-1 pixelated-border">
-                COMMUNITY
-              </span>
-            </h1>
+            <div className="mb-12 sm:mb-16 flex justify-center lg:justify-start lg:mt-12">
+              <Image
+                src="/winter-logo.jpg"
+                alt="PICT OSS Community Logo"
+                width={400}
+                height={300}
+                className="w-auto h-auto 
+                  max-w-[200px] 
+                  sm:max-w-[250px] 
+                  md:max-w-[300px] 
+                  lg:max-w-[350px] 
+                  xl:max-w-[500px]"
+                priority
+              />
+            </div>
 
             <p className="text-lg sm:text-xl lg:text-2xl font-mono text-gray-700 mb-8 max-w-lg mx-auto lg:mx-0 leading-relaxed">
-              A Beginner friendly community of<br />
-              passionate developers building the<br />
-              future with Open-Source
+              A student-led open-source community of devs, learners & curious minds at Pune Institute of Computer Technology
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center">
@@ -52,14 +52,9 @@ const Hero = () => {
                 </CTAButton>
               </Link>
               <Link href="/wrapped">
-                <CTAButton
-                  className="mr-2 animate-jiggle bg-gradient-to-r from-red-500 to-green-500 text-white border-none hover:scale-110 shadow-lg"
-                  color="green"
-                  size="large"
-                  variant="solid"
-                >
-                  <BookOpen size={20} className="mr-2" />
-                  VIEW WRAPPED 2025
+                <CTAButton className="mr-2" color="red" size="large">
+                
+                  VIEW WRAPPED 2025!
                 </CTAButton>
               </Link>
             </div>
@@ -110,7 +105,7 @@ const Hero = () => {
           />
           <FeatureCard
             icon={<Users size={40} />}
-            title="650+ MEMBERS"
+            title="850+ MEMBERS"
             description="A thriving community of passionate developers and innovators"
             color="green"
           />

@@ -19,110 +19,26 @@ const Community = () => {
         </div>
 
         {/* Character Pyramid Layout - Alphabetical Order */}
-        <div className="mb-16 space-y-6">
-          
-          {/* Row 1 - Mobile: 3, Medium: 4, Large: 5 */}
-          <div className="flex justify-center gap-6 lg:gap-8">
-            <Character name="ANISH"    color="emerald" message="git commit -m 'YOLO 🌱'" />
-            <Character name="ANSHUL"   color="sky"     message="i have a team of testers, they're called users" />
-            <Character name="ANURAG"   color="emerald" message="I only test in production 🤖" />
-            <div className="hidden md:block">
-              <Character name="ARYAN"    color="indigo"  message="I use Arch BTW… in Docker 😁" />
-            </div>
-            <div className="hidden lg:block">
-              <Character name="ASWATHI"  color="rose"    message="Ping me only for merge conflicts 🛠️" />
-            </div>
-          </div>
-
-          {/* Row 2 - Mobile: 3, Medium: 3, Large: 4 */}
-          <div className="flex justify-center gap-6 lg:gap-8">
-            <div className="block md:hidden">
-              <Character name="ARYAN"    color="indigo"  message="I use Arch BTW… in Docker 😁" />
-            </div>
-            <div className="block md:hidden">
-              <Character name="ASWATHI"  color="rose"    message="Ping me only for merge conflicts 🛠️" />
-            </div>
-            <div className="block md:hidden">
-              <Character name="CHIRAG"   color="violet"  message="0 bugs, 0 enemies, life sorted." />
-            </div>
-            <div className="hidden md:block lg:hidden">
-              <Character name="ASWATHI"  color="rose"    message="Ping me only for merge conflicts 🛠️" />
-            </div>
-            <div className="hidden md:block">
-              <Character name="CHIRAG"   color="violet"  message="0 bugs, 0 enemies, life sorted." />
-            </div>
-            <div className="hidden md:block">
-              <Character name="KSHITIJ"  color="amber"   message="99 bugs in the code, take one down…" />
-            </div>
-            <div className="hidden lg:block">
-              <Character name="SAKSHAM"  color="pink"    message="Currently cd-ing into /dev/null" />
-            </div>
-            <div className="hidden lg:block">
-              <Character name="SAMIR"    color="orange"  message="Livestreaming Stack Overflow searches 🎥" />
-            </div>
-          </div>
-
-          {/* Row 3 - Mobile: 3, Medium: 3, Large: 4 */}
-          <div className="flex justify-center gap-6 lg:gap-8">
-            <div className="block md:hidden">
-              <Character name="KSHITIJ"  color="amber"   message="99 bugs in the code, take one down…" />
-            </div>
-            <div className="block md:hidden">
-              <Character name="SAKSHAM"  color="pink"    message="Currently cd-ing into /dev/null" />
-            </div>
-            <div className="block md:hidden">
-              <Character name="SAMIR"    color="orange"  message="Livestreaming Stack Overflow searches 🎥" />
-            </div>
-            <div className="hidden md:block lg:hidden">
-              <Character name="SAKSHAM"  color="pink"    message="Currently cd-ing into /dev/null" />
-            </div>
-            <div className="hidden md:block lg:hidden">
-              <Character name="SAMIR"    color="orange"  message="Livestreaming Stack Overflow searches 🎥" />
-            </div>
-            <div className="hidden md:block lg:hidden">
-              <Character name="SHANTANU" color="teal"    message="Deploying on Friday, wish me luck 🚀" />
-            </div>
-            <div className="hidden lg:block">
-              <Character name="SHANTANU" color="teal"    message="Deploying on Friday, wish me luck 🚀" />
-            </div>
-            <div className="hidden lg:block">
-              <Character name="SUJAL"    color="lime"    message="⌛ compiling witty status…" />
-            </div>
-            <div className="hidden lg:block">
-              <Character name="TRUPTI"   color="cyan"    message="sudo make me a sandwich 🥪" />
-            </div>
-            <div className="hidden lg:block">
-              <Character name="VEDANT"   color="purple"  message="sudo apt-get coffee && learn" />
-            </div>
-          </div>
-
-          {/* Row 4 - Mobile: 3, Medium: 3, Large: hidden */}
-          <div className="flex justify-center gap-6 lg:gap-8 lg:hidden">
-            <div className="block md:hidden">
-              <Character name="SHANTANU" color="teal"    message="Deploying on Friday, wish me luck 🚀" />
-            </div>
-            <div className="block md:hidden">
-              <Character name="SUJAL"    color="lime"    message="⌛ compiling witty status…" />
-            </div>
-            <div className="block md:hidden">
-              <Character name="TRUPTI"   color="cyan"    message="sudo make me a sandwich 🥪" />
-            </div>
-            <div className="hidden md:block">
-              <Character name="SUJAL"    color="lime"    message="⌛ compiling witty status…" />
-            </div>
-            <div className="hidden md:block">
-              <Character name="TRUPTI"   color="cyan"    message="sudo make me a sandwich 🥪" />
-            </div>
-            <div className="hidden md:block">
-              <Character name="VEDANT"   color="purple"  message="sudo apt-get coffee && learn" />
-            </div>
-          </div>
-
-          {/* Row 5 - Mobile: 1, Medium: hidden, Large: hidden */}
-          <div className="flex justify-center gap-6 md:hidden">
-            <Character name="VEDANT"   color="purple"  message="sudo apt-get coffee && learn" />
-          </div>
-
+        <div className="mb-16 grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 lg:gap-8 justify-items-center">
+          {[
+            { name: "ANISH", color: "emerald", message: "git commit -m 'YOLO 🌱'" },
+            { name: "ANSHUL", color: "sky", message: "i have a team of testers, they're called users" },
+            { name: "ANURAG", color: "emerald", message: "I only test in production 🤖" },
+            { name: "ARYAN", color: "indigo", message: "I use Arch BTW… in Docker 😁" },
+            { name: "ASWATHI", color: "rose", message: "Ping me only for merge conflicts 🛠️" },
+            { name: "CHIRAG", color: "violet", message: "0 bugs, 0 enemies, life sorted." },
+            { name: "KSHITIJ", color: "amber", message: "99 bugs in the code, take one down…" },
+            { name: "SAKSHAM", color: "pink", message: "Currently cd-ing into /dev/null" },
+            { name: "SALINA", color: "fuchsia", message: "Debugging my life, one commit at a time 🐞" },
+            { name: "SAMIR", color: "orange", message: "Livestreaming Stack Overflow searches 🎥" },
+            { name: "SARANG", color: "cyan", message: "It works on my machine ¯\\_(ツ)_/¯" },
+            { name: "SHANTANU", color: "teal", message: "Deploying on Friday, wish me luck 🚀" },
+            { name: "SUJAL", color: "lime", message: "⌛ compiling witty status…" },
+            { name: "TRUPTI", color: "cyan", message: "sudo make me a sandwich 🥪" },
+            { name: "VEDANT", color: "purple", message: "sudo apt-get coffee && learn" }
+          ].map((char: any) => (
+            <Character key={char.name} name={char.name} color={char.color} message={char.message} />
+          ))}
         </div>
 
         {/* Connection Lines */}
@@ -184,13 +100,13 @@ const Community = () => {
   );
 };
 
-const Character = ({ 
-  name, 
-  color, 
-  message 
+const Character = ({
+  name,
+  color,
+  message
 }: {
   name: string;
-  color: 'emerald' | 'rose' | 'violet' | 'orange' | 'cyan' | 'indigo' | 'amber' | 'pink' | 'teal' | 'lime' | 'purple' | 'sky';
+  color: 'emerald' | 'rose' | 'violet' | 'orange' | 'cyan' | 'indigo' | 'amber' | 'pink' | 'teal' | 'lime' | 'purple' | 'sky' | 'fuchsia';
   message: string;
 }) => {
   const colorClasses = {
@@ -205,7 +121,8 @@ const Character = ({
     teal: 'bg-teal-500',
     lime: 'bg-lime-500',
     purple: 'bg-purple-500',
-    sky: 'bg-sky-500'
+    sky: 'bg-sky-500',
+    fuchsia: 'bg-fuchsia-500'
   };
 
   return (
@@ -232,22 +149,22 @@ const Character = ({
           <div className="bg-white w-4 h-1 absolute bottom-2 left-1/2 transform -translate-x-1/2"></div>
         </div>
       </div>
-      
+
       <p className="font-mono text-sm font-bold text-black">{name}</p>
     </div>
   );
 };
 
-const StatCard = ({ 
-  icon, 
-  number, 
-  label, 
-  color 
+const StatCard = ({
+  icon,
+  number,
+  label,
+  color
 }: {
   icon: React.ReactNode;
   number: string;
   label: string;
-  color: 'emerald' | 'rose' | 'violet' | 'orange' | 'cyan' | 'indigo' | 'amber' | 'pink' | 'teal' | 'lime' | 'purple' | 'sky';
+  color: 'emerald' | 'rose' | 'violet' | 'orange' | 'cyan' | 'indigo' | 'amber' | 'pink' | 'teal' | 'lime' | 'purple' | 'sky' | 'fuchsia';
 }) => {
   const colorClasses = {
     emerald: 'bg-emerald-500',
@@ -261,7 +178,8 @@ const StatCard = ({
     teal: 'bg-teal-500',
     lime: 'bg-lime-500',
     purple: 'bg-purple-500',
-    sky: 'bg-sky-500'
+    sky: 'bg-sky-500',
+    fuchsia: 'bg-fuchsia-500'
   };
 
   return (
