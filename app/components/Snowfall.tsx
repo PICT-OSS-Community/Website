@@ -6,14 +6,43 @@ const Snowfall = () => {
   const [snowflakes, setSnowflakes] = useState<Array<{ id: number; left: string; animationDuration: string; animationDelay: string; size: string }>>([]);
 
   useEffect(() => {
-    const flakes = Array.from({ length: 50 }).map((_, i) => ({
-      id: i,
-      left: `${Math.random() * 100}%`,
-      animationDuration: `${Math.random() * 3 + 2}s`,
-      animationDelay: `${Math.random() * 2}s`,
-      size: `${Math.random() * 0.5 + 0.2}rem`,
-    }));
-    setSnowflakes(flakes);
+    // Calculate base size based on screen width
+    const getBaseSize = () => {
+      if (typeof window !== 'undefined') {
+        const width = window.innerWidth;
+        if (width < 640) return { min: 0.1, max: 0.3 }; // Mobile: 0.1-0.3rem
+        if (width < 1024) return { min: 0.15, max: 0.4 }; // Tablet: 0.15-0.4rem
+        return { min: 0.2, max: 0.7 }; // Desktop: 0.2-0.7rem (original)
+      }
+      return { min: 0.2, max: 0.7 }; // Default
+    };
+
+    const generateSnowflakes = () => {
+      const baseSize = getBaseSize();
+      const flakes = Array.from({ length: 50 }).map((_, i) => ({
+        id: i,
+        left: `${Math.random() * 100}%`,
+        animationDuration: `${Math.random() * 3 + 2}s`,
+        animationDelay: `${Math.random() * 2}s`,
+        size: `${Math.random() * (baseSize.max - baseSize.min) + baseSize.min}rem`,
+      }));
+      setSnowflakes(flakes);
+    };
+
+    generateSnowflakes();
+
+    // Optional: Regenerate on resize (debounced)
+    let resizeTimeout: NodeJS.Timeout;
+    const handleResize = () => {
+      clearTimeout(resizeTimeout);
+      resizeTimeout = setTimeout(generateSnowflakes, 250);
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+      clearTimeout(resizeTimeout);
+    };
   }, []);
 
   return (

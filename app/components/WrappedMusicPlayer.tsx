@@ -67,10 +67,69 @@ const WrappedMusicPlayer: React.FC<WrappedMusicPlayerProps> = ({ musicSources, c
     }
   };
 
+  // Start music on initial mount
+  useEffect(() => {
+    if (currentTrackIndexRef.current === -1 && audioRefs.current[0]) {
+      const audio = audioRefs.current[0];
+      audio.loop = true;
+      audio.volume = 0.3;
+      
+      const tryPlay = () => {
+        if (currentTrackIndexRef.current === -1) {
+          const playPromise = audio.play();
+          if (playPromise !== undefined) {
+            playPromise.catch((error) => {
+              console.log('Audio play failed:', error);
+            });
+          }
+          currentTrackIndexRef.current = 0;
+          isInitializedRef.current = true;
+        }
+      };
+
+      if (audio.readyState >= 2) {
+        setTimeout(tryPlay, 100);
+      } else {
+        audio.addEventListener('canplay', tryPlay, { once: true });
+        audio.load();
+      }
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
   useEffect(() => {
     const trackIndex = getTrackIndex(currentSlide);
     
     if (trackIndex >= musicSources.length) {
+      return;
+    }
+
+    // If this is the initial load and we haven't started any track yet
+    if (currentTrackIndexRef.current === -1 && trackIndex === 0) {
+      const audio = audioRefs.current[0];
+      if (audio) {
+        audio.loop = true;
+        audio.volume = 0.3;
+        const tryPlay = () => {
+          if (!isMuted) {
+            const playPromise = audio.play();
+            if (playPromise !== undefined) {
+              playPromise.catch((error) => {
+                console.log('Audio play failed:', error);
+              });
+            }
+          }
+        };
+        
+        if (audio.readyState >= 2) {
+          tryPlay();
+        } else {
+          audio.addEventListener('canplay', tryPlay, { once: true });
+          audio.load();
+        }
+        currentTrackIndexRef.current = 0;
+        isInitializedRef.current = true;
+      }
       return;
     }
 
