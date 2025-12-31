@@ -85,7 +85,7 @@ const GrowthGraph: React.FC<GrowthGraphProps> = ({ onComplete }) => {
         `}>
                     <h2 className="font-mono text-xl sm:text-2xl text-gray-400 mb-1 animate-fadeIn uppercase tracking-widest">Community Growth</h2>
                     <div className={`flex items-baseline justify-center gap-2 transition-transform duration-300 ${beat ? 'scale-110' : ''}`}>
-                        <div className="text-8xl sm:text-9xl md:text-[10rem] font-bold font-mono text-black tracking-tighter">
+                        <div className="text-9xl sm:text-[10rem] md:text-[12rem] font-bold font-mono text-black tracking-tighter">
                             {showCounter && <CountUp value={801} duration={6000} />}
                         </div>
                     </div>
@@ -93,8 +93,8 @@ const GrowthGraph: React.FC<GrowthGraphProps> = ({ onComplete }) => {
                     <p className="font-mono text-lg text-gray-400 mt-1">Active Members</p>
                 </div>
 
-                <div className="w-full h-[70%] sm:h-full absolute bottom-0 left-0 z-10 px-4 pb-12 sm:px-12 sm:py-16">
-                    <svg key={isVisible ? 'playing' : 'idle'} viewBox="0 0 100 100" className="w-full h-full" preserveAspectRatio="xMidYMid meet">
+                <div className="w-full h-[80%] sm:h-[85%] md:h-full absolute bottom-0 left-0 z-10 px-4 pb-8 sm:px-12 sm:py-16">
+                    <svg key={isVisible ? 'playing' : 'idle'} viewBox="0 0 100 100" className="w-full h-full" preserveAspectRatio="none">
                         {/* Axes */}
                         <line x1="5" y1="5" x2="5" y2="95" stroke="#e5e7eb" strokeWidth="0.5" /> {/* Y Axis */}
                         <line x1="5" y1="95" x2="95" y2="95" stroke="#e5e7eb" strokeWidth="0.5" /> {/* X Axis */}
@@ -141,8 +141,8 @@ const GrowthGraph: React.FC<GrowthGraphProps> = ({ onComplete }) => {
                             style={{ filter: 'drop-shadow(0px 2px 4px rgba(239, 68, 68, 0.2))' }}
                         />
 
-                        {/* Arrow Head - following the path */}
-                        <g>
+                        {/* Arrow Head - following the path - Hidden on mobile */}
+                        <g className="hidden sm:block">
                             <animateMotion dur="6s" repeatCount="1" fill="freeze" calcMode="linear" rotate="auto">
                                 <mpath href="#growthLine" />
                             </animateMotion>

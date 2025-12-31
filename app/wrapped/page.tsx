@@ -32,7 +32,7 @@ const WrappedPage = () => {
     '/wrapped-music-1.mp3', // Slides 0-2
     '/wrapped-music-2.mp3', // Slides 3-5
     '/wrapped-music-0.mp3', // Slides 6-8
-    '/wrapped-music-4.mp3', // Slides 9-11
+    '/wrapped-music-5.mp3', // Slides 9-11
   ];
 
   const handleNext = () => {
@@ -97,11 +97,14 @@ const WrappedPage = () => {
                 </div>
               </div>
 
-              <h2 className="font-mono text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-black mb-6 sm:mb-8 animate-slideInUp" style={{ animation: 'slideInUp 2s ease-out 1s both' }}>
+              <h2 className="font-mono text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-black mb-4 sm:mb-6 animate-slideInUp" style={{ animation: 'slideInUp 2s ease-out 1s both' }}>
                 2025 WRAPPED
               </h2>
-              <p className="font-mono text-base sm:text-lg md:text-xl text-gray-600 animate-fadeIn" style={{ animation: 'fadeIn 2.5s ease-out 1.5s both' }}>
+              <p className="font-mono text-base sm:text-lg md:text-xl text-gray-600 mb-3 animate-fadeIn" style={{ animation: 'fadeIn 2.5s ease-out 1.5s both' }}>
                 OSS year in review
+              </p>
+              <p className="font-mono text-sm sm:text-base md:text-lg text-gray-500 italic animate-fadeIn" style={{ animation: 'fadeIn 3s ease-out 2s both' }}>
+                We've had a crazy year!
               </p>
             </div>
           </WrappedSlide>
@@ -124,7 +127,7 @@ const WrappedPage = () => {
                   </p>
                 </div>
 
-                <div className="space-y-3 sm:space-y-4">
+                <div className="space-y-3 sm:space-y-4 mb-6">
                   {wrappedData.growthDays.slice(0, 5).map((day, index) => (
                     <div
                       key={day.date}
@@ -144,6 +147,9 @@ const WrappedPage = () => {
                     </div>
                   ))}
                 </div>
+                <p className="font-mono text-sm sm:text-base text-red-600 font-bold animate-fadeIn" style={{ animation: 'fadeIn 2.5s ease-out 2s both' }}>
+                  From 0 → 800+ developers strong
+                </p>
               </div>
             )}
           </WrappedSlide>
@@ -165,7 +171,7 @@ const WrappedPage = () => {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 mb-6 sm:mb-8">
                 <div>
                   <h3 className="font-mono text-lg sm:text-xl font-bold text-black mb-3 sm:mb-4">Top Helpers</h3>
-                  <div className="space-y-2 sm:space-y-3">
+                  <div className="space-y-2 sm:space-y-3 mb-3">
                     {wrappedData.engagementStats.topHelpers.map((helper, index) => (
                       <div
                         key={helper.name}
@@ -183,10 +189,13 @@ const WrappedPage = () => {
                       </div>
                     ))}
                   </div>
+                  <p className="font-mono text-xs sm:text-sm text-gray-500 italic text-center animate-fadeIn" style={{ animation: 'fadeIn 2s ease-out 2s both' }}>
+                    Anish almost doubles second place. Classic anish.
+                  </p>
                 </div>
                 <div>
                   <h3 className="font-mono text-lg sm:text-xl font-bold text-black mb-3 sm:mb-4">Top Askers</h3>
-                  <div className="space-y-2 sm:space-y-3">
+                  <div className="space-y-2 sm:space-y-3 mb-3">
                     {wrappedData.engagementStats.topAskers.map((asker, index) => (
                       <div
                         key={asker.name}
@@ -204,8 +213,14 @@ const WrappedPage = () => {
                       </div>
                     ))}
                   </div>
+                  <p className="font-mono text-xs sm:text-sm text-gray-500 italic text-center animate-fadeIn" style={{ animation: 'fadeIn 2s ease-out 2s both' }}>
+                    Vedant is our cat of the year.
+                  </p>
                 </div>
               </div>
+              <p className="font-mono text-sm sm:text-base text-gray-600 italic animate-fadeIn" style={{ animation: 'fadeIn 2.5s ease-out 2.5s both' }}>
+                We don't let curious cats die :)
+              </p>
             </div>
           </WrappedSlide>
         );
@@ -296,6 +311,9 @@ const WrappedPage = () => {
                   <p className="font-mono text-xs sm:text-sm text-gray-600">WhatsApp Community</p>
                 </div>
               </div>
+              <p className="font-mono text-sm sm:text-base text-gray-600 italic mt-6 animate-fadeIn" style={{ animation: 'fadeIn 2s ease-out 2s both' }}>
+                Open source, everywhere.
+              </p>
             </div>
           </WrappedSlide>
         );
@@ -417,7 +435,7 @@ const WrappedPage = () => {
                 </p>
                 <p className="font-mono text-xl sm:text-2xl animate-fadeIn" style={{ animation: 'fadeIn 2s ease-out 1.5s both' }}>Members</p>
               </div>
-              <div className="bg-gray-50 p-4 sm:p-6 pixelated-border text-left max-w-md mx-auto animate-slideInUp hover:shadow-lg" style={{ animation: 'slideInUp 1.5s ease-out 1.5s both' }}>
+              <div className="bg-gray-50 p-4 sm:p-6 pixelated-border text-left max-w-md mx-auto animate-slideInUp hover:shadow-lg mb-6" style={{ animation: 'slideInUp 1.5s ease-out 1.5s both' }}>
                 <p className="font-mono font-bold text-xl sm:text-2xl text-black mb-2">
                   {wrappedData.theBiggestRoom.eventName}
                 </p>
@@ -428,6 +446,10 @@ const WrappedPage = () => {
                   {wrappedData.theBiggestRoom.description}
                 </p>
               </div>
+              <p className="font-mono text-base sm:text-lg text-gray-600 italic max-w-xl mx-auto animate-fadeIn" style={{ animation: 'fadeIn 2.5s ease-out 2.5s both' }}>
+                The Biggest Room wasn't a place.<br />
+                It was <span className="font-bold">this community</span>.
+              </p>
             </div>
           </WrappedSlide>
         );
@@ -445,12 +467,15 @@ const WrappedPage = () => {
                   Total messages in OSS community
                 </p>
               </div>
-              <div className="bg-blue-500 text-white px-8 py-8 sm:px-12 sm:py-10 pixelated-border inline-block animate-scaleIn hover:scale-110 transition-transform duration-500" style={{ animation: 'scaleIn 2.5s ease-out 1s both' }}>
+              <div className="bg-blue-500 text-white px-8 py-8 sm:px-12 sm:py-10 pixelated-border inline-block animate-scaleIn hover:scale-110 transition-transform duration-500 mb-6" style={{ animation: 'scaleIn 2.5s ease-out 1s both' }}>
                 <p className="font-mono text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-3 sm:mb-4">
                   <CountUp value={wrappedData.totalMessages} duration={4000} />
                 </p>
                 <p className="font-mono text-lg sm:text-xl md:text-2xl animate-fadeIn" style={{ animation: 'fadeIn 2.5s ease-out 2s both' }}>Messages</p>
               </div>
+              <p className="font-mono text-sm sm:text-base text-gray-600 italic max-w-2xl mx-auto animate-fadeIn" style={{ animation: 'fadeIn 3s ease-out 2.5s both' }}>
+                New tech. AI. AWS going down. Cloudflare doing it twice.
+              </p>
             </div>
           </WrappedSlide>
         );
@@ -524,6 +549,9 @@ const WrappedPage = () => {
                   </div>
                 ))}
               </div>
+              <p className="font-mono text-xs sm:text-sm text-gray-500 italic mt-6 animate-fadeIn" style={{ animation: 'fadeIn 2.5s ease-out 2.5s both' }}>
+                Google → claude → openAI → grok → repeat
+              </p>
             </div>
           </WrappedSlide>
         );
@@ -587,12 +615,19 @@ const WrappedPage = () => {
                 <h2 className="font-mono text-3xl sm:text-4xl md:text-5xl font-bold text-black mb-3 sm:mb-4 animate-scaleIn" style={{ animation: 'scaleIn 2.5s ease-out 0.5s both' }}>
                   THANK YOU
                 </h2>
-                <p className="font-mono text-lg sm:text-xl md:text-2xl text-gray-600 mb-6 sm:mb-8 animate-fadeIn" style={{ animation: 'fadeIn 3s ease-out 1s both' }}>
+                <p className="font-mono text-lg sm:text-xl md:text-2xl text-gray-600 mb-4 sm:mb-6 animate-fadeIn" style={{ animation: 'fadeIn 3s ease-out 1s both' }}>
                   For being part of the OSS Community
                 </p>
-                <div className="bg-black text-white px-4 py-3 sm:px-6 sm:py-4 pixelated-border inline-block animate-scaleIn hover:scale-110 transition-transform duration-500" style={{ animation: 'scaleIn 2.5s ease-out 1.5s both' }}>
+                <p className="font-mono text-base sm:text-lg md:text-xl text-gray-700 mb-6 sm:mb-8 animate-fadeIn max-w-2xl mx-auto" style={{ animation: 'fadeIn 3.5s ease-out 1.5s both' }}>
+                  800+ developers.<br />
+                  <span className="font-bold">One open source spirit.</span>
+                </p>
+                <div className="bg-black text-white px-4 py-3 sm:px-6 sm:py-4 pixelated-border inline-block animate-scaleIn hover:scale-110 transition-transform duration-500 mb-4" style={{ animation: 'scaleIn 2.5s ease-out 2s both' }}>
                   <p className="font-mono text-xl sm:text-2xl font-bold">2025</p>
                 </div>
+                <p className="font-mono text-sm sm:text-base text-gray-600 animate-fadeIn" style={{ animation: 'fadeIn 4s ease-out 2.5s both' }}>
+                  See you in 2026 🚀
+                </p>
               </div>
             </div>
           </WrappedSlide>
