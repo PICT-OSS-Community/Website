@@ -35,7 +35,7 @@ const Hero = () => {
                   sm:max-w-[250px] 
                   md:max-w-[300px] 
                   lg:max-w-[350px] 
-                  xl:max-w-[500px]"
+                  xl:max-w-[450px]"
                 priority
               />
             </div>
@@ -45,7 +45,7 @@ const Hero = () => {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center">
-              <Link href="https://chat.whatsapp.com/DIMjrXdU26y3JEHbK3bNjQ" >
+              <Link href="https://whatsapp.com/channel/0029VbClPP2LCoX0UjNkKt0f" >
                 <CTAButton className="mr-2" color="red" size="large">
                   <Users size={20} />
                   JOIN COMMUNITY

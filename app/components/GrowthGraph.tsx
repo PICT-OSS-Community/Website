@@ -93,8 +93,8 @@ const GrowthGraph: React.FC<GrowthGraphProps> = ({ onComplete }) => {
                     <p className="font-mono text-lg text-gray-400 mt-1">Active Members</p>
                 </div>
 
-                <div className="w-full h-[60%] sm:h-full absolute bottom-0 left-0 z-10 px-4 pb-12 sm:px-12 sm:py-16">
-                    <svg key={isVisible ? 'playing' : 'idle'} viewBox="0 0 100 100" className="w-full h-full" preserveAspectRatio="none">
+                <div className="w-full h-[70%] sm:h-full absolute bottom-0 left-0 z-10 px-4 pb-12 sm:px-12 sm:py-16">
+                    <svg key={isVisible ? 'playing' : 'idle'} viewBox="0 0 100 100" className="w-full h-full" preserveAspectRatio="xMidYMid meet">
                         {/* Axes */}
                         <line x1="5" y1="5" x2="5" y2="95" stroke="#e5e7eb" strokeWidth="0.5" /> {/* Y Axis */}
                         <line x1="5" y1="95" x2="95" y2="95" stroke="#e5e7eb" strokeWidth="0.5" /> {/* X Axis */}
