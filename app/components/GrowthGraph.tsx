@@ -150,7 +150,7 @@ const GrowthGraph: React.FC<GrowthGraphProps> = ({ onComplete }) => {
                          Our path goes roughly +X so this aligns. 
                          Triangle pointing right.
                      */}
-                            <path d="M -2,-2 L 2,0 L -2,2 Z" fill="#ef4444" transform="scale(3.5)" />
+                            <path d="M -2,-2 L 2,0 L -2,2 Z" fill="#ef4444" transform="scale(2)" />
                         </g>
 
                     </svg>
