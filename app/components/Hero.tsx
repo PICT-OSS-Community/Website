@@ -1,10 +1,13 @@
 import React from 'react';
-import { Code, Users, Zap, BookOpen } from 'lucide-react';
+import { Code, Users, Zap, BookOpen, Sun, Moon } from 'lucide-react';
 import Image from 'next/image';
 import Cube3D from './Cube3D';
 import Link from 'next/link';
+import { useTheme } from 'next-themes';
 
 const Hero = () => {
+
+  const { theme, setTheme } = useTheme();
   return (
     <section className="bg-white py-16 lg:py-12 relative overflow-hidden">
       {/* Decorative Clouds */}
@@ -17,6 +20,10 @@ const Hero = () => {
       <div className="absolute bottom-20 left-1/4 opacity-20">
         <PixelCloud />
       </div>
+
+      <button className={`absolute top-5 right-10 border-2 rounded-lg p-2 hover:cursor-pointer md:right-90 ${theme === "dark" ? "bg-white text-black" : "bg-black text-white"}`} onClick={() => setTheme(theme === "dark" ? "light" : "dark")}>
+        {theme === "dark" ? <Sun size={24} /> : <Moon size={24} />}
+      </button>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Main Hero Content with Cube */}
