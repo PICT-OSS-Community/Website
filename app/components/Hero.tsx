@@ -8,7 +8,7 @@ import Link from 'next/link';
 
 const Hero = () => {
   return (
-    <section className="bg-white py-16 lg:py-12 relative overflow-hidden dark:bg-gray-900 transition-colors duration-500">
+    <section className="bg-white py-16 lg:py-12 relative overflow-hidden">
       {/* Decorative Clouds */}
       <div className="absolute top-10 left-10 opacity-20">
         <PixelCloud />
