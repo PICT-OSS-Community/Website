@@ -22,7 +22,7 @@ export function ThemeToggle({ className = '' }: { className?: string }) {
   return (
     <button
       onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-      className={`absolute top-5 right-10 border-2 rounded-lg p-2 hover:cursor-pointer md:right-90 
+      className={`absolute top-5 right-10 border-2 rounded-lg p-2 hover:cursor-pointer lg:right-90
         ${theme === 'dark' ? 'bg-black text-white' : 'bg-white text-black'} 
         transition-colors hover:scale-110 duration-200 ${className}`}
       aria-label="Toggle theme"
