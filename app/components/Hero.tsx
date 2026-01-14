@@ -5,6 +5,7 @@ import { Code, Users, Zap, BookOpen } from 'lucide-react';
 import Image from 'next/image';
 import Cube3D from './Cube3D';
 import Link from 'next/link';
+import { ThemeToggle } from './ThemeToggle';
 
 const Hero = () => {
   return (
@@ -19,6 +20,8 @@ const Hero = () => {
       <div className="absolute bottom-20 left-1/4 opacity-20">
         <PixelCloud />
       </div>
+
+      <ThemeToggle />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Main Hero Content with Cube */}
