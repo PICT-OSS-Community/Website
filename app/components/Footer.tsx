@@ -35,11 +35,11 @@ const Footer = () => {
           <div>
             <h3 className="font-mono font-bold text-lg mb-4 text-green-500">QUICK LINKS</h3>
             <ul className="space-y-2 font-mono">
-              <li><FooterLink href="#projects">Projects</FooterLink></li>
-              <li><FooterLink href="#sessions">Sessions</FooterLink></li>
-              <li><FooterLink href="#fossible">FOSSible</FooterLink></li>
-              <li><FooterLink href="#events">Events</FooterLink></li>
-              <li><FooterLink href="#contribute">Contribute</FooterLink></li>
+              <li><FooterLink href="https://github.com/PICT-OSS-Community">Projects</FooterLink></li>
+              <li><FooterLink href="https://www.youtube.com/@PICT-OSS-Community/playlists">Sessions</FooterLink></li>
+              <li><FooterLink href="https://medium.com/fossible">FOSSible</FooterLink></li>
+              <li><FooterLink href="https://www.youtube.com/@PICT-OSS-Community">Events</FooterLink></li>
+              <li><FooterLink href="https://github.com/PICT-OSS-Community/Website">Contribute</FooterLink></li>
             </ul>
           </div>
 
@@ -47,9 +47,9 @@ const Footer = () => {
           <div>
             <h3 className="font-mono font-bold text-lg mb-4 text-blue-500">COMMUNITY</h3>
             <ul className="space-y-2 font-mono">
-              <li><FooterLink href="#discord">Discord Server</FooterLink></li>
-              <li><FooterLink href="#medium">Medium Publication</FooterLink></li>
-              <li><FooterLink href="#workshops">Workshops</FooterLink></li>
+              <li><FooterLink href="https://discord.com/invite/zgGmkFSr">Discord Server</FooterLink></li>
+              <li><FooterLink href="https://medium.com/fossible">Medium Publication</FooterLink></li>
+              <li><FooterLink href="https://www.youtube.com/@PICT-OSS-Community">Workshops</FooterLink></li>
               <li><FooterLink href="#mentorship">Mentorship</FooterLink></li>
               <li><FooterLink href="#code-of-conduct">Code of Conduct</FooterLink></li>
             </ul>
