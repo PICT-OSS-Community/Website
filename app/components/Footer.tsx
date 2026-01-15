@@ -1,6 +1,6 @@
 "use client"
 import React from 'react';
-import { Github, Twitter, Disc as Discord, Mail, Heart, BookOpen } from 'lucide-react';
+import { Github, Twitter, Disc as Discord, Mail, Heart, BookOpen, Youtube } from 'lucide-react';
 import dynamic from 'next/dynamic';
 
 const PixelArt = dynamic(() => import("./PixelArt"), { ssr: false });
@@ -19,7 +19,7 @@ const Footer = () => {
               <span className="font-mono text-xl font-bold">COMMUNITY</span>
             </div>
             <p className="font-mono text-gray-300 leading-relaxed mb-6">
-              Building the future of open source software through collaboration, 
+              Building the future of open source software through collaboration,
               innovation, and community-driven development. Join our 650+ members!
             </p>
             <div className="flex space-x-2">
@@ -28,6 +28,7 @@ const Footer = () => {
               <SocialIcon href="" icon={Twitter} color="yellow" />
               <SocialIcon href="https://discord.gg/zgGmkFSr" icon={Discord} color="green" />
               <SocialIcon href="#" icon={Mail} color="blue" />
+              <SocialIcon href="https://youtube.com/@pict-oss-community?si=ECIQRMF2Qn43Kprv" icon={Youtube} color="red" />
             </div>
           </div>
 
@@ -69,7 +70,7 @@ const Footer = () => {
               <p className="font-mono text-gray-400 flex items-center justify-center">
                 Made with <Heart size={16} className="mx-2 text-red-500" /> by OSS Community
               </p>
-              
+
             </div>
 
           </div>
