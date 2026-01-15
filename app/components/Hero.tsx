@@ -204,9 +204,9 @@ const FeatureCard = ({
 
 const PixelCloud = () => (
   <div className="relative">
-    <div className="bg-gray-300 w-16 h-8 pixelated-border"></div>
-    <div className="bg-gray-300 w-12 h-6 pixelated-border absolute -top-2 left-2"></div>
-    <div className="bg-gray-300 w-8 h-4 pixelated-border absolute -top-1 right-1"></div>
+    <div className="bg-gray-300 w-16 h-8 pixelated-border dark:bg-gray-50"></div>
+    <div className="bg-gray-300 w-12 h-6 pixelated-border absolute -top-2 left-2 dark:bg-gray-50"></div>
+    <div className="bg-gray-300 w-8 h-4 pixelated-border absolute -top-1 right-1 dark:bg-gray-50"></div>
   </div>
 );
 
