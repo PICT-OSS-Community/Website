@@ -9,7 +9,7 @@ import { ThemeToggle } from './ThemeToggle';
 
 const Hero = () => {
   return (
-    <section className="bg-white dark:bg-gray-800 py-16 lg:py-12 relative overflow-hidden">
+    <section className="bg-white dark:bg-gray-800 py-16 lg:py-12 relative overflow-hidden transition-colors duration-500">
       {/* Decorative Clouds */}
       <div className="absolute top-10 left-10 opacity-20">
         <PixelCloud />
