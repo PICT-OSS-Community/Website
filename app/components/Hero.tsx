@@ -9,7 +9,7 @@ import { ThemeToggle } from './ThemeToggle';
 
 const Hero = () => {
   return (
-    <section className="bg-white py-16 lg:py-12 relative overflow-hidden">
+    <section className="bg-white dark:bg-gray-800 py-16 lg:py-12 relative overflow-hidden">
       {/* Decorative Clouds */}
       <div className="absolute top-10 left-10 opacity-20">
         <PixelCloud />
@@ -45,7 +45,7 @@ const Hero = () => {
               />
             </div>
 
-            <p className="text-lg sm:text-xl lg:text-2xl font-mono text-gray-700 mb-8 max-w-lg mx-auto lg:mx-0 leading-relaxed">
+            <p className="text-lg sm:text-xl lg:text-2xl font-mono text-gray-700 dark:text-gray-50 mb-8 max-w-lg mx-auto lg:mx-0 leading-relaxed">
               A student-led open-source community of devs, learners & curious minds at Pune Institute of Computer Technology
             </p>
 
