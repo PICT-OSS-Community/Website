@@ -7,7 +7,7 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="bg-white border-b-4 border-black relative z-50">
+    <header className="bg-white dark:bg-gray-800 border-b-4 border-black dark:border-gray-500 relative z-50  transition-colors duration-500">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
@@ -15,7 +15,7 @@ const Header = () => {
             <div className="bg-black text-white px-3 py-2 font-mono text-xl font-bold pixelated-border">
               OSS
             </div>
-            <span className="font-mono text-xl font-bold text-black">COMMUNITY</span>
+            <span className="font-mono text-xl font-bold text-black dark:text-white">COMMUNITY</span>
           </div>
 
           {/* Desktop Navigation */}
