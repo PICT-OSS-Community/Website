@@ -37,7 +37,7 @@ const Footer = () => {
             <ul className="space-y-2 font-mono">
               <li><FooterLink href="https://github.com/PICT-OSS-Community">Projects</FooterLink></li>
               <li><FooterLink href="https://www.youtube.com/@PICT-OSS-Community/playlists">Sessions</FooterLink></li>
-              <li><FooterLink href="https://www.oss-community.social/">FOSSible</FooterLink></li>
+              <li><FooterLink href="https://medium.com/fossible">FOSSible</FooterLink></li>
               <li><FooterLink href="https://www.youtube.com/@PICT-OSS-Community">Events</FooterLink></li>
               <li><FooterLink href="https://github.com/PICT-OSS-Community/Website">Contribute</FooterLink></li>
             </ul>
