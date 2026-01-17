@@ -20,7 +20,7 @@ const Footer = () => {
             </div>
             <p className="font-mono text-gray-300 leading-relaxed mb-6">
               Building the future of open source software through collaboration, 
-              innovation, and community-driven development. Join our 650+ members!
+              innovation, and community-driven development. Join our 850+ members!
             </p>
             <div className="flex space-x-2">
               <SocialIcon href="https://github.com/PICT-OSS-Community" icon={Github} color="blue" />
