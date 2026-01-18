@@ -33,7 +33,7 @@ const Header = () => {
             <SocialIcon href="https://x.com/pict_oss" icon={Twitter} color="yellow" />
             <SocialIcon href="https://www.linkedin.com/company/oss-community/posts/?feedView=all" icon={Linkedin} color="red" />
             <SocialIcon href="https://www.instagram.com/oss__community" icon={Instagram} color="green" />
-            <SocialIcon href="https://youtube.com/@pict-oss-community?si=ECIQRMF2Qn43Kprv" icon={Youtube} color="red" />
+            <SocialIcon href="https://www.youtube.com/@pict-oss-community" icon={Youtube} color="red" />
           </div>
 
           {/* Mobile Menu Button */}
@@ -60,7 +60,7 @@ const Header = () => {
               <SocialIcon href="https://x.com/pict_oss" icon={Twitter} color="yellow" />
               <SocialIcon href="https://www.linkedin.com/company/oss-community/posts/?feedView=all" icon={Linkedin} color="red" />
               <SocialIcon href="https://www.instagram.com/oss__community" icon={Instagram} color="green" />
-              <SocialIcon href="https://youtube.com/@pict-oss-community?si=ECIQRMF2Qn43Kprv" icon={Youtube} color="red" />
+              <SocialIcon href="https://www.youtube.com/@pict-oss-community" icon={Youtube} color="red" />
             </div>
           </div>
         )}
