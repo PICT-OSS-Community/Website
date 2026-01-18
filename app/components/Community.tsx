@@ -14,7 +14,7 @@ const Community = () => {
             </span>
           </h2>
           <p className="text-xl font-mono text-gray-600 max-w-3xl mx-auto">
-            650+ passionate developers collaborating on amazing open source projects
+            850+ passionate developers collaborating on amazing open source projects
           </p>
         </div>
 
@@ -90,7 +90,7 @@ const Community = () => {
           />
           <StatCard
             icon={<Heart size={40} />}
-            number="650+"
+            number="850+"
             label="COMMUNITY MEMBERS"
             color="rose"
           />

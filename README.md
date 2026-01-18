@@ -1,10 +1,10 @@
 # OSS Website
 
-The official website for OSS Community - a beginner-friendly open source community with 650+ passionate developers from Pune Institute of Computer Technology. Built with Next.js 15, TypeScript, and Tailwind CSS, featuring a pixel-art inspired design that showcases our community, projects, and initiatives.
+The official website for OSS Community - a beginner-friendly open source community with 850+ passionate developers from Pune Institute of Computer Technology. Built with Next.js 15, TypeScript, and Tailwind CSS, featuring a pixel-art inspired design that showcases our community, projects, and initiatives.
 
 ## Features
 
--   **Community Hub**: Showcase of 650+ passionate developers and contributors
+-   **Community Hub**: Showcase of 850+ passionate developers and contributors
 -   **Project Gallery**: Featured open source projects built by community members
 -   **FOSSible**: Integration with our Medium publication for open source insights
 -   **Sessions & Workshops**: Information about regular learning events and talks
@@ -96,7 +96,7 @@ The official website for OSS Community - a beginner-friendly open source communi
 
 OSS Community is a thriving open source community:
 
--   **650+ Active Members**: Passionate developers, designers, and innovators
+-   **850+ Active Members**: Passionate developers, designers, and innovators
 -   **Open Source Projects**: Collaborative development of various tools and applications
 -   **FOSSible Publication**: Medium publication sharing open source insights and stories
 -   **Regular Sessions**: Workshops, talks, and learning events for skill development
