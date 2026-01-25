@@ -1,7 +1,7 @@
 "use client"
 import React, { useState } from 'react';
 import Link from 'next/link';
-import { Menu, X, Github, Twitter, Linkedin, Instagram } from 'lucide-react';
+import { Menu, X, Github, Twitter, Linkedin, Instagram, Youtube } from 'lucide-react';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -33,6 +33,7 @@ const Header = () => {
             <SocialIcon href="https://x.com/pict_oss" icon={Twitter} color="yellow" />
             <SocialIcon href="https://www.linkedin.com/company/oss-community/posts/?feedView=all" icon={Linkedin} color="red" />
             <SocialIcon href="https://www.instagram.com/oss__community" icon={Instagram} color="green" />
+            <SocialIcon href="https://www.youtube.com/@pict-oss-community" icon={Youtube} color="red" />
           </div>
 
           {/* Mobile Menu Button */}
@@ -59,6 +60,7 @@ const Header = () => {
               <SocialIcon href="https://x.com/pict_oss" icon={Twitter} color="yellow" />
               <SocialIcon href="https://www.linkedin.com/company/oss-community/posts/?feedView=all" icon={Linkedin} color="red" />
               <SocialIcon href="https://www.instagram.com/oss__community" icon={Instagram} color="green" />
+              <SocialIcon href="https://www.youtube.com/@pict-oss-community" icon={Youtube} color="red" />
             </div>
           </div>
         )}
