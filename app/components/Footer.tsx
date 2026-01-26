@@ -20,7 +20,7 @@ const Footer = () => {
             </div>
             <p className="font-mono text-gray-300 leading-relaxed mb-6">
               Building the future of open source software through collaboration,
-              innovation, and community-driven development. Join our 650+ members!
+              innovation, and community-driven development. Join our 850+ members!
             </p>
             <div className="flex space-x-2">
               <SocialIcon href="https://github.com/PICT-OSS-Community" icon={Github} color="blue" />
@@ -28,7 +28,7 @@ const Footer = () => {
               <SocialIcon href="" icon={Twitter} color="yellow" />
               <SocialIcon href="https://discord.gg/zgGmkFSr" icon={Discord} color="green" />
               <SocialIcon href="#" icon={Mail} color="blue" />
-              <SocialIcon href="https://youtube.com/@pict-oss-community?si=ECIQRMF2Qn43Kprv" icon={Youtube} color="red" />
+              <SocialIcon href="https://www.youtube.com/@pict-oss-community" icon={Youtube} color="red" />
             </div>
           </div>
 
