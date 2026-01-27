@@ -1,9 +1,38 @@
-'use client';
+"use client";
 
 import React from 'react';
 import { Quote } from 'lucide-react';
+// Map testimonial color names to Tailwind color classes
+const colorClassMap: { [key: string]: string } = {
+  emerald: "text-emerald-500",
+  teal: "text-teal-500",
+  indigo: "text-indigo-500",
+  amber: "text-amber-500",
+  rose: "text-rose-500",
+  violet: "text-violet-500",
+  fuchsia: "text-fuchsia-500",
+  pink: "text-pink-500",
+  cyan: "text-cyan-500",
+  purple: "text-purple-500",
+  lime: "text-lime-500",
+  orange: "text-orange-500",
+  yellow: "text-yellow-500",
+  red: "text-red-500"
+};
 
 const testimonials = [
+      {
+        name: "Sarang Rao",
+        role: "SY, ECE",
+        quote: "OSS helped me grow from a curious learner to a confident contributor, exploring security and real-world tech with an amazing community.",
+        color: "purple"
+      },
+    {
+      name: "Anish Dabhane",
+      role: "BE, CE",
+      quote: "I got first-hand experience in community building within the open-source ecosystem. It helped me improve my leadership skills significantly and transition from being an introvert to a more socially active person.",
+      color: "emerald"
+    },
   {
     name: "Shantanu Wable",
     role: "Alumnus, CE",
@@ -11,10 +40,10 @@ const testimonials = [
     color: "emerald"
   },
   {
-    name: "Omkar Wagholikar",
-    role: "Alumnus, CE",
-    quote: "Helped me connect with people who are contributing to the open source projects as well as the community is very focused on the tech which is good to passively improve my knowledge.",
-    color: "sky"
+    name: "Salina Tamboli",
+    role: "SY, CE",
+    quote: "Being part of the PICT OSS Club introduced me to the true spirit of open source collaboration, learning in public, and building solutions that matter. I learned how contributing code can create real impact beyond classrooms.",
+    color: "teal"
   },
   {
     name: "Saurav Shinde",
@@ -55,7 +84,7 @@ const testimonials = [
   {
     name: "Soham Metha",
     role: "TE, CE",
-    quote: "Helped me find out about various open source programs (GSSOC, LFX). Helps me keep up-to-date with the latest open-source news/programs/opportunities.",
+    quote: "Helped me find out about various open source programs (GSSOC, LFX). Helps me keep up-to-date with the latest open-source news, programs, and opportunities.",
     color: "cyan"
   },
   {
@@ -63,6 +92,30 @@ const testimonials = [
     role: "SY, AIDS",
     quote: "I've got a lot more knowledge about Linux and open source, and have been able to host and present sessions. Getting to know about cool projects.",
     color: "purple"
+  },
+  {
+    name: "Eshwari Sagar Jain",
+    role: "FY, ECE",
+    quote: "Learning new things, improvement in technical Knowledge. Supportive, helpful and amazing.",
+    color: "lime"
+  },
+  {
+    name: "Om Pravin Mahajan",
+    role: "SY, AIDS",
+    quote: "OSS helped me understand open-source and how to contribute. The community chat is always energetic and tech discussions are a highlight!",
+    color: "orange"
+  },
+  {
+    name: "Suyog Yogesh Shete",
+    role: "FY, CE",
+    quote: "Knew about the growing technology. The discussions and open minded thinking.",
+    color: "yellow"
+  },
+  {
+    name: "Anshul Kalbande",
+    role: "BE, CE",
+    quote: "The OSS Community is full of passionate devs. I always learn something new and love that it stays independent and active!",
+    color: "red"
   }
 ];
 
@@ -71,7 +124,7 @@ const doubledTestimonials = [...testimonials, ...testimonials];
 
 const Testimonials = () => {
   return (
-    <section className="bg-white py-16 lg:py-24 border-t-4 border-black overflow-hidden">
+    <section className="bg-white py-16 lg:py-24 overflow-hidden">
       <div className="max-w-full mx-auto">
         <div className="text-center mb-16 px-4">
           <h2 className="font-mono text-4xl sm:text-6xl font-bold text-black mb-8">
@@ -81,24 +134,23 @@ const Testimonials = () => {
               VOICES
             </span>
           </h2>
-          <p className="text-xl font-mono text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl font-mono text-gray-600 max-w-3xl mx-auto whitespace-nowrap">
             Real stories from students and alumni about their growth with us.
           </p>
         </div>
 
-        <div className="relative w-full overflow-hidden">
-          {/* Fading Gradients */}
-          <div className="absolute left-0 top-0 bottom-0 w-8 sm:w-16 z-10 bg-gradient-to-r from-white to-transparent pointer-events-none" />
-          <div className="absolute right-0 top-0 bottom-0 w-8 sm:w-16 z-10 bg-gradient-to-l from-white to-transparent pointer-events-none" />
+        {/* Fading Gradients */}
+        <div className="absolute left-0 top-0 bottom-0 w-8 sm:w-16 z-10 bg-gradient-to-r from-white to-transparent pointer-events-none" />
+        <div className="absolute right-0 top-0 bottom-0 w-8 sm:w-16 z-10 bg-gradient-to-l from-white to-transparent pointer-events-none" />
 
-          {/* Marquee Container */}
-          <div
-            className="flex w-[200%] md:w-max hover:[animation-play-state:paused] animate-marquee"
-            style={{
-              animation: 'marquee 40s linear infinite',
-            }}
-          >
-            <style jsx>{`
+        {/* Marquee Container */}
+        <div
+          className="flex w-[200%] md:w-max hover:[animation-play-state:paused] animate-marquee"
+          style={{
+            animation: 'marquee 40s linear infinite',
+          }}
+        >
+          <style jsx>{`
               @keyframes marquee {
                 0% { transform: translateX(0); }
                 100% { transform: translateX(-50%); }
@@ -108,41 +160,39 @@ const Testimonials = () => {
               }
             `}</style>
 
-            {doubledTestimonials.map((testimonial, index) => (
-              <div
-                key={index}
-                className="flex-none w-[300px] sm:w-[400px] px-4"
-              >
-                <div className="h-full bg-gray-50 p-8 pixelated-border flex flex-col relative group hover:-translate-y-2 transition-transform duration-300">
-                  {/* Decorative background element */}
-                  <div className={`absolute top-0 right-0 w-16 h-16 opacity-10 bg-${testimonial.color}-500`} />
+          {doubledTestimonials.map((testimonial, index) => (
+            <div
+              key={index}
+              className="flex-none w-[320px] sm:w-[380px] px-4"
+            >
+              <div className="h-full bg-gray-50 p-8 pixelated-border flex flex-col relative group hover:-translate-y-2 transition-transform duration-300">
+                {/* Decorative background element */}
+                <div className={`absolute top-0 right-0 w-16 h-16 opacity-10 bg-${testimonial.color}-500`} />
 
-                  <Quote className={`text-${testimonial.color}-500 w-10 h-10 mb-6`} />
+                <Quote className={`w-10 h-10 mb-6 ${colorClassMap[testimonial.color] || 'text-gray-900'}`} />
 
-                  <p className="font-mono text-lg text-gray-800 mb-8 flex-grow leading-relaxed">
-                    "{testimonial.quote}"
-                  </p>
+                <p className="font-mono text-lg text-gray-800 mb-8 flex-grow leading-relaxed">
+                  "{testimonial.quote}"
+                </p>
 
-                  <div className="flex items-center gap-4 mt-auto">
-                    <div className={`w-12 h-12 bg-${testimonial.color}-500 pixelated-border flex items-center justify-center shrink-0`}>
-                      <span className="font-mono font-bold text-white text-xl">
-                        {testimonial.name.charAt(0)}
-                      </span>
-                    </div>
-                    <div>
-                      <h4 className="font-bold font-mono text-black">
-                        {testimonial.name}
-                      </h4>
-                      {/* Fixed visibility: Removed dynamic color class for text and used a static dark gray */}
-                      <p className="text-sm font-mono text-gray-700 font-bold">
-                        {testimonial.role}
-                      </p>
-                    </div>
+                <div className="flex items-center gap-4 mt-auto">
+                  <div className={`w-12 h-12 bg-${testimonial.color}-500 pixelated-border flex items-center justify-center shrink-0`}>
+                    <span className="font-mono font-bold text-white text-xl">
+                      {testimonial.name.charAt(0)}
+                    </span>
+                  </div>
+                  <div>
+                    <h4 className="font-bold font-mono text-black">
+                      {testimonial.name}
+                    </h4>
+                    <p className="text-sm font-mono text-gray-700 font-bold">
+                      {testimonial.role}
+                    </p>
                   </div>
                 </div>
               </div>
-            ))}
-          </div>
+            </div>
+          ))}
         </div>
       </div>
     </section>
