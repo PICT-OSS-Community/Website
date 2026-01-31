@@ -1,4 +1,6 @@
+
 'use client';
+import Partnerships from "./components/Partnerships";
 
 import Image from "next/image";
 import Hero from "./components/Hero";
@@ -18,6 +20,7 @@ function HomeContent() {
       <Header />
       <main>
         <Hero />
+        <Partnerships />
         <Community />
         <Testimonials />
         <Blogs />
