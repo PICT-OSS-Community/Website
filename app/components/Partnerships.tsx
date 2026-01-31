@@ -11,13 +11,13 @@ const partners = [
     url: "https://www.socialwinterofcode.com/"
   },
   {
-    name: "GirlScript Summer of Code",
+    name: "GirlScript Summer of Code 2025",
     subtext: "GSSoC",
     logo: "/logos/gssoc.png",
     url: "https://gssoc.girlscript.tech/"
   },
   {
-    name: "Hacktoberfest",
+    name: "Hacktoberfest 2025",
     subtext: "DigitalOcean",
     logo: "/logos/hacktoberfest.jpg",
     url: "https://hacktoberfest.com/"
@@ -29,8 +29,8 @@ const partners = [
     url: "https://apertre.resourcio.in/"
   },
   {
-    name: "Open Source Generation Club",
-    subtext: "OSGC",
+    name: "Open Source Connect Global 2026",
+    subtext: "OSCG",
     logo: "/logos/osgc.png",
     url: "https://osgc.in/" // Guessed URL, standard if unknown
   }
