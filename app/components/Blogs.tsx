@@ -4,17 +4,17 @@ import { ExternalLink, Calendar, Clock } from 'lucide-react';
 
 const Blogs = () => {
   return (
-    <section className="bg-white py-16 lg:py-24">
+    <section className="bg-white py-16 lg:py-24 dark:bg-gray-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="font-mono text-4xl sm:text-6xl font-bold text-black mb-8">
+          <h2 className="font-mono text-4xl sm:text-6xl font-bold text-black mb-8 dark:text-white">
             FEATURED
             <br />
             <span className="bg-blue-500 text-white px-4 py-2 pixelated-border inline-block">
               BLOGS
             </span>
           </h2>
-          <p className="text-xl font-mono text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl font-mono text-gray-600 max-w-3xl mx-auto dark:text-gray-300">
             Insightful articles and tutorials from our community writers
           </p>
         </div>
@@ -127,7 +127,7 @@ const BlogCard = ({
 
   const CardContent = () => (
     <div className={`
-      bg-white border-4 ${colorClasses[color]} p-6 
+      bg-white dark:bg-gray-200 border-4 ${colorClasses[color]} p-6 
       hover:scale-105 transition-all duration-200 cursor-pointer
       group relative overflow-hidden
       flex flex-col h-full

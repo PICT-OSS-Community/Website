@@ -28,7 +28,7 @@ const Footer = () => {
               <SocialIcon href="" icon={Twitter} color="yellow" />
               <SocialIcon href="https://discord.gg/zgGmkFSr" icon={Discord} color="green" />
               <SocialIcon href="#" icon={Mail} color="blue" />
-              <SocialIcon href=" https://www.youtube.com/@pict-oss-community" icon={Youtube} color="red" />
+              <SocialIcon href="https://www.youtube.com/@pict-oss-community" icon={Youtube} color="red" />
             </div>
           </div>
 
@@ -70,6 +70,7 @@ const Footer = () => {
               <p className="font-mono text-gray-400 flex items-center justify-center">
                 Made with <Heart size={16} className="mx-2 text-red-500" /> by OSS Community
               </p>
+
             </div>
 
           </div>

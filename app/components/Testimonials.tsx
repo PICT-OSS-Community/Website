@@ -124,17 +124,21 @@ const doubledTestimonials = [...testimonials, ...testimonials];
 
 const Testimonials = () => {
   return (
-    <section className="bg-white py-16 lg:py-24 overflow-hidden">
+
+    <section className="bg-white py-16 lg:py-24 border-t-4 border-black overflow-hidden dark:bg-gray-900">
+
       <div className="max-w-full mx-auto">
         <div className="text-center mb-16 px-4">
-          <h2 className="font-mono text-4xl sm:text-6xl font-bold text-black mb-8">
+          <h2 className="font-mono text-4xl sm:text-6xl font-bold text-black mb-8 dark:text-white">
             COMMUNITY
             <br />
             <span className="bg-purple-500 text-white px-4 py-2 pixelated-border inline-block">
               VOICES
             </span>
           </h2>
-          <p className="text-xl font-mono text-gray-600 max-w-3xl mx-auto whitespace-nowrap">
+
+          <p className="text-xl font-mono text-gray-600 max-w-3xl mx-auto dark:text-gray-300 whitespace-nowrap">
+
             Real stories from students and alumni about their growth with us.
           </p>
         </div>
@@ -160,12 +164,13 @@ const Testimonials = () => {
               }
             `}</style>
 
+
           {doubledTestimonials.map((testimonial, index) => (
             <div
               key={index}
               className="flex-none w-[320px] sm:w-[380px] px-4"
             >
-              <div className="h-full bg-gray-50 p-8 pixelated-border flex flex-col relative group hover:-translate-y-2 transition-transform duration-300">
+              <div className="h-full bg-gray-50 p-8 pixelated-border flex flex-col relative group hover:-translate-y-2 transition-transform duration-300 will-change-transform" >
                 {/* Decorative background element */}
                 <div className={`absolute top-0 right-0 w-16 h-16 opacity-10 bg-${testimonial.color}-500`} />
 

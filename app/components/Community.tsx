@@ -3,17 +3,17 @@ import { MessageCircle, GitBranch, Heart, BookOpen } from 'lucide-react';
 
 const Community = () => {
   return (
-    <section className="bg-gray-50 py-16 lg:py-24">
+    <section className="bg-gray-50 dark:bg-gray-700 py-16 lg:py-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="font-mono text-4xl sm:text-6xl font-bold text-black mb-8">
+          <h2 className="font-mono text-4xl sm:text-6xl font-bold text-black dark:text-white mb-8">
             MEET THE
             <br />
             <span className="bg-green-500 text-white px-4 py-2 pixelated-border inline-block">
               COMMUNITY
             </span>
           </h2>
-          <p className="text-xl font-mono text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl font-mono text-gray-600 dark:text-white max-w-3xl mx-auto">
             850+ passionate developers collaborating on amazing open source projects
           </p>
         </div>
@@ -46,6 +46,7 @@ const Community = () => {
           <svg className="w-full h-32 opacity-20" viewBox="0 0 800 200">
             <path
               d="M100,50 Q200,20 300,50 T500,50 T700,50"
+              className="stroke-red-600 dark:stroke-red-400"
               stroke="#FF0000"
               strokeWidth="4"
               fill="none"
@@ -53,6 +54,7 @@ const Community = () => {
             />
             <path
               d="M150,100 Q300,130 450,100 T750,100"
+              className="stroke-blue-500 dark:stroke-blue-400"
               stroke="#0000FF"
               strokeWidth="4"
               fill="none"
@@ -60,6 +62,7 @@ const Community = () => {
             />
             <path
               d="M50,150 Q250,120 450,150 T750,150"
+              className="stroke-green-500 dark:stroke-green-400"
               stroke="#00FF00"
               strokeWidth="4"
               fill="none"
@@ -150,7 +153,7 @@ const Character = ({
         </div>
       </div>
 
-      <p className="font-mono text-sm font-bold text-black">{name}</p>
+      <p className="font-mono text-sm font-bold text-black dark:text-white">{name}</p>
     </div>
   );
 };
@@ -193,7 +196,7 @@ const StatCard = ({
         {icon}
       </div>
       <h3 className="font-mono text-2xl font-bold text-black mb-2">{number}</h3>
-      <p className="font-mono text-gray-600 text-sm">{label}</p>
+      <p className="font-mono text-gray-600 text-sm dark:text-gray-200">{label}</p>
     </div>
   );
 };
