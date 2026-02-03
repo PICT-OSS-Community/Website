@@ -88,7 +88,7 @@ const WrappedPage = () => {
               <div className="mb-6 sm:mb-8 animate-scaleIn" style={{ animation: 'scaleIn 2s ease-out' }}>
                 <div className="inline-block mb-3 sm:mb-4 hover:scale-110 transition-transform duration-500 animate-float" style={{ animation: 'float 4s ease-in-out infinite 1s' }}>
                   <Image
-                    src="/winter-logo.jpg"
+                    src="/logo.jpg"
                     alt="OSS Community Logo"
                     width={300}
                     height={300}

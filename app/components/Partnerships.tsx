@@ -41,17 +41,17 @@ const doubledPartners = [...partners, ...partners, ...partners];
 
 const Partnerships = () => {
   return (
-    <section className="bg-white py-16 lg:py-24 overflow-hidden relative">
+    <section className="bg-white dark:bg-gray-900 py-16 lg:py-24 overflow-hidden relative transition-colors duration-500">
       <div className="max-w-7xl mx-auto mb-16 px-4">
         <div className="text-center">
-          <h2 className="font-mono text-4xl sm:text-6xl font-bold text-black mb-4">
+          <h2 className="font-mono text-4xl sm:text-6xl font-bold text-black dark:text-white mb-4">
             OUR
             <br />
             <span className="bg-[#00D16C] text-white px-6 py-2 border-4 border-black inline-block mt-2">
               PARTNERSHIPS
             </span>
           </h2>
-          <p className="text-base sm:text-lg font-mono text-gray-500 max-w-3xl mx-auto">
+          <p className="text-base sm:text-lg font-mono text-gray-500 dark:text-gray-400 max-w-3xl mx-auto">
             Collaborating with global open-source programs.
           </p>
         </div>
@@ -59,8 +59,8 @@ const Partnerships = () => {
 
       <div className="relative max-w-full">
         {/* Fading Gradients */}
-        <div className="absolute left-0 top-0 bottom-0 w-16 sm:w-32 z-10 bg-gradient-to-r from-white to-transparent pointer-events-none" />
-        <div className="absolute right-0 top-0 bottom-0 w-16 sm:w-32 z-10 bg-gradient-to-l from-white to-transparent pointer-events-none" />
+        <div className="absolute left-0 top-0 bottom-0 w-16 sm:w-32 z-10 bg-gradient-to-r from-white dark:from-gray-900 to-transparent pointer-events-none" />
+        <div className="absolute right-0 top-0 bottom-0 w-16 sm:w-32 z-10 bg-gradient-to-l from-white dark:from-gray-900 to-transparent pointer-events-none" />
 
         {/* Marquee Container */}
         <div
@@ -104,10 +104,10 @@ const Partnerships = () => {
 
                 {/* Text Below Logo */}
                 <div className="text-center">
-                  <p className="font-mono font-bold text-lg sm:text-xl text-black leading-tight group-hover:text-[#00D16C] transition-colors">
+                  <p className="font-mono font-bold text-lg sm:text-xl text-black dark:text-white leading-tight group-hover:text-[#00D16C] transition-colors">
                     {partner.name}
                   </p>
-                  <p className="font-mono text-xs sm:text-sm text-gray-400 mt-2 uppercase tracking-widest">
+                  <p className="font-mono text-xs sm:text-sm text-gray-400 dark:text-gray-500 mt-2 uppercase tracking-widest">
                     {partner.subtext}
                   </p>
                 </div>

@@ -31,7 +31,7 @@ const Hero = () => {
           <div className="lg:w-1/2 flex-shrink-0 text-center lg:text-left">
             <div className="mb-12 sm:mb-16 flex justify-center lg:justify-start lg:mt-12">
               <Image
-                src="/winter-logo.jpg"
+                src="/logo.jpg"
                 alt="PICT OSS Community Logo"
                 width={400}
                 height={300}
@@ -40,7 +40,20 @@ const Hero = () => {
                   sm:max-w-[250px] 
                   md:max-w-[300px] 
                   lg:max-w-[350px] 
-                  xl:max-w-[450px]"
+                  xl:max-w-[450px] dark:hidden"
+                priority
+              />
+              <Image
+                src="/dark-logo.png"
+                alt="PICT OSS Community Logo"
+                width={400}
+                height={300}
+                className="w-auto h-auto 
+                  max-w-[200px] 
+                  sm:max-w-[250px] 
+                  md:max-w-[300px] 
+                  lg:max-w-[350px] 
+                  xl:max-w-[450px] hidden dark:block"
                 priority
               />
             </div>

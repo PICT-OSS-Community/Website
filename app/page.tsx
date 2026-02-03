@@ -16,7 +16,7 @@ function HomeContent() {
   const { isModalOpen, selectedProject, closeModal } = useProjectModalContext();
 
   return (
-    <div className="min-h-screen bg-white relative">
+    <div className="min-h-screen bg-white dark:bg-gray-900 relative transition-colors duration-500">
       <Header />
       <main>
         <Hero />

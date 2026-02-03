@@ -36,7 +36,7 @@ const testimonials = [
   {
     name: "Shantanu Wable",
     role: "Alumnus, CE",
-    quote: "There’s always some new discussion going on that really helps me to stay updated in tech! Easy-to-approach general chat.",
+    quote: "There's always some new discussion going on that really helps me to stay updated in tech! Easy-to-approach general chat.",
     color: "emerald"
   },
   {
@@ -124,10 +124,8 @@ const doubledTestimonials = [...testimonials, ...testimonials];
 
 const Testimonials = () => {
   return (
-
-    <section className="bg-white py-16 lg:py-24 border-t-4 border-black overflow-hidden dark:bg-gray-900">
-
-      <div className="max-w-full mx-auto">
+    <section className="bg-white dark:bg-gray-900 py-16 lg:py-24 border-t-4 border-black dark:border-gray-700 overflow-hidden relative transition-colors duration-500">
+      <div className="max-w-full mx-auto relative">
         <div className="text-center mb-16 px-4">
           <h2 className="font-mono text-4xl sm:text-6xl font-bold text-black mb-8 dark:text-white">
             COMMUNITY
@@ -143,9 +141,9 @@ const Testimonials = () => {
           </p>
         </div>
 
-        {/* Fading Gradients */}
-        <div className="absolute left-0 top-0 bottom-0 w-8 sm:w-16 z-10 bg-gradient-to-r from-white to-transparent pointer-events-none" />
-        <div className="absolute right-0 top-0 bottom-0 w-8 sm:w-16 z-10 bg-gradient-to-l from-white to-transparent pointer-events-none" />
+        {/* Fading Gradients - scoped to testimonials section */}
+        <div className="absolute left-0 top-0 bottom-0 w-8 sm:w-16 z-10 bg-gradient-to-r from-white dark:from-gray-900 to-transparent pointer-events-none" />
+        <div className="absolute right-0 top-0 bottom-0 w-8 sm:w-16 z-10 bg-gradient-to-l from-white dark:from-gray-900 to-transparent pointer-events-none" />
 
         {/* Marquee Container */}
         <div
@@ -170,13 +168,13 @@ const Testimonials = () => {
               key={index}
               className="flex-none w-[320px] sm:w-[380px] px-4"
             >
-              <div className="h-full bg-gray-50 p-8 pixelated-border flex flex-col relative group hover:-translate-y-2 transition-transform duration-300 will-change-transform" >
+              <div className="h-full bg-gray-50 dark:bg-gray-800 p-8 pixelated-border flex flex-col relative group hover:-translate-y-2 transition-transform duration-300 will-change-transform" >
                 {/* Decorative background element */}
-                <div className={`absolute top-0 right-0 w-16 h-16 opacity-10 bg-${testimonial.color}-500`} />
+                <div className={`absolute top-0 right-0 w-16 h-16 opacity-10 dark:opacity-20 bg-${testimonial.color}-500`} />
 
-                <Quote className={`w-10 h-10 mb-6 ${colorClassMap[testimonial.color] || 'text-gray-900'}`} />
+                <Quote className={`w-10 h-10 mb-6 ${colorClassMap[testimonial.color] || 'text-gray-900 dark:text-gray-100'}`} />
 
-                <p className="font-mono text-lg text-gray-800 mb-8 flex-grow leading-relaxed">
+                <p className="font-mono text-lg text-gray-800 dark:text-gray-200 mb-8 flex-grow leading-relaxed">
                   "{testimonial.quote}"
                 </p>
 
@@ -187,10 +185,10 @@ const Testimonials = () => {
                     </span>
                   </div>
                   <div>
-                    <h4 className="font-bold font-mono text-black">
+                    <h4 className="font-bold font-mono text-black dark:text-white">
                       {testimonial.name}
                     </h4>
-                    <p className="text-sm font-mono text-gray-700 font-bold">
+                    <p className="text-sm font-mono text-gray-700 dark:text-gray-300 font-bold">
                       {testimonial.role}
                     </p>
                   </div>
