@@ -30,32 +30,9 @@ const Hero = () => {
           {/* Text Content - On Left */}
           <div className="lg:w-1/2 flex-shrink-0 text-center lg:text-left">
             <div className="mb-12 sm:mb-16 flex justify-center lg:justify-start lg:mt-12">
-              <Image
-                src="/logo.jpg"
-                alt="PICT OSS Community Logo"
-                width={400}
-                height={300}
-                className="w-auto h-auto 
-                  max-w-[200px] 
-                  sm:max-w-[250px] 
-                  md:max-w-[300px] 
-                  lg:max-w-[350px] 
-                  xl:max-w-[450px] dark:hidden"
-                priority
-              />
-              <Image
-                src="/dark-logo.png"
-                alt="PICT OSS Community Logo"
-                width={400}
-                height={300}
-                className="w-auto h-auto 
-                  max-w-[200px] 
-                  sm:max-w-[250px] 
-                  md:max-w-[300px] 
-                  lg:max-w-[350px] 
-                  xl:max-w-[450px] hidden dark:block"
-                priority
-              />
+              <h1 className="font-mono font-bold text-2xl text-black dark:text-white">
+               PICT
+              </h1>
             </div>
 
             <p className="text-lg sm:text-xl lg:text-2xl font-mono text-gray-700 dark:text-gray-50 mb-8 max-w-lg mx-auto lg:mx-0 leading-relaxed">
