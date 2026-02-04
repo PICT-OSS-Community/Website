@@ -1,12 +1,15 @@
+'use client'
+
 import React from 'react';
 import { Code, Users, Zap, BookOpen } from 'lucide-react';
 import Image from 'next/image';
 import Cube3D from './Cube3D';
 import Link from 'next/link';
+import { ThemeToggle } from './ThemeToggle';
 
 const Hero = () => {
   return (
-    <section className="bg-white py-16 lg:py-12 relative overflow-hidden">
+    <section className="bg-white dark:bg-gray-800 py-16 lg:py-12 relative overflow-hidden transition-colors duration-500">
       {/* Decorative Clouds */}
       <div className="absolute top-10 left-10 opacity-20">
         <PixelCloud />
@@ -18,6 +21,8 @@ const Hero = () => {
         <PixelCloud />
       </div>
 
+      <ThemeToggle />
+
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Main Hero Content with Cube */}
         <div className="flex flex-col lg:flex-row items-center lg:justify-between gap-8 lg:gap-16 mb-32">
@@ -28,10 +33,9 @@ const Hero = () => {
               <h1 className="font-mono font-bold text-2xl text-black dark:text-white">
                PICT
               </h1>
-
             </div>
 
-            <p className="text-lg sm:text-xl lg:text-2xl font-mono text-gray-700 mb-8 max-w-lg mx-auto lg:mx-0 leading-relaxed">
+            <p className="text-lg sm:text-xl lg:text-2xl font-mono text-gray-700 dark:text-gray-50 mb-8 max-w-lg mx-auto lg:mx-0 leading-relaxed">
               A student-led open-source community of devs, learners & curious minds at Pune Institute of Computer Technology
             </p>
 
@@ -190,9 +194,9 @@ const FeatureCard = ({
 
 const PixelCloud = () => (
   <div className="relative">
-    <div className="bg-gray-300 w-16 h-8 pixelated-border"></div>
-    <div className="bg-gray-300 w-12 h-6 pixelated-border absolute -top-2 left-2"></div>
-    <div className="bg-gray-300 w-8 h-4 pixelated-border absolute -top-1 right-1"></div>
+    <div className="bg-gray-300 w-16 h-8 pixelated-border dark:bg-gray-50"></div>
+    <div className="bg-gray-300 w-12 h-6 pixelated-border absolute -top-2 left-2 dark:bg-gray-50"></div>
+    <div className="bg-gray-300 w-8 h-4 pixelated-border absolute -top-1 right-1 dark:bg-gray-50"></div>
   </div>
 );
 
