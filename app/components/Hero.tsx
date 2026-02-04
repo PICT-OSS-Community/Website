@@ -26,9 +26,8 @@ const Hero = () => {
           <div className="lg:w-1/2 flex-shrink-0 text-center lg:text-left">
             <div className="mb-12 sm:mb-16 flex justify-center lg:justify-start lg:mt-12">
               <h1 className="font-mono font-bold text-2xl text-black dark:text-white">
-     <h1 className="font-mono font-bold text-2xl text-black dark:text-white">
-      PICT
-     </h1>
+               PICT
+              </h1>
 
             </div>
 
