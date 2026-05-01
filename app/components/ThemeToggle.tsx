@@ -4,30 +4,27 @@ import { Moon, Sun } from 'lucide-react';
 import { useTheme } from 'next-themes';
 import { useEffect, useState } from 'react';
 
-export function ThemeToggle({ className = '' }: { className?: string }) {
+export function ThemeToggle() {
   const [mounted, setMounted] = useState(false);
-  const { theme, setTheme, resolvedTheme } = useTheme();
+  const { theme, setTheme } = useTheme();
 
   useEffect(() => {
     setMounted(true);
   }, []);
 
-  // Avoid hydration mismatch - return null or a placeholder during SSR
   if (!mounted) {
-    return (
-      <div className={`absolute top-5 right-10 border-2 rounded-lg p-2 w-[52px] h-[52px] md:right-90 ${className}`} />
-    );
+    return <div className="fixed bottom-6 right-6 z-50 w-11 h-11 pixelated-border" />;
   }
 
   return (
     <button
       onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-      className={`absolute top-5 right-10 border-2 rounded-lg p-2 hover:cursor-pointer lg:right-90
-        ${theme === 'dark' ? 'bg-black text-white border-white' : 'bg-white text-black border-black'} 
-        transition-colors hover:scale-110 duration-200 ${className}`}
+      className={`fixed bottom-6 right-6 z-50 p-2.5 pixelated-border hover:cursor-pointer
+        hover:scale-110 transition-all duration-200
+        ${theme === 'dark' ? 'bg-gray-900 text-white' : 'bg-white text-black'}`}
       aria-label="Toggle theme"
     >
-      {theme === 'dark' ? <Moon size={24} /> : <Sun size={24} />}
+      {theme === 'dark' ? <Moon size={22} /> : <Sun size={22} />}
     </button>
   );
 }
