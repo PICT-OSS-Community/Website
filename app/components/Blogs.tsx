@@ -1,178 +1,159 @@
 import React from 'react';
 import Link from 'next/link';
-import { ExternalLink, Calendar, Clock } from 'lucide-react';
 
-const Blogs = () => {
-  return (
-    <section className="bg-white py-16 lg:py-24 dark:bg-gray-800">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="font-mono text-4xl sm:text-6xl font-bold text-black mb-8 dark:text-white">
-            FEATURED
-            <br />
-            <span className="bg-blue-500 text-white px-4 py-2 pixelated-border inline-block">
-              BLOGS
-            </span>
-          </h2>
-          <p className="text-xl font-mono text-gray-600 max-w-3xl mx-auto dark:text-gray-300">
-            Insightful articles and tutorials from our community writers
-          </p>
-        </div>
+type Section = 'Philosophy' | 'AI' | 'Hall of Fame' | 'General';
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <BlogCard
-            title="NEHA NARKHEDE'S JOURNEY"
-            description="Open Source Innovation to Global Enterprise"
-            author="Anish Dabhane"
-            date="Jun 20"
-            readTime="5 min read"
-            color="red"
-            href="https://medium.com/fossible/neha-narkhedes-journey-open-source-innovation-to-global-enterprise-f7f07a85c9cb"
-          />
-          <BlogCard
-            title="HOW OPEN SOURCE TEACHES YOU"
-            description="To Write Code for People, Not Just Machines"
-            author="Sujal Bhor" 
-            date="May 12"
-            readTime="5 min read"
-            color="green"
-            href="https://medium.com/fossible/how-open-source-teaches-you-to-write-code-for-people-not-just-machines-f43000c4bf34"
-          />
-          <BlogCard
-            title="A2A+MCP: PART 2"
-            description="A Practical guide to the future of AI agent workflows"
-
-            author="Anshul K"
-
-            date="Jun 18"
-            readTime="12 min read"
-            color="blue"
-            href="https://medium.com/fossible/part-2-a2a-mcp-a-practical-guide-to-the-future-of-ai-agent-workflows-7ab38a013f02"
-          />
-          <BlogCard
-            title="AUTOMATING HTTPS"
-            description="With Docker, Nginx & Certbot for web projects"
-            author="Samir Wankhede"
-            date="Jun 14"
-            readTime="7 min read"
-            color="yellow"
-            href="https://medium.com/fossible/automating-https-with-docker-nginx-certbot-c4c406409f32"
-          />
-          <BlogCard
-            title="WHY VULKAN IS BETTER"
-            description="But You Might Want OpenGL Anyway for game engines"
-            author="Kshitijaucharmal"
-            date="Jun 8"
-            readTime="5 min read"
-            color="red"
-            href="https://medium.com/fossible/why-vulkan-is-better-but-you-might-want-opengl-anyway-f797cf9cfaea"
-          />
-          <BlogCard
-            title="A2A + MCP: PART 1"
-            description="A practical guide to the future of AI agent workflows"
-            author="Anurag Mandke"
-            date="May 13"
-            readTime="10 min read"
-            color="green"
-            href="https://medium.com/fossible/part-1-a2a-mcp-a-practical-guide-to-the-future-of-ai-agent-workflows-f8052aa6e126"
-          />
-        </div>
-
-        <div className="text-center mt-16">
-          <Link 
-            href="https://medium.com/fossible" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="bg-black text-white font-mono font-bold px-8 py-4 text-xl pixelated-border hover:scale-105 transition-all duration-200 flex items-center justify-center mx-auto w-fit"
-          >
-            <ExternalLink className="mr-2" size={20} />
-            VIEW ALL BLOGS
-          </Link>
-        </div>
-      </div>
-    </section>
-  );
+const SECTION_STYLES: Record<Section, { chip: string; text: string; label: string }> = {
+  'Philosophy':   { chip: 'bg-blue-500',   text: 'text-white', label: 'PHILOSOPHY'   },
+  'AI':           { chip: 'bg-red-500',    text: 'text-white', label: 'AI'           },
+  'Hall of Fame': { chip: 'bg-yellow-500', text: 'text-black', label: 'HALL OF FAME' },
+  'General':      { chip: 'bg-green-500',  text: 'text-white', label: 'GENERAL'      },
 };
 
-const BlogCard = ({ 
-  title, 
-  description, 
-  author, 
-  date, 
-  readTime, 
-  color,
-  href 
-}: {
+interface BlogPost {
   title: string;
   description: string;
   author: string;
   date: string;
-  readTime: string;
-  color: 'red' | 'blue' | 'green' | 'yellow';
-  href?: string;
-}) => {
-  const colorClasses = {
-    red: 'border-red-500',
-    blue: 'border-blue-500',
-    green: 'border-green-500',
-    yellow: 'border-yellow-500'
-  };
+  readMin: number;
+  section: Section;
+  href: string;
+}
 
-  const accentColorClasses = {
-    red: 'bg-red-500',
-    blue: 'bg-blue-500',
-    green: 'bg-green-500',
-    yellow: 'bg-yellow-500'
-  };
+const FEATURED_POSTS: BlogPost[] = [
+  {
+    title: 'How Open Source Teaches You to Write Code for People, Not Just Machines',
+    description: '"Programs must be written for people to read, and only incidentally for machines to execute."',
+    author: 'Sujal Bhor',
+    date: 'May 12',
+    readMin: 5,
+    section: 'Philosophy',
+    href: 'https://medium.com/fossible/how-open-source-teaches-you-to-write-code-for-people-not-just-machines-f43000c4bf34',
+  },
+  {
+    title: "Neha Narkhede's Journey: Open Source Innovation to Global Enterprise",
+    description: 'What if one of the most powerful tools used by Netflix, Uber and Spotify was co-created by a woman who started as an open-source contributor?',
+    author: 'Anish Dabhane',
+    date: 'Jun 20',
+    readMin: 5,
+    section: 'Hall of Fame',
+    href: 'https://medium.com/fossible/neha-narkhedes-journey-open-source-innovation-to-global-enterprise-f7f07a85c9cb',
+  },
+  {
+    title: 'Open Source Hygiene 101',
+    description: 'Keeping Your Repo Fresh, Secure, and Contribution-Friendly.',
+    author: 'Anish Dabhane',
+    date: 'Jul 4',
+    readMin: 4,
+    section: 'General',
+    href: 'https://medium.com/fossible/open-source-hygiene-101-9322499425f7',
+  },
+];
 
-  const CardContent = () => (
-    <div className={`
-      bg-white dark:bg-gray-200 border-4 ${colorClasses[color]} p-6 
-      hover:scale-105 transition-all duration-200 cursor-pointer
-      group relative overflow-hidden
-      flex flex-col h-full
-    `}>
-      {/* Decorative Corner */}
-      <div className={`absolute top-0 left-0 right-0 h-1 ${accentColorClasses[color]}`}></div>
-      <div className={`absolute top-0 right-0 w-6 h-6 ${accentColorClasses[color]} opacity-20`}></div>
-      
-      <h3 className="font-mono text-xl font-bold text-black mb-2 sm:mb-3 leading-tight">{title}</h3>
-      <p className="text-gray-600 font-mono text-sm mb-3 sm:mb-4 leading-relaxed line-clamp-2">{description}</p>
-      
-      <div className="flex-grow"></div>
 
-      <div className="space-y-2 pt-2 border-t border-gray-200">
-        <div className="flex items-center space-x-1.5">
-          <div className={`w-3 h-3 ${accentColorClasses[color]} rounded-full flex-shrink-0`}></div>
-          <span className="text-gray-700 font-mono text-sm font-medium truncate">{author}</span>
+function PostCard({ post, idx }: { post: BlogPost; idx: number }) {
+  const s = SECTION_STYLES[post.section];
+  return (
+    <Link
+      href={post.href}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="group bg-white dark:bg-gray-800 pixelated-border flex flex-col transition-transform duration-200 hover:-translate-x-1 hover:-translate-y-1"
+    >
+      <div className={`relative aspect-video overflow-hidden border-b-4 border-black ${s.chip}`}>
+        {/* Grid texture */}
+        <div className="absolute inset-0 opacity-20 grid-bg" />
+
+        {/* Corner pixels */}
+        <div className="absolute top-3 left-3 w-3 h-3 bg-black" />
+        <div className="absolute top-3 right-3 w-3 h-3 bg-black" />
+        <div className="absolute bottom-3 left-3 w-3 h-3 bg-black" />
+        <div className="absolute bottom-3 right-3 w-3 h-3 bg-black" />
+
+        {/* Title — the entire thumbnail */}
+        <div className="absolute inset-0 flex items-center justify-center px-6">
+          <h3 className={`font-mono font-bold ${s.text} text-xl sm:text-2xl leading-tight text-center group-hover:underline decoration-white decoration-4 underline-offset-4`}>
+            {post.title}
+          </h3>
         </div>
-        
-        <div className="flex items-center justify-between text-gray-500 font-mono" style={{ fontSize: '12px' }}>
-          <div className="flex items-center space-x-1">
-            <Calendar size={12} />
-            <span>{date}</span>
+
+        {/* Category chip */}
+        <div className={`absolute top-3 left-3 bg-black text-white font-mono text-[10px] font-bold tracking-widest px-2 py-1 pixelated-border`}>
+          {s.label}
+        </div>
+
+        {/* Read time */}
+        <div className={`absolute bottom-3 right-3 bg-black text-white font-mono text-xs font-bold px-2 py-1`}>
+          {post.readMin} MIN
+        </div>
+      </div>
+
+      <div className="p-4 flex flex-col gap-3">
+        <div className="flex items-center justify-between gap-3">
+        <div className="font-mono text-xs text-gray-600 dark:text-gray-300 flex items-center gap-2 truncate">
+          <span className="inline-block w-2 h-2 bg-black dark:bg-white shrink-0" />
+          <span className="truncate">{post.author}</span>
+        </div>
+        <div className="flex items-center gap-3 shrink-0">
+          <span className="font-mono text-[11px] tracking-widest text-gray-500 dark:text-gray-400">
+            {post.date.toUpperCase()}
+          </span>
+          <span className="font-mono text-xs font-bold text-black dark:text-white group-hover:text-yellow-600">
+            READ →
+          </span>
+        </div>
+        </div>
+      </div>
+    </Link>
+  );
+}
+
+const Blogs = () => {
+  return (
+    <section id="blogs" className="bg-white dark:bg-gray-900 border-t-4 border-black dark:border-gray-500 transition-colors duration-500">
+
+      {/* Header */}
+      <div className="overflow-hidden">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16 text-center">
+          <h2 className="font-mono font-bold text-black dark:text-white leading-[0.95] tracking-tight text-4xl sm:text-5xl lg:text-6xl xl:text-7xl mb-4">
+            FEATURED
+            <span className="block mt-3">
+              <span className="inline-block bg-blue-500 text-white px-3 py-1 pixelated-border">
+                BLOGS
+              </span>
+            </span>
+          </h2>
+          <p className="font-mono text-base sm:text-lg text-gray-700 dark:text-gray-200 max-w-xl mx-auto leading-relaxed mt-6">
+            Insightful articles and tutorials from our community writers, published under{' '}
+            <a href="https://medium.com/fossible" target="_blank" rel="noopener noreferrer"
+              className="underline decoration-yellow-500 decoration-4 underline-offset-4 font-bold">
+              FOSSible
+            </a>.
+          </p>
+        </div>
+      </div>
+
+      {/* Cards */}
+      <div className="bg-gray-50 dark:bg-gray-900 py-12 lg:py-16 transition-colors duration-500">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 mb-10">
+            {FEATURED_POSTS.map((post, i) => (
+              <PostCard key={post.href} post={post} idx={i} />
+            ))}
           </div>
-          <div className="flex items-center space-x-1">
-            <Clock size={12} />
-            <span>{readTime}</span>
+
+          <div className="flex justify-center">
+            <Link
+              href="/blogs"
+              className="bg-black hover:bg-gray-800 text-white font-mono font-bold px-8 py-4 text-sm tracking-widest pixelated-border hover:scale-105 transition-all duration-200"
+            >
+              VIEW ALL BLOGS →
+            </Link>
           </div>
         </div>
       </div>
-      
-      {/* Hover Effect */}
-      <div className="absolute inset-0 hover:bg-gray-200 bg-opacity-5 opacity-0 group-hover:opacity-10 transition-opacity duration-200"></div>
-    </div>
+    </section>
   );
-
-  if (href) {
-    return (
-      <Link href={href} target="_blank" rel="noopener noreferrer">
-        <CardContent />
-      </Link>
-    );
-  }
-
-  return <CardContent />;
 };
 
 export default Blogs;
