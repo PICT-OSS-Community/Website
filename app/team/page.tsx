@@ -39,27 +39,27 @@ interface Member {
 /* ── Team roster — update to add / remove members ────────────────────────── */
 const TEAM_MEMBERS: Member[] = [
   /* Co-Founders */
-  { name: 'Anish Dabhane',    role: 'Co-Founder & Lead',      category: 'Co-Founder',    photo: '/Anish_1.jpeg',   photo2: '/Anish_2.jpeg'   },
-  { name: 'Kshitij Aucharmal',role: 'Co-Founder',             category: 'Co-Founder',    photo: '/Kshitij_1.jpeg', photo2: '/Kshitij_2.jpeg' },
+  { name: 'Anish Dabhane',    role: 'Co-Founder & Lead',      category: 'Co-Founder',    photo: '/Anish_1.jpeg',   photo2: '/Anish_2.jpeg',   links: { github: 'https://github.com/Spartan-71', linkedin: 'https://www.linkedin.com/in/anish-dabhane-0669781b5' } },
+  { name: 'Kshitij Aucharmal',role: 'Co-Founder',             category: 'Co-Founder',    photo: '/Kshitij_1.jpeg', photo2: '/Kshitij_2.jpeg', links: { github: 'https://github.com/kshitijaucharmal', linkedin: 'https://linkedin.com/in/kshitijaucharmal21' } },
 
   /* Founding Team */
-  { name: 'Anshul Kalbande',  role: 'Website Lead',           category: 'Founding Team', photo: '/Anshul_1.jpeg',  photo2: '/Anshul_2.jpeg'  },
-  { name: 'Aryan Kadole',     role: 'Technical Lead',         category: 'Founding Team', photo: '/Aryan_1.jpeg',   photo2: '/Aryan_2.jpeg'   },
-  { name: 'Chirag Dave',      role: 'Website Lead',           category: 'Founding Team', photo: '/Chirag.png'                                },
-  { name: 'Anurag Mandke',    role: 'Founding Member',        category: 'Founding Team', photo: '/Anurag_1.jpeg',  photo2: '/Anurag_2.jpeg'  },
-  { name: 'Sujal Bhor',       role: 'Technical Lead',         category: 'Founding Team', photo: '/Sujal.jpeg'                                },
-  { name: 'Shantanu Wable',   role: 'Advisor',                category: 'Founding Team', photo: '/Shantanu.png'                              },
+  { name: 'Anshul Kalbande',  role: 'Website Lead',           category: 'Founding Team', photo: '/Anshul_1.jpeg',  photo2: '/Anshul_2.jpeg',  links: { github: 'https://github.com/anshulLuhsna', linkedin: 'https://www.linkedin.com/in/anshul-kalbande-a44b36219/' } },
+  { name: 'Aryan Kadole',     role: 'Technical Lead',         category: 'Founding Team', photo: '/Aryan_1.jpeg',   photo2: '/Aryan_2.jpeg',   links: { github: 'https://github.com/ak1932', linkedin: 'https://www.linkedin.com/in/aryan-kadole-855bb5204/' } },
+  { name: 'Chirag Dave',      role: 'Website Lead',           category: 'Founding Team', photo: '/Chirag.png',    links: { github: 'https://github.com/definitelynotchirag', linkedin: 'https://www.linkedin.com/in/chirag-dave-751a91249' } },
+  { name: 'Anurag Mandke',    role: 'Founding Member',        category: 'Founding Team', photo: '/Anurag_1.jpeg',  photo2: '/Anurag_2.jpeg',  links: { github: 'https://github.com/AnuragMandke', linkedin: 'https://www.linkedin.com/in/anuragmandke' } },
+  { name: 'Sujal Bhor',       role: 'Technical Lead',         category: 'Founding Team', photo: '/Sujal.jpeg',    links: { github: 'https://github.com/bhorsujal', linkedin: 'https://linkedin.com/in/sujal-bhor' } },
+  { name: 'Shantanu Wable',   role: 'Advisor',                category: 'Founding Team', photo: '/Shantanu.png',  links: { github: 'https://github.com/shxntanu', linkedin: 'https://www.linkedin.com/in/shxntanu/' } },
 
   /* Community Leads */
-  { name: 'Sarang Rao',       role: 'Community Lead',         category: 'Community Lead', photo: '/Sarang.jpeg'    },
-  { name: 'Vedant Jadhav',    role: 'Community Lead',         category: 'Community Lead', photo: '/Vedant.jpeg'    },
+  { name: 'Sarang Rao',       role: 'Community Lead',         category: 'Community Lead', photo: '/Sarang.jpeg',   links: { github: 'https://github.com/SarangRao20', linkedin: 'https://www.linkedin.com/in/sarang-rao-262bbb324/' } },
+  { name: 'Vedant Jadhav',    role: 'Community Lead',         category: 'Community Lead', photo: '/Vedant.jpeg',   links: { github: 'https://github.com/yokelman', linkedin: 'https://www.linkedin.com/in/vedant-jadhav-b400a8352/' } },
 
   /* Design Team */
-  { name: 'Trupti Mahajan',   role: 'Design Head',            category: 'Design Team',   photo: '/Trupti.jpeg'    },
-  { name: 'Salina Tamboli',   role: 'Design Head',            category: 'Design Team',   photo: '/Salina.png'     },
+  { name: 'Trupti Mahajan',   role: 'Design Head',            category: 'Design Team',   photo: '/Trupti.jpeg',   links: { github: 'https://github.com/Mahajan-Trupti', linkedin: 'https://www.linkedin.com/in/truptimahajan/' } },
+  { name: 'Salina Tamboli',   role: 'Design Head',            category: 'Design Team',   photo: '/Salina.png',    links: { github: 'https://github.com/Salina00', linkedin: 'https://www.linkedin.com/in/salina-tamboli' } },
 
   /* Social Media */
-  { name: 'Aswathi Pillai',   role: 'Social Media Head',      category: 'Social Media',  photo: '/Aswathi.jpeg'   },
+  { name: 'Aswathi Pillai',   role: 'Social Media Head',      category: 'Social Media',  photo: '/Aswathi.jpeg',  links: { linkedin: 'https://www.linkedin.com/in/aswathi-pillai-736131215/' } },
 ];
 /* ─────────────────────────────────────────────────────────────────────────── */
 
@@ -83,23 +83,24 @@ const TwitterIcon = () => (
   </svg>
 );
 
-function SocialLink({ href, icon }: { href?: string; icon: React.ReactNode }) {
-  if (!href || href === '#') return null;
+function SocialLink({ href, icon, brand }: { href?: string; icon: React.ReactNode; brand: string }) {
+  const base = `${brand} text-white p-2 pixelated-border`;
+  if (href && href !== '#') {
+    return (
+      <a href={href} target="_blank" rel="noopener noreferrer" className={`${base} hover:scale-110 transition-transform`}>
+        {icon}
+      </a>
+    );
+  }
   return (
-    <a
-      href={href}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="bg-black text-white p-2 pixelated-border hover:scale-110 transition-transform"
-    >
+    <span className={base}>
       {icon}
-    </a>
+    </span>
   );
 }
 
 function MemberCard({ member }: { member: Member }) {
   const s = CATEGORY_STYLES[member.category];
-  const hasLinks = !!(member.links?.github || member.links?.linkedin || member.links?.twitter);
 
   return (
     <article className="group bg-white dark:bg-gray-800 pixelated-border flex flex-col transition-transform duration-200 hover:-translate-x-1 hover:-translate-y-1">
@@ -130,28 +131,20 @@ function MemberCard({ member }: { member: Member }) {
           </div>
         )}
 
-        {/* Category chip overlay */}
-        <div className={`absolute top-3 left-3 ${s.chip} ${s.text} font-mono text-[10px] font-bold tracking-widest px-2 py-1 pixelated-border`}>
-          {s.label}
-        </div>
       </div>
 
       {/* Body */}
-      <div className="p-5 flex-1 flex flex-col">
+      <div className="p-5 flex flex-col">
         <h3 className="font-mono font-bold text-black dark:text-white text-lg leading-tight mb-1">
           {member.name}
         </h3>
-        <p className="font-mono text-sm text-gray-600 dark:text-gray-300 mb-4">
+        <p className="font-mono text-sm text-gray-600 dark:text-gray-300 mb-3">
           {member.role}
         </p>
-
-        {hasLinks && (
-          <div className="mt-auto flex justify-end gap-1.5 pt-3 border-t-4 border-dashed border-black/10 dark:border-white/10">
-            <SocialLink href={member.links?.github}   icon={<GithubIcon />} />
-            <SocialLink href={member.links?.linkedin} icon={<LinkedinIcon />} />
-            <SocialLink href={member.links?.twitter}  icon={<TwitterIcon />} />
-          </div>
-        )}
+        <div className="flex gap-1.5">
+          <SocialLink href={member.links?.github}   icon={<GithubIcon />}   brand="bg-[#24292e]" />
+          <SocialLink href={member.links?.linkedin} icon={<LinkedinIcon />} brand="bg-[#0077B5]" />
+        </div>
       </div>
     </article>
   );

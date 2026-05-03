@@ -31,10 +31,11 @@ interface Achiever {
 /* ── Add or update entries here ───────────────────────────────────────────── */
 const ACHIEVERS: Achiever[] = [
   { name: 'Soham Metha',     program: 'LFX',     org: 'The Linux Foundation',            year: 2025, project: 'LFX Mentorship 2025',        role: 'Mentee'              },
-  { name: 'Anish Dabhane',   program: 'LFX',     org: 'The Linux Foundation',            year: 2025, project: 'LFX Mentorship 2025',        role: 'Mentee'              },
-  { name: 'Sujal Bhor',      program: 'GSoC',    org: 'The Linux Foundation',            year: 2025, project: 'Google Summer of Code 2025', role: 'Contributor'         },
-  { name: 'Soham Mehta',     program: 'GSSoC',   org: 'GirlScript Summer of Code 2025',  year: 2025, project: 'Virex – AI-powered Cybersecurity Tool', role: 'Project Admin'      },
-  { name: 'Anish Dabhane',   program: 'GSSoC',   org: 'GirlScript Summer of Code 2025',  year: 2025, project: 'GSSoC 2025',                            role: 'Campus Ambassador'  },
+  { name: 'Anish Dabhane',   program: 'LFX',     org: 'The Linux Foundation',            year: 2025, project: 'LFX Mentorship 2025',        role: 'Mentee',             links: { github: 'https://github.com/Spartan-71', linkedin: 'https://www.linkedin.com/in/anish-dabhane-0669781b5' } },
+  { name: 'Sujal Bhor',      program: 'GSoC',    org: 'The Linux Foundation',            year: 2025, project: 'Google Summer of Code 2025', role: 'Contributor',        links: { github: 'https://github.com/bhorsujal', linkedin: 'https://linkedin.com/in/sujal-bhor' } },
+  { name: 'Soham Mehta',     program: 'GSSoC',   org: 'The GirlScript Foundation',  year: 2025, project: 'GSSoC 2025',                            role: 'Project Admin'      },
+  { name: 'Anish Dabhane',   program: 'GSSoC',   org: 'The GirlScript Foundation',  year: 2025, project: 'GSSoC 2025',                            role: 'Campus Ambassador',  links: { github: 'https://github.com/Spartan-71', linkedin: 'https://www.linkedin.com/in/anish-dabhane-0669781b5' } },
+  { name: 'Farkhanda Dalal', program: 'GSSoC',   org: 'The GirlScript Foundation',  year: 2025, project: 'GSSoC 2025',                            role: 'Rank 71',           links: { github: 'https://github.com/Farkhanda-Dalal', linkedin: 'https://www.linkedin.com/in/farkhanda-dalal/' } },
   { name: 'Renuka Bhavsar',  program: 'Apertre', org: 'Resourcio Community',             year: 2026, project: 'Apertre 3.0',               role: 'Top 50 Contributors'   },
   { name: 'PICT OSS Community', program: 'Apertre', org: 'Resourcio Community',          year: 2026, project: 'Apertre 3.0',               role: 'Top 3 Community Partner' },
 ];
@@ -104,18 +105,16 @@ const GlobeIcon = () => (
   </svg>
 );
 
-function SocialLink({ href, icon }: { href?: string; icon: React.ReactNode }) {
-  if (!href || href === '#') return null;
-  return (
-    <a
-      href={href}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="bg-black text-white p-2 pixelated-border hover:scale-110 transition-transform"
-    >
-      {icon}
-    </a>
-  );
+function SocialLink({ href, icon, brand }: { href?: string; icon: React.ReactNode; brand: string }) {
+  const base = `${brand} text-white p-2 pixelated-border`;
+  if (href && href !== '#') {
+    return (
+      <a href={href} target="_blank" rel="noopener noreferrer" className={`${base} hover:scale-110 transition-transform`}>
+        {icon}
+      </a>
+    );
+  }
+  return <span className={base}>{icon}</span>;
 }
 
 function AchieverCard({ achiever }: { achiever: Achiever }) {
@@ -149,10 +148,8 @@ function AchieverCard({ achiever }: { achiever: Achiever }) {
             {achiever.role ?? 'Contributor'}
           </span>
           <div className="flex gap-1.5">
-            <SocialLink href={achiever.links?.github}   icon={<GithubIcon />} />
-            <SocialLink href={achiever.links?.linkedin} icon={<LinkedinIcon />} />
-            <SocialLink href={achiever.links?.twitter}  icon={<TwitterIcon />} />
-            <SocialLink href={achiever.links?.site}     icon={<GlobeIcon />} />
+            <SocialLink href={achiever.links?.github}   icon={<GithubIcon />}   brand="bg-[#24292e]" />
+            <SocialLink href={achiever.links?.linkedin} icon={<LinkedinIcon />} brand="bg-[#0077B5]" />
           </div>
         </div>
       </div>
