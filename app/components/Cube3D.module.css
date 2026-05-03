@@ -94,21 +94,22 @@
 /* Tooltip */
 .tooltip {
   position: absolute;
-  top: -170px;
+  top: -50px;
   left: 50%;
   transform: translateX(-50%);
-  background: rgba(0, 0, 0, 0.9);
-  color: #fff;
-  padding: 8px 12px;
-  border-radius: 6px;
+  background: #ffffff;
+  color: #000000;
+  padding: 6px 14px;
   font-size: 12px;
+  font-weight: 700;
+  font-family: monospace;
   white-space: nowrap;
   pointer-events: none;
-  transition: opacity 0.3s ease;
+  transition: opacity 0.2s ease;
   z-index: 1000;
-  min-width: 120px;
   text-align: center;
-  margin-top: 16px;
+  border: 3px solid #000000;
+  box-shadow: 3px 3px 0px #000000;
 }
 
 /* Face Images */

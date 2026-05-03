@@ -40,6 +40,19 @@ html {
 
 /* Custom Pixel Art Styles */
 @layer components {
+  .grid-bg {
+    background-image:
+      linear-gradient(to right, rgba(0,0,0,.07) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(0,0,0,.07) 1px, transparent 1px);
+    background-size: 24px 24px;
+  }
+
+  .dark .grid-bg {
+    background-image:
+      linear-gradient(to right, rgba(255,255,255,.08) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(255,255,255,.08) 1px, transparent 1px);
+  }
+
   .pixelated-border {
     border: 4px solid currentColor;
     border-image: url("data:image/svg+xml;charset=utf-8,%3csvg width='100' height='100' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='m25 0h50v25h25v50h-25v25h-50v-25h-25v-50h25z' fill='%23000'/%3e%3c/svg%3e") 25;
@@ -203,6 +216,18 @@ html {
   100% {
     background-position: 1000px 0;
   }
+}
+
+/* Active nav pixel underline */
+.nav-active::after {
+  content: "";
+  position: absolute;
+  left: 8px;
+  right: 8px;
+  bottom: -8px;
+  height: 4px;
+  background: currentColor;
+  box-shadow: 4px 0 0 currentColor, -4px 0 0 currentColor;
 }
 
 /* Smooth scrolling */
