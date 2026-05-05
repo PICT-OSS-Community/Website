@@ -3,12 +3,13 @@ import React, { useState, useEffect, useCallback } from 'react';
 import { usePathname } from 'next/navigation';
 import { Menu, X } from 'lucide-react';
 
-type NavId = 'home' | 'contributions' | 'blogs' | 'achievements' | 'events' | 'team';
+type NavId = 'home' | 'contributions' | 'blogs' | 'projects' | 'achievements' | 'events' | 'team';
 
 const NAV_ITEMS: { id: NavId; label: string; color: 'red' | 'blue' | 'yellow' | 'green' }[] = [
   { id: 'home',          label: 'HOME',          color: 'red' },
   { id: 'blogs',         label: 'BLOGS',         color: 'yellow' },
-  { id: 'achievements',  label: 'ACHIEVEMENTS',  color: 'green' },
+  { id: 'projects',      label: 'PROJECTS',      color: 'green' },
+  { id: 'achievements',  label: 'ACHIEVEMENTS',  color: 'red' },
   { id: 'contributions', label: 'CONTRIBUTIONS', color: 'blue' },
   { id: 'events',        label: 'EVENTS',        color: 'red' },
   { id: 'team',          label: 'OUR TEAM',      color: 'blue' },
@@ -24,6 +25,7 @@ const COLOR_CLASSES = {
 const SUB_PAGES: Partial<Record<string, NavId>> = {
   '/events':        'events',
   '/blogs':         'blogs',
+  '/projects':      'projects',
   '/achievements':  'achievements',
   '/team':          'team',
   '/contributions': 'contributions',
@@ -40,7 +42,7 @@ const Header = () => {
     if (subPage) return;
 
     const sections = NAV_ITEMS
-      .filter(({ id }) => id !== 'events' && id !== 'blogs' && id !== 'achievements' && id !== 'team' && id !== 'contributions')
+      .filter(({ id }) => id !== 'events' && id !== 'blogs' && id !== 'projects' && id !== 'achievements' && id !== 'team' && id !== 'contributions')
       .map(({ id }) => document.getElementById(id))
       .filter(Boolean) as HTMLElement[];
 
@@ -67,6 +69,7 @@ const Header = () => {
   function hrefFor(id: NavId) {
     if (id === 'events')        return '/events';
     if (id === 'blogs')         return '/blogs';
+    if (id === 'projects')      return '/projects';
     if (id === 'achievements')  return '/achievements';
     if (id === 'team')          return '/team';
     if (id === 'contributions') return '/contributions';

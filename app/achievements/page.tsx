@@ -251,7 +251,7 @@ export default function AchievementsPage() {
           <h1 className="font-mono font-bold text-black dark:text-white leading-[0.95] tracking-tight text-5xl sm:text-6xl lg:text-7xl xl:text-8xl mb-6">
             ACHIEVEMENTS
             <span className="block mt-3">
-              <span className="inline-block bg-green-500 text-white px-3 py-1 pixelated-border">
+              <span className="inline-block bg-red-500 text-white px-3 py-1 pixelated-border">
                 UNLOCKED
               </span>
             </span>
