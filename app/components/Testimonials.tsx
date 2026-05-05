@@ -124,10 +124,10 @@ const doubledTestimonials = [...testimonials, ...testimonials];
 
 const Testimonials = () => {
   return (
-    <section className="bg-white dark:bg-gray-900 py-16 lg:py-24 border-t-4 border-black dark:border-gray-700 overflow-hidden relative transition-colors duration-500">
+    <section className="bg-white dark:bg-gray-900 py-16 lg:py-24 border-t-4 border-black dark:border-gray-700 overflow-hidden relative transition-colors duration-500 grid-bg">
       <div className="max-w-full mx-auto relative">
         <div className="text-center mb-16 px-4">
-          <h2 className="font-mono text-4xl sm:text-6xl font-bold text-black mb-8 dark:text-white">
+          <h2 className="font-mono text-5xl sm:text-6xl font-bold text-black mb-8 dark:text-white">
             COMMUNITY
             <br />
             <span className="bg-purple-500 text-white px-4 py-2 pixelated-border inline-block">
@@ -135,9 +135,9 @@ const Testimonials = () => {
             </span>
           </h2>
 
-          <p className="text-xl font-mono text-gray-600 max-w-3xl mx-auto dark:text-gray-300 whitespace-nowrap">
+          <p className="text-base sm:text-xl font-mono text-gray-600 max-w-3xl mx-auto dark:text-gray-300">
 
-            Real stories from students and alumni about their growth with us.
+          Stories from our members sharing their journey, growth, and experiences in open source.
           </p>
         </div>
 

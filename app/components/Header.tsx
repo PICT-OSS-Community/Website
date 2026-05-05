@@ -1,45 +1,116 @@
 "use client"
-import React, { useState } from 'react';
-import Link from 'next/link';
-import { Menu, X, Github, Twitter, Linkedin, Instagram, Youtube } from 'lucide-react';
+import React, { useState, useEffect, useCallback } from 'react';
+import { usePathname } from 'next/navigation';
+import { Menu, X } from 'lucide-react';
+
+type NavId = 'home' | 'contributions' | 'blogs' | 'projects' | 'achievements' | 'events' | 'team';
+
+const NAV_ITEMS: { id: NavId; label: string; color: 'red' | 'blue' | 'yellow' | 'green' }[] = [
+  { id: 'home',          label: 'HOME',          color: 'red' },
+  { id: 'blogs',         label: 'BLOGS',         color: 'yellow' },
+  { id: 'projects',      label: 'PROJECTS',      color: 'green' },
+  { id: 'achievements',  label: 'ACHIEVEMENTS',  color: 'red' },
+  { id: 'contributions', label: 'CONTRIBUTIONS', color: 'blue' },
+  { id: 'events',        label: 'EVENTS',        color: 'red' },
+  { id: 'team',          label: 'OUR TEAM',      color: 'blue' },
+];
+
+const COLOR_CLASSES = {
+  red:    { base: 'bg-red-500',    hover: 'hover:bg-red-600',    active: 'bg-red-700 hover:bg-red-700' },
+  blue:   { base: 'bg-blue-500',   hover: 'hover:bg-blue-600',   active: 'bg-blue-700 hover:bg-blue-700' },
+  yellow: { base: 'bg-yellow-500', hover: 'hover:bg-yellow-600', active: 'bg-yellow-600 hover:bg-yellow-600' },
+  green:  { base: 'bg-green-500',  hover: 'hover:bg-green-600',  active: 'bg-green-700 hover:bg-green-700' },
+};
+
+const SUB_PAGES: Partial<Record<string, NavId>> = {
+  '/events':        'events',
+  '/blogs':         'blogs',
+  '/projects':      'projects',
+  '/achievements':  'achievements',
+  '/team':          'team',
+  '/contributions': 'contributions',
+};
 
 const Header = () => {
+  const pathname = usePathname();
+  const subPage = SUB_PAGES[pathname] ?? null;
+
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [activeNav, setActiveNav] = useState<NavId>(subPage ?? 'home');
+
+  useEffect(() => {
+    if (subPage) return;
+
+    const sections = NAV_ITEMS
+      .filter(({ id }) => id !== 'events' && id !== 'blogs' && id !== 'projects' && id !== 'achievements' && id !== 'team' && id !== 'contributions')
+      .map(({ id }) => document.getElementById(id))
+      .filter(Boolean) as HTMLElement[];
+
+    if (sections.length === 0) return;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) setActiveNav(entry.target.id as NavId);
+        });
+      },
+      { rootMargin: '-40% 0px -55% 0px', threshold: 0 }
+    );
+
+    sections.forEach((s) => observer.observe(s));
+    return () => observer.disconnect();
+  }, [subPage]);
+
+  const handleNavClick = useCallback((id: NavId) => {
+    setActiveNav(id);
+    setIsMenuOpen(false);
+  }, []);
+
+  function hrefFor(id: NavId) {
+    if (id === 'events')        return '/events';
+    if (id === 'blogs')         return '/blogs';
+    if (id === 'projects')      return '/projects';
+    if (id === 'achievements')  return '/achievements';
+    if (id === 'team')          return '/team';
+    if (id === 'contributions') return '/contributions';
+    return subPage ? `/#${id}` : `#${id}`;
+  }
 
   return (
-    <header className="bg-white dark:bg-gray-800 border-b-4 border-black dark:border-gray-500 relative z-50  transition-colors duration-500">
+    <header className="bg-white dark:bg-gray-800 border-b-4 border-black dark:border-gray-500 relative z-50 transition-colors duration-500">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center py-4">
+        <div className="flex items-center justify-between py-4 gap-4">
+
           {/* Logo */}
-          <div className="flex items-center space-x-2">
-            <div className="bg-black text-white px-3 py-2 font-mono text-xl font-bold pixelated-border">
-              OSS
-            </div>
-            <span className="font-mono text-xl font-bold text-black dark:text-white">COMMUNITY</span>
-          </div>
+          <a href={subPage ? '/' : '#home'} className="shrink-0 hidden sm:flex items-center gap-2" onClick={() => handleNavClick('home')}>
+            <span className="font-mono text-2xl font-bold text-black dark:text-white">PICT</span>
+            <span className="font-mono text-2xl font-bold bg-black text-white dark:bg-white dark:text-black px-2 py-0.5 pixelated-border">OSS</span>
+            <span className="font-mono text-2xl font-bold text-black dark:text-white">COMMUNITY</span>
+          </a>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-1">
-            {/* <NavButton href="#home" color="red">HOME</NavButton>
-            <NavButton href="#projects" color="blue">PROJECTS</NavButton>
-            <NavButton href="#sessions" color="yellow">SESSIONS</NavButton>
-            <NavButton href="#fossible" color="red">FOSSible</NavButton>
-            <NavButton href="#about" color="green">ABOUT</NavButton> */}
+          <nav className="hidden lg:flex items-center gap-2 ml-auto">
+            {NAV_ITEMS.map(({ id, label, color }) => {
+              const isActive = subPage ? id === subPage : activeNav === id;
+              const c = COLOR_CLASSES[color];
+              return (
+                <a
+                  key={id}
+                  href={hrefFor(id)}
+                  onClick={() => handleNavClick(id)}
+                  className={`relative font-mono font-bold px-3 py-2 text-sm text-white pixelated-border hover:scale-105 transition-all duration-200 ${isActive ? `${c.active} nav-active` : `${c.base} ${c.hover}`}`}
+                >
+                  {label}
+                </a>
+              );
+            })}
           </nav>
-
-          {/* Social Links */}
-          <div className="hidden md:flex items-center space-x-2">
-            <SocialIcon href="https://github.com/PICT-OSS-Community" icon={Github} color="blue" />
-            <SocialIcon href="https://x.com/pict_oss" icon={Twitter} color="yellow" />
-            <SocialIcon href="https://www.linkedin.com/company/oss-community/posts/?feedView=all" icon={Linkedin} color="red" />
-            <SocialIcon href="https://www.instagram.com/oss__community" icon={Instagram} color="green" />
-            <SocialIcon href="https://www.youtube.com/@pict-oss-community" icon={Youtube} color="red" />
-          </div>
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden p-2 pixelated-border bg-red-500 text-white hover:bg-red-600 transition-colors"
+            className="lg:hidden ml-auto p-2 pixelated-border bg-red-500 text-white hover:bg-red-600 transition-colors"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
+            aria-label="Toggle menu"
           >
             {isMenuOpen ? <X size={20} /> : <Menu size={20} />}
           </button>
@@ -47,80 +118,27 @@ const Header = () => {
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="md:hidden py-4 border-t-4 border-black">
-            <div className="flex flex-col space-y-2">
-              {/* <NavButton href="#home" color="red" mobile>HOME</NavButton>
-              <NavButton href="#projects" color="blue" mobile>PROJECTS</NavButton>
-              <NavButton href="#sessions" color="yellow" mobile>SESSIONS</NavButton>
-              <NavButton href="#fossible" color="red" mobile>FOSSible</NavButton>
-              <NavButton href="#about" color="green" mobile>ABOUT</NavButton> */}
-            </div>
-            <div className="flex justify-center space-x-2 mt-4">
-              <SocialIcon href="https://github.com/PICT-OSS-Community" icon={Github} color="blue" />
-              <SocialIcon href="https://x.com/pict_oss" icon={Twitter} color="yellow" />
-              <SocialIcon href="https://www.linkedin.com/company/oss-community/posts/?feedView=all" icon={Linkedin} color="red" />
-              <SocialIcon href="https://www.instagram.com/oss__community" icon={Instagram} color="green" />
-              <SocialIcon href="https://youtube.com/@pict-oss-community?si=ECIQRMF2Qn43Kprv" icon={Youtube} color="red" />
+          <div className="lg:hidden py-4 border-t-4 border-black dark:border-gray-500">
+            <div className="flex flex-col gap-2">
+              {NAV_ITEMS.map(({ id, label, color }) => {
+                const isActive = subPage ? id === subPage : activeNav === id;
+                const c = COLOR_CLASSES[color];
+                return (
+                  <a
+                    key={id}
+                    href={hrefFor(id)}
+                    onClick={() => handleNavClick(id)}
+                    className={`font-mono font-bold px-3 py-2 text-sm text-white pixelated-border block text-center transition-all duration-200 ${isActive ? c.active : `${c.base} ${c.hover}`}`}
+                  >
+                    {label}
+                  </a>
+                );
+              })}
             </div>
           </div>
         )}
       </div>
     </header>
-  );
-};
-
-const NavButton = ({ href, children, color, mobile = false }: {
-  href: string;
-  children: React.ReactNode;
-  color: 'red' | 'blue' | 'green' | 'yellow';
-  mobile?: boolean;
-}) => {
-  const colorClasses = {
-    red: 'bg-red-500 hover:bg-red-600 border-red-700',
-    blue: 'bg-blue-500 hover:bg-blue-600 border-blue-700',
-    green: 'bg-green-500 hover:bg-green-600 border-green-700',
-    yellow: 'bg-yellow-500 hover:bg-yellow-600 border-yellow-700'
-  };
-
-  return (
-    <a
-      href={href}
-      className={`
-        ${colorClasses[color]} 
-        text-white font-mono font-bold px-4 py-2 
-        pixelated-border hover:scale-105 transition-all duration-200
-        ${mobile ? 'block text-center' : 'inline-block'}
-      `}
-    >
-      {children}
-    </a>
-  );
-};
-
-const SocialIcon = ({ href, icon: Icon, color }: {
-  href: string;
-  icon: React.ComponentType<any>;
-  color: 'red' | 'blue' | 'green' | 'yellow';
-}) => {
-  const colorClasses = {
-    red: 'bg-red-500 hover:bg-red-600',
-    blue: 'bg-blue-500 hover:bg-blue-600',
-    green: 'bg-green-500 hover:bg-green-600',
-    yellow: 'bg-yellow-500 hover:bg-yellow-600'
-  };
-
-  return (
-    <Link
-      href={href}
-      target="_blank"
-      rel="noopener noreferrer"
-      className={`
-        ${colorClasses[color]} 
-        text-white p-2 pixelated-border hover:scale-110 transition-all duration-200
-      `}
-    >
-      <Icon size={16} />
-    </Link>
   );
 };
 

@@ -17,10 +17,10 @@ const partners = [
     url: "https://gssoc.girlscript.tech/"
   },
   {
-    name: "Hacktoberfest 2025",
-    subtext: "DigitalOcean",
-    logo: "/logos/hacktoberfest.jpg",
-    url: "https://hacktoberfest.com/"
+    name: "FOSS HACK 2026",
+    subtext: "FOSS United",
+    logo: "/logos/FOSS_Hack_2026.png",
+    url: "https://fossunited.org/hack/fosshack26"
   },
   {
     name: "Apertre 3.0",
@@ -41,18 +41,18 @@ const doubledPartners = [...partners, ...partners, ...partners];
 
 const Partnerships = () => {
   return (
-    <section className="bg-white dark:bg-gray-900 py-16 lg:py-24 overflow-hidden relative transition-colors duration-500">
-      <div className="max-w-7xl mx-auto mb-16 px-4">
+    <section className="bg-white dark:bg-gray-900 py-8 lg:py-12 overflow-hidden relative transition-colors duration-500 border-t-4 border-b-4 border-black dark:border-gray-500">
+      <div className="max-w-7xl mx-auto mb-8 px-4">
         <div className="text-center">
-          <h2 className="font-mono text-4xl sm:text-6xl font-bold text-black dark:text-white mb-4">
+          <h2 className="font-mono text-5xl sm:text-6xl font-bold text-black dark:text-white mb-4">
             OUR
             <br />
-            <span className="bg-[#00D16C] text-white px-6 py-2 border-4 border-black inline-block mt-2">
+            <span className="bg-[#00D16C] text-white px-4 sm:px-6 py-2 border-4 border-black inline-block mt-2">
               PARTNERSHIPS
             </span>
           </h2>
           <p className="text-base sm:text-lg font-mono text-gray-500 dark:text-gray-400 max-w-3xl mx-auto">
-            Collaborating with global open-source programs.
+              Partnering with India's top open-source initiatives.
           </p>
         </div>
       </div>
@@ -91,7 +91,7 @@ const Partnerships = () => {
                 className="group flex flex-col items-center cursor-pointer"
               >
                 {/* Logo Area - Clean transparent look */}
-                <div className="relative w-full h-64 mb-8 flex items-center justify-center transition-all duration-300 group-hover:-translate-y-2">
+                <div className="relative w-full h-40 mb-4 flex items-center justify-center transition-all duration-300 group-hover:-translate-y-2">
                   <div className="relative w-[95%] h-[95%]">
                     <Image
                       src={partner.logo}
