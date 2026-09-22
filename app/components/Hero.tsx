@@ -59,7 +59,7 @@ const Hero = () => {
 
             <p className="text-base sm:text-lg lg:text-xl font-mono text-gray-700 dark:text-gray-100 mb-8 max-w-lg mx-auto lg:mx-0 leading-relaxed">
               A student-led open-source community of{' '}
-              <span className="bg-yellow-500 text-black px-1 font-bold">850+</span>{' '}
+              <span className="bg-yellow-500 text-black px-1 font-bold">1000+</span>{' '}
               developers, Linux enthusiasts & tech builders at Pune Institute of Computer Technology.
             </p>
 
