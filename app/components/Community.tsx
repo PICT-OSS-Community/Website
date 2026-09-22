@@ -55,7 +55,7 @@ const Community = () => {
             <StatCard icon={<BookOpen size={40} />}    number="FOSSible" label="MEDIUM PUBLICATION"   color="violet" />
             <StatCard icon={<GitBranch size={40} />}   number="Sessions" label="WORKSHOPS & TALKS"    color="orange" />
             <StatCard icon={<MessageCircle size={40} />} number="Projects" label="COLLABORATIVE BUILDS" color="teal"   />
-            <StatCard icon={<Heart size={40} />}       number="850+"     label="COMMUNITY MEMBERS"    color="rose"   />
+            <StatCard icon={<Heart size={40} />}       number="1000+"    label="COMMUNITY MEMBERS"    color="rose"   />
           </div>
         </div>
       </div>
