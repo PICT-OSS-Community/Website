@@ -39,6 +39,7 @@ const Footer = () => {
                 { label: 'Blogs',         href: '/blogs'                                       },
                 { label: 'Events',       href: '/events'                                      },
                 { label: 'Projects',     href: '/projects'                                    },
+                { label: 'Programs',     href: '/programs'                                    },
                 { label: 'Contribute',   href: 'https://github.com/PICT-OSS-Community/Website' },
                 { label: 'Achievements', href: '/achievements'                                },
               ].map(({ label, href }) => (

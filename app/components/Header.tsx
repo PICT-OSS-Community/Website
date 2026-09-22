@@ -3,13 +3,14 @@ import React, { useState, useEffect, useCallback } from 'react';
 import { usePathname } from 'next/navigation';
 import { Menu, X } from 'lucide-react';
 
-type NavId = 'home' | 'contributions' | 'blogs' | 'projects' | 'achievements' | 'events' | 'team';
+type NavId = 'home' | 'contributions' | 'blogs' | 'projects' | 'achievements' | 'programs' | 'events' | 'team';
 
 const NAV_ITEMS: { id: NavId; label: string; color: 'red' | 'blue' | 'yellow' | 'green' }[] = [
   { id: 'home',          label: 'HOME',          color: 'red' },
   { id: 'blogs',         label: 'BLOGS',         color: 'yellow' },
   { id: 'projects',      label: 'PROJECTS',      color: 'green' },
   { id: 'achievements',  label: 'ACHIEVEMENTS',  color: 'red' },
+  { id: 'programs',      label: 'PROGRAMS',      color: 'green' },
   { id: 'contributions', label: 'CONTRIBUTIONS', color: 'blue' },
   { id: 'events',        label: 'EVENTS',        color: 'red' },
   { id: 'team',          label: 'OUR TEAM',      color: 'blue' },
@@ -27,6 +28,7 @@ const SUB_PAGES: Partial<Record<string, NavId>> = {
   '/blogs':         'blogs',
   '/projects':      'projects',
   '/achievements':  'achievements',
+  '/programs':      'programs',
   '/team':          'team',
   '/contributions': 'contributions',
 };
@@ -42,7 +44,7 @@ const Header = () => {
     if (subPage) return;
 
     const sections = NAV_ITEMS
-      .filter(({ id }) => id !== 'events' && id !== 'blogs' && id !== 'projects' && id !== 'achievements' && id !== 'team' && id !== 'contributions')
+      .filter(({ id }) => id !== 'events' && id !== 'blogs' && id !== 'projects' && id !== 'achievements' && id !== 'programs' && id !== 'team' && id !== 'contributions')
       .map(({ id }) => document.getElementById(id))
       .filter(Boolean) as HTMLElement[];
 
@@ -71,6 +73,7 @@ const Header = () => {
     if (id === 'blogs')         return '/blogs';
     if (id === 'projects')      return '/projects';
     if (id === 'achievements')  return '/achievements';
+    if (id === 'programs')      return '/programs';
     if (id === 'team')          return '/team';
     if (id === 'contributions') return '/contributions';
     return subPage ? `/#${id}` : `#${id}`;
