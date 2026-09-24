@@ -2,6 +2,7 @@
 
 The official website for PICT OSS Community — a beginner-friendly open source community with 850+ passionate developers from Pune Institute of Computer Technology. Built with Next.js 15, TypeScript, and Tailwind CSS, featuring a pixel-art inspired design that showcases our community, projects, and initiatives.
 
+
 ## Features
 
 - **Community Hub**: Showcase of 850+ passionate developers and contributors
