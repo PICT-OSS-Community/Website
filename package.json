@@ -6,7 +6,8 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "check:projects": "node scripts/check-projects.mjs"
   },
   "dependencies": {
     "@number-flow/react": "^0.5.10",

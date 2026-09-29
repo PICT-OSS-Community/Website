@@ -7,8 +7,8 @@
       "longDescription": "React makes it painless to create interactive UIs. Design simple views for each state in your application, and React will efficiently update and render just the right components when your data changes. Declarative views make your code more predictable and easier to debug.",
       "category": "Frontend Framework",
       "language": "JavaScript",
-      "stars": 223000,
-      "forks": 45700,
+      "stars": 250827,
+      "forks": 51416,
       "githubUrl": "https://github.com/facebook/react",
       "websiteUrl": "https://reactjs.org",
       "features": [
@@ -26,8 +26,8 @@
       "longDescription": "Vue is a progressive framework for building user interfaces. It is designed from the ground up to be incrementally adoptable, and can easily scale between a library and a framework depending on different use cases.",
       "category": "Frontend Framework",
       "language": "JavaScript",
-      "stars": 207000,
-      "forks": 33600,
+      "stars": 212841,
+      "forks": 33722,
       "githubUrl": "https://github.com/vuejs/vue",
       "websiteUrl": "https://vuejs.org",
       "features": [
@@ -45,9 +45,9 @@
       "longDescription": "Docker is a set of platform as a service products that use OS-level virtualization to deliver software in packages called containers. Containers are isolated from one another and bundle their own software, libraries and configuration files.",
       "category": "DevOps & Infrastructure",
       "language": "Go",
-      "stars": 68500,
-      "forks": 18700,
-      "githubUrl": "https://github.com/docker/docker-ce",
+      "stars": 72147,
+      "forks": 19240,
+      "githubUrl": "https://github.com/moby/moby",
       "websiteUrl": "https://docker.com",
       "features": [
         "Containerization Technology",
@@ -64,8 +64,8 @@
       "longDescription": "Kubernetes is a portable, extensible, open-source platform for managing containerized workloads and services, that facilitates both declarative configuration and automation. It has a large, rapidly growing ecosystem.",
       "category": "Container Orchestration",
       "language": "Go",
-      "stars": 109000,
-      "forks": 39200,
+      "stars": 128108,
+      "forks": 45673,
       "githubUrl": "https://github.com/kubernetes/kubernetes",
       "websiteUrl": "https://kubernetes.io",
       "features": [
@@ -83,8 +83,8 @@
       "longDescription": "Node.js is designed to build scalable network applications. It uses an event-driven, non-blocking I/O model that makes it lightweight and efficient, perfect for data-intensive real-time applications.",
       "category": "Runtime Environment",
       "language": "JavaScript",
-      "stars": 106000,
-      "forks": 28900,
+      "stars": 122187,
+      "forks": 38392,
       "githubUrl": "https://github.com/nodejs/node",
       "websiteUrl": "https://nodejs.org",
       "features": [
@@ -102,8 +102,8 @@
       "longDescription": "Express is a minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications. It's the de facto standard server framework for Node.js.",
       "category": "Web Framework",
       "language": "JavaScript",
-      "stars": 65000,
-      "forks": 15400,
+      "stars": 69498,
+      "forks": 25097,
       "githubUrl": "https://github.com/expressjs/express",
       "websiteUrl": "https://expressjs.com",
       "features": [
@@ -121,8 +121,8 @@
       "longDescription": "MongoDB is a document database with the scalability and flexibility that you want with the querying and indexing that you need. It stores data in flexible, JSON-like documents.",
       "category": "Database",
       "language": "C++",
-      "stars": 26000,
-      "forks": 5700,
+      "stars": 28613,
+      "forks": 5814,
       "githubUrl": "https://github.com/mongodb/mongo",
       "websiteUrl": "https://mongodb.com",
       "features": [
@@ -140,8 +140,8 @@
       "longDescription": "PostgreSQL is a powerful, open source object-relational database system with over 30 years of active development that has earned it a strong reputation for reliability, feature robustness, and performance.",
       "category": "Database",
       "language": "C",
-      "stars": 15800,
-      "forks": 4200,
+      "stars": 22243,
+      "forks": 5921,
       "githubUrl": "https://github.com/postgres/postgres",
       "websiteUrl": "https://postgresql.org",
       "features": [
@@ -151,21 +151,918 @@
         "JSON Support",
         "Multi-Version Concurrency"
       ]
+    },
+    "freeCodeCamp": {
+      "name": "freeCodeCamp",
+      "logo": "https://img.logo.dev/freecodecamp.org?token=pk_OUhUek_aRgG84RLJJpMY7A&size=40&format=png",
+      "description": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
+      "longDescription": "freeCodeCamp is a nonprofit that offers a free, open-source curriculum covering mathematics, programming, and computer science. Its codebase powers a learning platform where millions of developers earn certifications by building projects.",
+      "category": "Developer Education",
+      "language": "TypeScript",
+      "stars": 456513,
+      "forks": 47809,
+      "githubUrl": "https://github.com/freeCodeCamp/freeCodeCamp",
+      "websiteUrl": "https://www.freecodecamp.org",
+      "features": [
+        "Free Full Curriculum",
+        "Certifications & Projects",
+        "Interactive Coding Lessons",
+        "Nonprofit & Community Driven",
+        "Open Source Codebase"
+      ]
+    },
+    "TensorFlow": {
+      "name": "TensorFlow",
+      "logo": "https://img.logo.dev/tensorflow.org?token=pk_OUhUek_aRgG84RLJJpMY7A&size=40&format=png",
+      "description": "An Open Source Machine Learning Framework for Everyone",
+      "longDescription": "TensorFlow is an end-to-end open source platform for machine learning from Google. It offers tools, libraries, and community resources that let researchers build and deploy state-of-the-art models, and developers integrate ML into apps.",
+      "category": "Machine Learning",
+      "language": "C++",
+      "stars": 200618,
+      "forks": 77953,
+      "githubUrl": "https://github.com/tensorflow/tensorflow",
+      "websiteUrl": "https://tensorflow.org",
+      "features": [
+        "Comprehensive ML Ecosystem",
+        "Keras High-Level API",
+        "Deploy to Cloud, Edge & Browser",
+        "TensorBoard Visualization",
+        "Pretrained Model Hub"
+      ]
+    },
+    "Bootstrap": {
+      "name": "Bootstrap",
+      "logo": "https://img.logo.dev/getbootstrap.com?token=pk_OUhUek_aRgG84RLJJpMY7A&size=40&format=png",
+      "description": "The most popular HTML, CSS, and JavaScript framework for developing responsive, mobile first projects on the web.",
+      "longDescription": "Bootstrap is a free CSS framework that ships responsive, mobile-first components and utilities. It is one of the most starred projects on GitHub and underpins millions of websites and web apps.",
+      "category": "Frontend Framework",
+      "language": "MDX",
+      "stars": 174936,
+      "forks": 78575,
+      "githubUrl": "https://github.com/twbs/bootstrap",
+      "websiteUrl": "https://getbootstrap.com",
+      "features": [
+        "Responsive Grid System",
+        "Prebuilt Components",
+        "CSS & JavaScript Utilities",
+        "Sass Variables & Mixins",
+        "Broad Browser Support"
+      ]
+    },
+    "Oh My Zsh": {
+      "name": "Oh My Zsh",
+      "logo": "https://img.logo.dev/ohmyz.sh?token=pk_OUhUek_aRgG84RLJJpMY7A&size=40&format=png",
+      "description": "A delightful community-driven framework for managing your zsh configuration.",
+      "longDescription": "Oh My Zsh is a framework for managing your zsh configuration, with 300+ plugins and 140+ themes contributed by a community of over 2,500 contributors. It also ships an auto-update tool to stay current with the community.",
+      "category": "Developer Tool",
+      "language": "Shell",
+      "stars": 189985,
+      "forks": 28075,
+      "githubUrl": "https://github.com/ohmyzsh/ohmyzsh",
+      "websiteUrl": "https://ohmyz.sh",
+      "features": [
+        "300+ Plugins",
+        "140+ Themes",
+        "2,500+ Community Contributors",
+        "Auto-Update Tool",
+        "Rich Tab Completion"
+      ]
+    },
+    "Axios": {
+      "name": "Axios",
+      "logo": "https://img.logo.dev/axios-http.com?token=pk_OUhUek_aRgG84RLJJpMY7A&size=40&format=png",
+      "description": "Promise based HTTP client for the browser and node.js",
+      "longDescription": "Axios is a promise-based HTTP client that works both in the browser and in Node.js. It supports interceptors, automatic request and response transformation, client-side protection against XSRF, and request cancellation.",
+      "category": "HTTP Client",
+      "language": "JavaScript",
+      "stars": 109245,
+      "forks": 11884,
+      "githubUrl": "https://github.com/axios/axios",
+      "websiteUrl": "https://axios-http.com",
+      "features": [
+        "Promise-Based API",
+        "Browser & Node.js Support",
+        "Request/Response Interceptors",
+        "Automatic Data Transformation",
+        "XSRF Protection & Cancellation"
+      ]
+    },
+    "Build Your Own X": {
+      "name": "Build Your Own X",
+      "logo": "https://img.logo.dev/github.com?token=pk_OUhUek_aRgG84RLJJpMY7A&size=40&format=png",
+      "description": "Master programming by recreating your favorite technologies from scratch.",
+      "longDescription": "Build Your Own X is a curated step-by-step collection of guides for recreating popular technologies from scratch: operating systems, blockchains, databases, compilers and more. It is one of the most starred repositories on GitHub.",
+      "category": "Learning Resource",
+      "language": "Markdown",
+      "stars": 550579,
+      "forks": 51703,
+      "githubUrl": "https://github.com/codecrafters-io/build-your-own-x",
+      "websiteUrl": "https://codecrafters.io",
+      "features": [
+        "Step-by-Step Tutorials",
+        "Dozens of Technologies",
+        "Multiple Programming Languages",
+        "Community-Maintained Guides",
+        "Free & Open Source"
+      ]
+    },
+    "React Native": {
+      "name": "React Native",
+      "logo": "https://img.logo.dev/reactnative.dev?token=pk_OUhUek_aRgG84RLJJpMY7A&size=40&format=png",
+      "description": "A framework for building native applications using React",
+      "longDescription": "React Native lets you build native mobile apps for iOS and Android using React and JavaScript. It powers apps from Meta, Microsoft and Shopify, and shares code between platforms and with React on the web.",
+      "category": "Mobile Framework",
+      "language": "C++",
+      "stars": 126754,
+      "forks": 25289,
+      "githubUrl": "https://github.com/react/react-native",
+      "websiteUrl": "https://reactnative.dev",
+      "features": [
+        "Native iOS & Android UIs",
+        "Code Sharing with React on Web",
+        "Fast Refresh",
+        "Huge Native Module Ecosystem",
+        "Backed by Meta"
+      ]
+    },
+    "Visual Studio Code": {
+      "name": "Visual Studio Code",
+      "logo": "https://img.logo.dev/code.visualstudio.com?token=pk_OUhUek_aRgG84RLJJpMY7A&size=40&format=png",
+      "description": "Visual Studio Code",
+      "longDescription": "Visual Studio Code is a lightweight but powerful source code editor from Microsoft. It ships with support for hundreds of languages, integrated Git, debugging, and a marketplace of extensions.",
+      "category": "Code Editor",
+      "language": "TypeScript",
+      "stars": 193273,
+      "forks": 43909,
+      "githubUrl": "https://github.com/microsoft/vscode",
+      "websiteUrl": "https://code.visualstudio.com",
+      "features": [
+        "IntelliSense Completion",
+        "Integrated Git & Debugging",
+        "Extensions Marketplace",
+        "Built-in Terminal",
+        "Remote Development"
+      ]
+    },
+    "Linux Kernel": {
+      "name": "Linux Kernel",
+      "logo": "https://img.logo.dev/kernel.org?token=pk_OUhUek_aRgG84RLJJpMY7A&size=40&format=png",
+      "description": "Linux kernel source tree",
+      "longDescription": "The Linux kernel is the core of Linux-based operating systems, managing hardware, processes, memory and file systems. It runs on servers, desktops, smartphones, embedded devices and most of the public cloud.",
+      "category": "Operating System Kernel",
+      "language": "C",
+      "stars": 250566,
+      "forks": 66295,
+      "githubUrl": "https://github.com/torvalds/linux",
+      "websiteUrl": "https://www.kernel.org",
+      "features": [
+        "Monolithic Kernel",
+        "Runs from IoT to Supercomputers",
+        "Process & Memory Management",
+        "Device Drivers",
+        "Open Source (GPL)"
+      ]
+    },
+    "Mozilla Firefox": {
+      "name": "Mozilla Firefox",
+      "logo": "https://img.logo.dev/mozilla.org?token=pk_OUhUek_aRgG84RLJJpMY7A&size=40&format=png",
+      "description": "The official repository of Mozilla's Firefox web browser.",
+      "longDescription": "Firefox is the privacy-focused web browser from Mozilla, built for a better open web. This repository holds the official source of the browser, developed in the open by Mozilla and community contributors.",
+      "category": "Web Browser",
+      "language": "JavaScript",
+      "stars": 13285,
+      "forks": 1549,
+      "githubUrl": "https://github.com/mozilla-firefox/firefox",
+      "websiteUrl": "https://www.firefox.com/",
+      "features": [
+        "Tracking Protection",
+        "Extensions & Customization",
+        "Developer Tools",
+        "Multi-Process Architecture",
+        "Backed by a Nonprofit"
+      ]
+    },
+    "OpenAI Gym": {
+      "name": "Gymnasium",
+      "logo": "https://img.logo.dev/openai.com?token=pk_OUhUek_aRgG84RLJJpMY7A&size=40&format=png",
+      "description": "A standard API for single-agent reinforcement learning environments, with popular reference environments and related utilities (formerly Gym)",
+      "longDescription": "Gymnasium is the successor to OpenAI Gym, maintained by the Farama Foundation. It provides a standard API for reinforcement learning environments along with reference environments, wrappers, and tools for comparing RL algorithms.",
+      "category": "Reinforcement Learning",
+      "language": "Python",
+      "stars": 12596,
+      "forks": 1482,
+      "githubUrl": "https://github.com/Farama-Foundation/Gymnasium",
+      "websiteUrl": "https://gymnasium.farama.org",
+      "features": [
+        "Standard RL Environment API",
+        "Reference Environments",
+        "Wrappers & Utilities",
+        "Successor to OpenAI Gym",
+        "Maintained by Farama Foundation"
+      ]
+    },
+    "Apache Kafka": {
+      "name": "Apache Kafka",
+      "logo": "https://img.logo.dev/kafka.apache.org?token=pk_OUhUek_aRgG84RLJJpMY7A&size=40&format=png",
+      "description": "Apache Kafka - A distributed event streaming platform",
+      "longDescription": "Kafka is a distributed event streaming platform for high-performance data pipelines, streaming analytics, data integration, and mission-critical applications. Thousands of companies use it for real-time feeds at scale.",
+      "category": "Data Streaming",
+      "language": "Java",
+      "stars": 33881,
+      "forks": 15539,
+      "githubUrl": "https://github.com/apache/kafka",
+      "websiteUrl": "https://kafka.apache.org/",
+      "features": [
+        "Distributed Event Streaming",
+        "High Throughput & Low Latency",
+        "Exactly-Once Semantics",
+        "Kafka Connect & Streams API",
+        "Durable, Scalable Storage"
+      ]
+    },
+    "Flutter": {
+      "name": "Flutter",
+      "logo": "https://img.logo.dev/flutter.dev?token=pk_OUhUek_aRgG84RLJJpMY7A&size=40&format=png",
+      "description": "Flutter makes it easy and fast to build beautiful apps for mobile and beyond",
+      "longDescription": "Flutter is Google's UI toolkit for building natively compiled applications for mobile, web, desktop and embedded devices from a single codebase, using the Dart language.",
+      "category": "App Framework",
+      "language": "Dart",
+      "stars": 179148,
+      "forks": 32693,
+      "githubUrl": "https://github.com/flutter/flutter",
+      "websiteUrl": "https://flutter.dev",
+      "features": [
+        "One Codebase, Many Platforms",
+        "Hot Reload",
+        "Customizable Widget Library",
+        "60/120fps Rendering",
+        "Backed by Google"
+      ]
+    },
+    "Bitcoin": {
+      "name": "Bitcoin",
+      "logo": "https://img.logo.dev/bitcoin.org?token=pk_OUhUek_aRgG84RLJJpMY7A&size=40&format=png",
+      "description": "Bitcoin Core integration/staging tree",
+      "longDescription": "Bitcoin Core is the original and most widely used Bitcoin client, implementing the full peer-to-peer network node and wallet. It is where the Bitcoin protocol reference implementation is developed.",
+      "category": "Cryptocurrency",
+      "language": "C++",
+      "stars": 90275,
+      "forks": 39416,
+      "githubUrl": "https://github.com/bitcoin/bitcoin",
+      "websiteUrl": "https://bitcoin.org",
+      "features": [
+        "Full Node Implementation",
+        "Built-in Wallet",
+        "Reference Bitcoin Protocol",
+        "Privacy & Security Focused",
+        "Permissionless Development"
+      ]
+    },
+    "DefinitelyTyped": {
+      "name": "DefinitelyTyped",
+      "logo": "https://img.logo.dev/typescriptlang.org?token=pk_OUhUek_aRgG84RLJJpMY7A&size=40&format=png",
+      "description": "The repository for high quality TypeScript type definitions.",
+      "longDescription": "DefinitelyTyped hosts TypeScript type definitions for thousands of untyped JavaScript packages. The community-curated repository lets TypeScript projects add types to any npm library via the @types scope.",
+      "category": "Type Definitions",
+      "language": "TypeScript",
+      "stars": 51448,
+      "forks": 30366,
+      "githubUrl": "https://github.com/DefinitelyTyped/DefinitelyTyped",
+      "websiteUrl": "https://definitelytyped.org",
+      "features": [
+        "Types for Thousands of Packages",
+        "@types npm Scope",
+        "Automated CI Validation",
+        "Community-Curated",
+        "Used by Millions of TS Projects"
+      ]
+    },
+    "Prometheus": {
+      "name": "Prometheus",
+      "logo": "https://img.logo.dev/prometheus.io?token=pk_OUhUek_aRgG84RLJJpMY7A&size=40&format=png",
+      "description": "The Prometheus monitoring system and time series database.",
+      "longDescription": "Prometheus is an open source systems monitoring and alerting toolkit originally built at SoundCloud. It records real-time metrics in a time series database with a multi-dimensional data model and a powerful query language (PromQL).",
+      "category": "Monitoring & Observability",
+      "language": "Go",
+      "stars": 66309,
+      "forks": 10868,
+      "githubUrl": "https://github.com/prometheus/prometheus",
+      "websiteUrl": "https://prometheus.io/",
+      "features": [
+        "PromQL Query Language",
+        "Multi-Dimensional Metrics",
+        "Pull-Based Metrics Collection",
+        "Alertmanager Integration",
+        "No External Database Required"
+      ]
+    },
+    "OpenAI Python SDK": {
+      "name": "OpenAI Python SDK",
+      "logo": "https://img.logo.dev/openai.com?token=pk_OUhUek_aRgG84RLJJpMY7A&size=40&format=png",
+      "description": "The official Python library for the OpenAI API",
+      "longDescription": "The OpenAI Python SDK is the official library for accessing the OpenAI API, including chat models, embeddings, image generation, audio and more. It handles authentication, retries, and streaming responses.",
+      "category": "AI / ML SDK",
+      "language": "Python",
+      "stars": 31721,
+      "forks": 6736,
+      "githubUrl": "https://github.com/openai/openai-python",
+      "websiteUrl": "https://openai.com",
+      "features": [
+        "Official OpenAI Client",
+        "Chat, Audio, Image & Embedding APIs",
+        "Streaming Responses",
+        "Automatic Retries",
+        "Typed Arguments & Responses"
+      ]
+    },
+    "RISC-V": {
+      "name": "RISC-V",
+      "logo": "https://img.logo.dev/riscv.org?token=pk_OUhUek_aRgG84RLJJpMY7A&size=40&format=png",
+      "description": "RISC-V Instruction Set Manual",
+      "longDescription": "RISC-V is an open, royalty-free instruction set architecture that anyone can use to design custom processors. This repository contains the official ISA manual defining the instruction sets and extensions.",
+      "category": "CPU Architecture",
+      "language": "TeX",
+      "stars": 4836,
+      "forks": 867,
+      "githubUrl": "https://github.com/riscv/riscv-isa-manual",
+      "websiteUrl": "https://riscv.org",
+      "features": [
+        "Open, Royalty-Free ISA",
+        "Modular Extensions (I, M, A, F, D)",
+        "Used in Industry & Academia",
+        "Official Reference Manual",
+        "Base + Custom Extensions"
+      ]
+    },
+    "Rust": {
+      "name": "Rust",
+      "logo": "https://img.logo.dev/rust-lang.org?token=pk_OUhUek_aRgG84RLJJpMY7A&size=40&format=png",
+      "description": "Empowering everyone to build reliable and efficient software.",
+      "longDescription": "Rust is a systems programming language focused on safety, speed and concurrency, backed by Mozilla and the Rust Foundation. It guarantees memory safety at compile time without a garbage collector.",
+      "category": "Programming Language",
+      "language": "Rust",
+      "stars": 119305,
+      "forks": 17201,
+      "githubUrl": "https://github.com/rust-lang/rust",
+      "websiteUrl": "https://www.rust-lang.org",
+      "features": [
+        "Memory Safety without GC",
+        "Fearless Concurrency",
+        "Cargo Package Manager",
+        "Zero-Cost Abstractions",
+        "No Runtime Required"
+      ]
+    },
+    "WebAssembly": {
+      "name": "WebAssembly",
+      "logo": "https://img.logo.dev/webassembly.org?token=pk_OUhUek_aRgG84RLJJpMY7A&size=40&format=png",
+      "description": "WebAssembly specification, reference interpreter, and test suite.",
+      "longDescription": "WebAssembly (Wasm) is a binary instruction format for a stack-based virtual machine, designed as a portable compilation target for languages like C, C++ and Rust on the web and beyond. This repository contains the official specification.",
+      "category": "Web Standard",
+      "language": "WebAssembly",
+      "stars": 3457,
+      "forks": 540,
+      "githubUrl": "https://github.com/WebAssembly/spec",
+      "websiteUrl": "https://webassembly.org",
+      "features": [
+        "Near-Native Performance",
+        "Language-Agnostic Compile Target",
+        "WASI System Interface",
+        "Sandboxed Execution",
+        "Official Spec & Test Suite"
+      ]
+    },
+    "OpenTelemetry": {
+      "name": "OpenTelemetry",
+      "logo": "https://img.logo.dev/opentelemetry.io?token=pk_OUhUek_aRgG84RLJJpMY7A&size=40&format=png",
+      "description": "Specifications for OpenTelemetry",
+      "longDescription": "OpenTelemetry is a vendor-neutral collection of APIs, SDKs and tools for generating and collecting traces, metrics and logs. It is a CNCF project and the de facto standard for instrumenting applications.",
+      "category": "Observability",
+      "language": "Makefile",
+      "stars": 4347,
+      "forks": 1003,
+      "githubUrl": "https://github.com/open-telemetry/opentelemetry-specification",
+      "websiteUrl": "https://opentelemetry.io",
+      "features": [
+        "Traces, Metrics & Logs",
+        "Vendor-Neutral (CNCF)",
+        "SDKs & Auto-Instrumentation",
+        "OpenTelemetry Protocol (OTLP)",
+        "Language-Agnostic Collector"
+      ]
+    },
+    "Libraries.io": {
+      "name": "Libraries.io",
+      "logo": "https://img.logo.dev/libraries.io?token=pk_OUhUek_aRgG84RLJJpMY7A&size=40&format=png",
+      "description": "The Open Source Discovery Service",
+      "longDescription": "Libraries.io is an open source discovery service that monitors millions of packages across dozens of package managers and code hosts, helping developers evaluate dependencies and spot abandoned libraries.",
+      "category": "Package Discovery",
+      "language": "Ruby",
+      "stars": 1158,
+      "forks": 213,
+      "githubUrl": "https://github.com/librariesio/libraries.io",
+      "websiteUrl": "https://libraries.io",
+      "features": [
+        "Millions of Packages Monitored",
+        "Multi-Registry Support",
+        "Dependency & Version Metadata",
+        "Repository Health Metrics",
+        "Open Data & API"
+      ]
+    },
+    "Coolify": {
+      "name": "Coolify",
+      "logo": "https://img.logo.dev/coolify.io?token=pk_OUhUek_aRgG84RLJJpMY7A&size=40&format=png",
+      "description": "An open-source, self-hostable PaaS alternative to Vercel, Heroku & Netlify for deploying apps on your own servers.",
+      "longDescription": "Coolify lets you deploy static sites, databases, full-stack applications and hundreds of one-click services on your own infrastructure. It handles building, networking and SSL so you can self-host without giving up a managed-platform experience.",
+      "category": "DevOps / PaaS",
+      "language": "PHP",
+      "stars": 62394,
+      "forks": 5569,
+      "githubUrl": "https://github.com/coollabsio/coolify",
+      "websiteUrl": "https://coolify.io",
+      "features": [
+        "Self-Hostable PaaS",
+        "280+ One-Click Services",
+        "Automatic SSL & Networking",
+        "Docker & Remote Servers",
+        "Vercel/Heroku/Netlify Alternative"
+      ]
+    },
+    "DevToys": {
+      "name": "DevToys",
+      "logo": "https://img.logo.dev/devtoys.app?token=pk_OUhUek_aRgG84RLJJpMY7A&size=40&format=png",
+      "description": "A Swiss Army knife for developers.",
+      "longDescription": "DevToys is an offline-first Swiss Army knife for developers: a desktop app bundling many small utilities such as JSON and JWT formatters, encoders, hashers, color pickers and diff tools in one place.",
+      "category": "Developer Tool",
+      "language": "C#",
+      "stars": 32036,
+      "forks": 1760,
+      "githubUrl": "https://github.com/DevToys-app/DevToys",
+      "websiteUrl": "https://devtoys.app/",
+      "features": [
+        "JSON, JWT & Data Formatters",
+        "Encoders, Decoders & Hashers",
+        "Regex & Text Tools",
+        "Color Picker & Image Tools",
+        "Offline-First Desktop App"
+      ]
+    },
+    "Zed": {
+      "name": "Zed",
+      "logo": "https://img.logo.dev/zed.dev?token=pk_OUhUek_aRgG84RLJJpMY7A&size=40&format=png",
+      "description": "Code at the speed of thought – Zed is a high-performance, multiplayer code editor from the creators of Atom and Tree-sitter.",
+      "longDescription": "Zed is a fast, collaborative code editor built by the creators of Atom and Tree-sitter, written in Rust with a GPU-accelerated renderer. It features first-class multiplayer editing and built-in AI assistance.",
+      "category": "Code Editor",
+      "language": "Rust",
+      "stars": 91057,
+      "forks": 10826,
+      "githubUrl": "https://github.com/zed-industries/zed",
+      "websiteUrl": "https://zed.dev",
+      "features": [
+        "GPU-Accelerated Rendering",
+        "Real-Time Multiplayer Editing",
+        "Built-In AI Agent",
+        "LSP & Tree-sitter Support",
+        "Written in Rust"
+      ]
+    },
+    "STORM": {
+      "name": "STORM",
+      "logo": "https://img.logo.dev/openai.com?token=pk_OUhUek_aRgG84RLJJpMY7A&size=40&format=png",
+      "description": "An LLM-powered knowledge curation system that researches a topic and generates a full-length report with citations.",
+      "longDescription": "STORM is an LLM-powered knowledge curation system from Stanford OVAL that researches a topic and writes full-length, Wikipedia-style reports with citations. Its successor, Co-STORM, adds human-AI collaboration.",
+      "category": "AI Research",
+      "language": "Python",
+      "stars": 31533,
+      "forks": 2972,
+      "githubUrl": "https://github.com/stanford-oval/storm",
+      "websiteUrl": "http://storm.genie.stanford.edu",
+      "features": [
+        "Automated Source Research",
+        "Reports with Real Citations",
+        "Wikipedia-Style Article Generation",
+        "LLM Multi-Agent Pipeline",
+        "From Stanford OVAL"
+      ]
+    },
+    "Budibase": {
+      "name": "Budibase",
+      "logo": "https://img.logo.dev/budibase.com?token=pk_OUhUek_aRgG84RLJJpMY7A&size=40&format=png",
+      "description": "AI agents, automations and apps that run your operations. Model agnostic.",
+      "longDescription": "Budibase is an open source platform for building internal tools, business apps and automations with AI agents. It connects to your existing databases and lets teams ship operational apps with minimal code.",
+      "category": "No-Code Platform",
+      "language": "TypeScript",
+      "stars": 28326,
+      "forks": 2227,
+      "githubUrl": "https://github.com/Budibase/budibase",
+      "websiteUrl": "https://budibase.com",
+      "features": [
+        "Drag-and-Drop App Builder",
+        "Database & API Connectors",
+        "Automated Workflows",
+        "AI Agents (Model Agnostic)",
+        "Self-Hostable"
+      ]
+    },
+    "GrapesJS": {
+      "name": "GrapesJS",
+      "logo": "https://img.logo.dev/grapesjs.com?token=pk_OUhUek_aRgG84RLJJpMY7A&size=40&format=png",
+      "description": "Free and Open source Web Builder Framework. Next generation tool for building templates without coding",
+      "longDescription": "GrapesJS is a free, open source web builder framework for creating multi-platform templates without coding. Developers embed it to build page builders, email editors and landing-page tools inside their own apps.",
+      "category": "Web Builder",
+      "language": "TypeScript",
+      "stars": 26282,
+      "forks": 4652,
+      "githubUrl": "https://github.com/GrapesJS/grapesjs",
+      "websiteUrl": "https://grapesjs.com",
+      "features": [
+        "Drag & Drop Page Building",
+        "Embeddable Builder SDK",
+        "Multi-Platform Templates",
+        "Custom Component Blocks",
+        "Plugin Architecture"
+      ]
+    },
+    "NocoBase": {
+      "name": "NocoBase",
+      "logo": "https://img.logo.dev/nocobase.com?token=pk_OUhUek_aRgG84RLJJpMY7A&size=40&format=png",
+      "description": "NocoBase is an open-source AI + no-code platform for building business systems fast.",
+      "longDescription": "NocoBase uses a WYSIWYG interface and data-model-driven architecture so business tools can be assembled without writing code. AI works on top of the production-ready infrastructure for speed without sacrificing reliability.",
+      "category": "No-Code Platform",
+      "language": "TypeScript",
+      "stars": 24392,
+      "forks": 2894,
+      "githubUrl": "https://github.com/nocobase/nocobase",
+      "websiteUrl": "https://www.nocobase.com",
+      "features": [
+        "Data Model-Driven Architecture",
+        "WYSIWYG Configuration",
+        "Plugin-Based Extensions",
+        "AI-Assisted Building",
+        "Self-Hostable"
+      ]
+    },
+    "Windmill": {
+      "name": "Windmill",
+      "logo": "https://img.logo.dev/windmill.dev?token=pk_OUhUek_aRgG84RLJJpMY7A&size=40&format=png",
+      "description": "Open-source developer platform that turns scripts into webhooks, workflows and UIs. Positions itself as an open-source alternative to Retool and Temporal.",
+      "longDescription": "Windmill turns scripts written in Python, TypeScript, Go or Bash into APIs, cron jobs, workflows and UIs. It is positioned as a much faster workflow engine than Airflow and as an open source alternative to Retool and Temporal.",
+      "category": "Workflow Automation",
+      "language": "Rust",
+      "stars": 18060,
+      "forks": 1102,
+      "githubUrl": "https://github.com/windmill-labs/windmill",
+      "websiteUrl": "https://windmill.dev",
+      "features": [
+        "Scripts to APIs & Cron Jobs",
+        "Workflow Engine",
+        "Self-Serve UI Builder",
+        "Python, TypeScript, Go & Bash",
+        "Retool & Temporal Alternative"
+      ]
+    },
+    "Directus": {
+      "name": "Directus",
+      "logo": "https://img.logo.dev/directus.io?token=pk_OUhUek_aRgG84RLJJpMY7A&size=40&format=png",
+      "description": "The flexible backend for all your projects. Turn your database into a headless CMS, admin panels or apps with instant APIs, auth and more.",
+      "longDescription": "Directus wraps any SQL database with a real-time REST and GraphQL API, an admin app, authentication and file storage. It stays out of your schema, so the same backend can serve apps, sites and internal tools.",
+      "category": "Backend / Headless CMS",
+      "language": "TypeScript",
+      "stars": 37993,
+      "forks": 4959,
+      "githubUrl": "https://github.com/directus/directus",
+      "websiteUrl": "https://directus.com",
+      "features": [
+        "Instant REST & GraphQL APIs",
+        "Works with Any SQL Database",
+        "Admin App & Role-Based Access",
+        "File Storage & Realtime Events",
+        "Schema-Faithful, No Lock-In"
+      ]
+    },
+    "Refine": {
+      "name": "Refine",
+      "logo": "https://img.logo.dev/refine.dev?token=pk_OUhUek_aRgG84RLJJpMY7A&size=40&format=png",
+      "description": "A React Framework for building internal tools, admin panels, dashboards & B2B apps with unmatched flexibility.",
+      "longDescription": "Refine is a React-based framework for CRUD-heavy applications such as admin panels, dashboards and internal tools. It is headless and hook-based, letting you plug in any UI library, router or data provider.",
+      "category": "React Framework",
+      "language": "TypeScript",
+      "stars": 35738,
+      "forks": 3223,
+      "githubUrl": "https://github.com/refinedev/refine",
+      "websiteUrl": "https://refine.dev",
+      "features": [
+        "Headless CRUD Framework",
+        "Any UI Library & Router",
+        "Data Provider Connectors",
+        "Access Control & Audit Logs",
+        "React Hooks Based"
+      ]
+    },
+    "Appsmith": {
+      "name": "Appsmith",
+      "logo": "https://img.logo.dev/appsmith.com?token=pk_OUhUek_aRgG84RLJJpMY7A&size=40&format=png",
+      "description": "Platform to build admin panels, internal tools, and dashboards. Integrates with 25+ databases and any API.",
+      "longDescription": "Appsmith is an open source low-code platform for building internal tools and dashboards. Drag-and-drop widgets connect to databases and APIs, and apps can be deployed with access control.",
+      "category": "Low-Code Platform",
+      "language": "TypeScript",
+      "stars": 40971,
+      "forks": 4781,
+      "githubUrl": "https://github.com/appsmithorg/appsmith",
+      "websiteUrl": "https://www.appsmith.com",
+      "features": [
+        "Drag-and-Drop Widgets",
+        "25+ Database Connectors",
+        "Any REST/GraphQL API",
+        "Self-Host or Cloud",
+        "Git-Based Deployment"
+      ]
+    },
+    "Strapi": {
+      "name": "Strapi",
+      "logo": "https://img.logo.dev/strapi.io?token=pk_OUhUek_aRgG84RLJJpMY7A&size=40&format=png",
+      "description": "Strapi is the leading open-source headless CMS. It's 100% JavaScript/TypeScript, fully customizable and developer-first.",
+      "longDescription": "Strapi is an open source headless CMS that gives developers a flexible API and content editors a customizable admin panel. It supports REST and GraphQL out of the box and can use SQL or MongoDB databases.",
+      "category": "Headless CMS",
+      "language": "TypeScript",
+      "stars": 73251,
+      "forks": 9879,
+      "githubUrl": "https://github.com/strapi/strapi",
+      "websiteUrl": "https://strapi.io",
+      "features": [
+        "REST & GraphQL APIs",
+        "Customizable Admin Panel",
+        "Role-Based Access Control",
+        "SQL & MongoDB Support",
+        "Plugin Architecture"
+      ]
+    },
+    "ToolJet": {
+      "name": "ToolJet",
+      "logo": "https://img.logo.dev/tooljet.com?token=pk_OUhUek_aRgG84RLJJpMY7A&size=40&format=png",
+      "description": "Open-source platform for building internal tools, dashboards and business applications, with AI agent integrations.",
+      "longDescription": "ToolJet is an open source platform for building internal tools, dashboards and business apps visually, from a prompt or with AI coding tools over MCP. It connects to databases, APIs and third-party services.",
+      "category": "Low-Code Platform",
+      "language": "JavaScript",
+      "stars": 41011,
+      "forks": 5460,
+      "githubUrl": "https://github.com/ToolJet/ToolJet",
+      "websiteUrl": "https://tooljet.com",
+      "features": [
+        "Visual App Builder",
+        "20+ Data Connectors",
+        "AI Agent & MCP Integrations",
+        "Workflows & Business Logic",
+        "Self-Hostable"
+      ]
+    },
+    "Appwrite": {
+      "name": "Appwrite",
+      "logo": "https://img.logo.dev/appwrite.io?token=pk_OUhUek_aRgG84RLJJpMY7A&size=40&format=png",
+      "description": "Complete backend platform for web, mobile and AI apps, including Auth, Databases, Storage, Functions, Messaging and Hosting.",
+      "longDescription": "Appwrite is an open source Backend-as-a-Service providing hosted building blocks for web, mobile and AI applications. It ships auth, databases, storage, functions, messaging and realtime in one platform you can self-host.",
+      "category": "Backend as a Service",
+      "language": "PHP",
+      "stars": 57507,
+      "forks": 5758,
+      "githubUrl": "https://github.com/appwrite/appwrite",
+      "websiteUrl": "https://appwrite.io",
+      "features": [
+        "Authentication & Authorization",
+        "Databases & Storage",
+        "Serverless Functions",
+        "Realtime & Messaging",
+        "Self-Hostable BaaS"
+      ]
+    },
+    "PocketBase": {
+      "name": "PocketBase",
+      "logo": "https://img.logo.dev/pocketbase.io?token=pk_OUhUek_aRgG84RLJJpMY7A&size=40&format=png",
+      "description": "Open Source realtime backend in 1 file",
+      "longDescription": "PocketBase is a self-hostable backend in a single executable: REST API, realtime database sync, file storage, authentication and an admin dashboard, built in Go on top of SQLite.",
+      "category": "Backend as a Service",
+      "language": "Go",
+      "stars": 61208,
+      "forks": 3707,
+      "githubUrl": "https://github.com/pocketbase/pocketbase",
+      "websiteUrl": "https://pocketbase.io",
+      "features": [
+        "Single Binary Deployment",
+        "Realtime Database Sync",
+        "Built-In Auth & File Storage",
+        "Admin Dashboard UI",
+        "SQLite-Based"
+      ]
+    },
+    "NocoDB": {
+      "name": "NocoDB",
+      "logo": "https://img.logo.dev/nocodb.com?token=pk_OUhUek_aRgG84RLJJpMY7A&size=40&format=png",
+      "description": "A free and self-hostable Airtable alternative.",
+      "longDescription": "NocoDB turns existing databases such as MySQL, PostgreSQL, SQLite, MariaDB and SQL Server into a smart spreadsheet interface with APIs, workflows and automations, like an open source Airtable.",
+      "category": "Database Tool",
+      "language": "TypeScript",
+      "stars": 65109,
+      "forks": 5074,
+      "githubUrl": "https://github.com/nocodb/nocodb",
+      "websiteUrl": "https://nocodb.com",
+      "features": [
+        "Airtable Alternative",
+        "Works on Existing Databases",
+        "Auto-Generated APIs",
+        "Automations & Webhooks",
+        "Self-Hostable"
+      ]
+    },
+    "AppFlowy": {
+      "name": "AppFlowy",
+      "logo": "https://img.logo.dev/appflowy.io?token=pk_OUhUek_aRgG84RLJJpMY7A&size=40&format=png",
+      "description": "Bring projects, wikis and teams together with AI. The leading open source Notion alternative, built for privacy and control of your data.",
+      "longDescription": "AppFlowy is an open source AI collaborative workspace for notes, wikis, projects and teams, a Notion alternative written in Flutter and Dart. It emphasizes offline use and keeping your data under your control.",
+      "category": "Productivity / Workspace",
+      "language": "Dart",
+      "stars": 76987,
+      "forks": 6046,
+      "githubUrl": "https://github.com/AppFlowy-IO/AppFlowy",
+      "websiteUrl": "https://appflowy.com",
+      "features": [
+        "Open Source Notion Alternative",
+        "Notes, Wikis & Projects",
+        "Built-In AI Assistant",
+        "Offline-First & Local Data",
+        "Built with Flutter"
+      ]
+    },
+    "Supabase": {
+      "name": "Supabase",
+      "logo": "https://img.logo.dev/supabase.com?token=pk_OUhUek_aRgG84RLJJpMY7A&size=40&format=png",
+      "description": "The Postgres development platform. Supabase gives you a dedicated Postgres database to build your web, mobile, and AI applications.",
+      "longDescription": "Supabase is an open source platform that gives you a dedicated Postgres database with authentication, instant APIs, edge functions, realtime subscriptions, storage and vector embeddings.",
+      "category": "Backend as a Service",
+      "language": "TypeScript",
+      "stars": 110885,
+      "forks": 15418,
+      "githubUrl": "https://github.com/supabase/supabase",
+      "websiteUrl": "https://supabase.com",
+      "features": [
+        "Full Postgres Database",
+        "Auth & Row-Level Security",
+        "Auto-Generated APIs",
+        "Realtime & Storage",
+        "Vector Embeddings for AI"
+      ]
+    },
+    "n8n": {
+      "name": "n8n",
+      "logo": "https://img.logo.dev/n8n.io?token=pk_OUhUek_aRgG84RLJJpMY7A&size=40&format=png",
+      "description": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.",
+      "longDescription": "n8n is a fair-code workflow automation platform with a node-based visual editor. It offers hundreds of integrations, native AI agent nodes, and the option to self-host or use the cloud.",
+      "category": "Workflow Automation",
+      "language": "TypeScript",
+      "stars": 206268,
+      "forks": 60931,
+      "githubUrl": "https://github.com/n8n-io/n8n",
+      "websiteUrl": "https://n8n.io",
+      "features": [
+        "400+ Integrations",
+        "Visual Workflow Builder",
+        "AI Agent Nodes",
+        "Self-Host or Cloud",
+        "Custom Code Nodes (JS/Python)"
+      ]
+    },
+    "OpenCV": {
+      "name": "OpenCV",
+      "logo": "https://img.logo.dev/opencv.org?token=pk_OUhUek_aRgG84RLJJpMY7A&size=40&format=png",
+      "description": "Open Source Computer Vision Library",
+      "longDescription": "OpenCV is the largest computer vision library, providing thousands of algorithms for image processing, object detection, video analysis and machine vision, with bindings for C++, Python and Java.",
+      "category": "Computer Vision",
+      "language": "C++",
+      "stars": 91010,
+      "forks": 57045,
+      "githubUrl": "https://github.com/opencv/opencv",
+      "websiteUrl": "https://opencv.org",
+      "features": [
+        "2,500+ Algorithms",
+        "Image & Video Processing",
+        "Object Detection & Tracking",
+        "C++, Python & Java Bindings",
+        "Cross-Platform"
+      ]
+    },
+    "CyberChef": {
+      "name": "CyberChef",
+      "logo": "https://gchq.github.io/CyberChef/images/cyberchef-128x128.png",
+      "description": "The Cyber Swiss Army Knife - a web app for encryption, encoding, compression and data analysis",
+      "longDescription": "CyberChef is a web app from GCHQ for carrying out operations on data: encrypt, decrypt, encode, decode, compress, hash and parse it through a drag-and-drop recipe model. It runs entirely client-side in your browser, so your data never leaves your machine.",
+      "category": "Security & Data Tools",
+      "language": "JavaScript",
+      "stars": 35988,
+      "forks": 4162,
+      "githubUrl": "https://github.com/gchq/CyberChef",
+      "websiteUrl": "https://gchq.github.io/CyberChef",
+      "features": [
+        "Encryption, Encoding & Hashing",
+        "Compression & Data Analysis",
+        "Drag-and-Drop Recipe Builder",
+        "Runs Entirely in Your Browser",
+        "Apache 2.0, by GCHQ"
+      ]
+    },
+    "Grafana": {
+      "name": "Grafana",
+      "logo": "https://img.logo.dev/grafana.com?token=pk_OUhUek_aRgG84RLJJpMY7A&size=40&format=png",
+      "description": "The open and composable observability and data visualization platform. Visualize metrics, logs, and traces from multiple sources like Prometheus, Loki, Elasticsearch, InfluxDB, Postgres and many more.",
+      "longDescription": "Grafana is an open source analytics and interactive visualization platform. It connects to data sources like Prometheus, Loki, Elasticsearch and PostgreSQL, letting you build dashboards, alerting and reports on metrics, logs and traces in one place.",
+      "category": "Monitoring & Observability",
+      "language": "TypeScript",
+      "stars": 76992,
+      "forks": 14800,
+      "githubUrl": "https://github.com/grafana/grafana",
+      "websiteUrl": "https://grafana.com",
+      "features": [
+        "Dashboards for Metrics, Logs & Traces",
+        "40+ Data Source Plugins",
+        "Alerting & Incident Management",
+        "Explore & Ad-Hoc Queries",
+        "Plugin Architecture & Extensibility"
+      ]
+    },
+    "Neovim": {
+      "name": "Neovim",
+      "logo": "https://img.logo.dev/neovim.io?token=pk_OUhUek_aRgG84RLJJpMY7A&size=40&format=png",
+      "description": "Vim-fork focused on extensibility and usability",
+      "longDescription": "Neovim is a hyperextensible Vim-based text editor focused on extensibility and usability. It ships a built-in Lua API, asynchronous plugin execution, terminal emulators and first-class LSP support while keeping full Vim compatibility.",
+      "category": "Code Editor",
+      "language": "Vim Script",
+      "stars": 102669,
+      "forks": 7141,
+      "githubUrl": "https://github.com/neovim/neovim",
+      "websiteUrl": "https://neovim.io",
+      "features": [
+        "Built-In Lua API",
+        "Asynchronous Plugins & Jobs",
+        "Built-In LSP Client",
+        "Integrated Terminal Emulator",
+        "Full Vim Compatibility"
+      ]
+    },
+    "Ollama": {
+      "name": "Ollama",
+      "logo": "https://img.logo.dev/ollama.com?token=pk_OUhUek_aRgG84RLJJpMY7A&size=40&format=png",
+      "description": "Get up and running with Kimi, GLM, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma and other models.",
+      "longDescription": "Ollama lets you download and run large language models on your own machine with a single command. It serves a local REST API with OpenAI-compatible endpoints and handles model versioning, quantization and CPU/GPU inference.",
+      "category": "AI / ML Tooling",
+      "language": "Go",
+      "stars": 181919,
+      "forks": 18041,
+      "githubUrl": "https://github.com/ollama/ollama",
+      "websiteUrl": "https://ollama.com",
+      "features": [
+        "Run LLMs Locally",
+        "One-Command Model Library",
+        "OpenAI-Compatible API",
+        "CPU & GPU Inference",
+        "MIT Licensed"
+      ]
+    },
+    "Bruno": {
+      "name": "Bruno",
+      "logo": "https://img.logo.dev/usebruno.com?token=pk_OUhUek_aRgG84RLJJpMY7A&size=40&format=png",
+      "description": "Open-source IDE for exploring and testing APIs - a lightweight alternative to Postman and Insomnia.",
+      "longDescription": "Bruno is an IDE-like client for making and organizing API requests. Unlike cloud clients, it stores collections as plain files on your disk, works fully offline, and fits naturally into Git workflows.",
+      "category": "Developer Tool",
+      "language": "JavaScript",
+      "stars": 47273,
+      "forks": 2937,
+      "githubUrl": "https://github.com/usebruno/bruno",
+      "websiteUrl": "https://www.usebruno.com/",
+      "features": [
+        "Offline, Files-on-Disk Collections",
+        "Git-Friendly Plain Text Format",
+        "Scripting & Test Assertions",
+        "OpenAPI & GraphQL Support",
+        "Lightweight Postman Alternative"
+      ]
+    },
+    "Go": {
+      "name": "Go",
+      "logo": "https://img.logo.dev/go.dev?token=pk_OUhUek_aRgG84RLJJpMY7A&size=40&format=png",
+      "description": "The Go programming language",
+      "longDescription": "Go is an open source, statically typed and compiled language designed at Google, famous for simple syntax, fast compilation and built-in concurrency with goroutines and channels. It is the backbone of cloud-native infrastructure such as Docker and Kubernetes.",
+      "category": "Programming Language",
+      "language": "Go",
+      "stars": 139081,
+      "forks": 20933,
+      "githubUrl": "https://github.com/golang/go",
+      "websiteUrl": "https://go.dev",
+      "features": [
+        "Statically Typed & Compiled",
+        "Goroutines & Channels",
+        "Fast Builds, Single Binary",
+        "Powerful Standard Library",
+        "Backs Docker & Kubernetes"
+      ]
     }
-  },
-  "defaultProjectTemplate": {
-    "description": "{name} is an innovative open source project making waves in the developer community.",
-    "longDescription": "This project demonstrates cutting-edge technology and best practices in software development. {name} offers powerful features and has gained significant traction among developers worldwide.",
-    "category": "Open Source Project",
-    "languages": ["JavaScript", "Python", "Go", "Rust", "TypeScript", "Java", "C++"],
-    "features": [
-      "Modern Architecture",
-      "High Performance",
-      "Developer Friendly",
-      "Well Documented",
-      "Active Community"
-    ],
-    "starRange": [5000, 100000],
-    "forkRange": [1000, 20000]
   }
-} 
+}

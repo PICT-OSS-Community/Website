@@ -37,25 +37,25 @@ const Cube3D = () => {
     ],
     right: [
       { name: 'DefinitelyTyped', logo: 'https://img.logo.dev/typescriptlang.org?token=pk_OUhUek_aRgG84RLJJpMY7A&size=40&format=png' },
-      { name: 'Linux', logo: 'https://img.logo.dev/linux.org?token=pk_OUhUek_aRgG84RLJJpMY7A&size=40&format=png' },
       { name: 'Prometheus', logo: 'https://img.logo.dev/prometheus.io?token=pk_OUhUek_aRgG84RLJJpMY7A&size=40&format=png' },
-      { name: 'OpenAI GPT', logo: 'https://img.logo.dev/openai.com?token=pk_OUhUek_aRgG84RLJJpMY7A&size=40&format=png' },
+      { name: 'OpenAI Python SDK', logo: 'https://img.logo.dev/openai.com?token=pk_OUhUek_aRgG84RLJJpMY7A&size=40&format=png' },
       { name: 'RISC-V', logo: 'https://img.logo.dev/riscv.org?token=pk_OUhUek_aRgG84RLJJpMY7A&size=40&format=png' },
       { name: 'Rust', logo: 'https://img.logo.dev/rust-lang.org?token=pk_OUhUek_aRgG84RLJJpMY7A&size=40&format=png' },
       { name: 'WebAssembly', logo: 'https://img.logo.dev/webassembly.org?token=pk_OUhUek_aRgG84RLJJpMY7A&size=40&format=png' },
       { name: 'OpenTelemetry', logo: 'https://img.logo.dev/opentelemetry.io?token=pk_OUhUek_aRgG84RLJJpMY7A&size=40&format=png' },
-      { name: 'Edge Computing', logo: 'https://img.logo.dev/azure.microsoft.com?token=pk_OUhUek_aRgG84RLJJpMY7A&size=40&format=png' }
+      { name: 'Grafana', logo: 'https://img.logo.dev/grafana.com?token=pk_OUhUek_aRgG84RLJJpMY7A&size=40&format=png' },
+      { name: 'Go', logo: 'https://img.logo.dev/go.dev?token=pk_OUhUek_aRgG84RLJJpMY7A&size=40&format=png' }
     ],
     left: [
-      { name: 'Open Hub', logo: 'https://img.logo.dev/github.com?token=pk_OUhUek_aRgG84RLJJpMY7A&size=40&format=png' },
-      { name: 'SourceForge', logo: 'https://img.logo.dev/sourceforge.net?token=pk_OUhUek_aRgG84RLJJpMY7A&size=40&format=png' },
       { name: 'Libraries.io', logo: 'https://img.logo.dev/libraries.io?token=pk_OUhUek_aRgG84RLJJpMY7A&size=40&format=png' },
-      { name: 'AlternativeTo', logo: 'https://img.logo.dev/alternativeto.net?token=pk_OUhUek_aRgG84RLJJpMY7A&size=40&format=png' },
       { name: 'Coolify', logo: 'https://img.logo.dev/coolify.io?token=pk_OUhUek_aRgG84RLJJpMY7A&size=40&format=png' },
       { name: 'DevToys', logo: 'https://img.logo.dev/devtoys.app?token=pk_OUhUek_aRgG84RLJJpMY7A&size=40&format=png' },
       { name: 'Zed', logo: 'https://img.logo.dev/zed.dev?token=pk_OUhUek_aRgG84RLJJpMY7A&size=40&format=png' },
       { name: 'STORM', logo: 'https://img.logo.dev/openai.com?token=pk_OUhUek_aRgG84RLJJpMY7A&size=40&format=png' },
-      { name: 'Co-STORM', logo: 'https://img.logo.dev/openai.com?token=pk_OUhUek_aRgG84RLJJpMY7A&size=40&format=png' }
+      { name: 'CyberChef', logo: 'https://gchq.github.io/CyberChef/images/cyberchef-128x128.png' },
+      { name: 'Neovim', logo: 'https://img.logo.dev/neovim.io?token=pk_OUhUek_aRgG84RLJJpMY7A&size=40&format=png' },
+      { name: 'Ollama', logo: 'https://img.logo.dev/ollama.com?token=pk_OUhUek_aRgG84RLJJpMY7A&size=40&format=png' },
+      { name: 'Bruno', logo: 'https://img.logo.dev/usebruno.com?token=pk_OUhUek_aRgG84RLJJpMY7A&size=40&format=png' }
     ],
     top: [
       { name: 'Budibase', logo: 'https://img.logo.dev/budibase.com?token=pk_OUhUek_aRgG84RLJJpMY7A&size=40&format=png' },
@@ -160,45 +160,11 @@ const Cube3D = () => {
   };
 
   // Get project data from JSON file
-  const getProjectInfo = (projectName: string, faceKey: string): ProjectInfo => {
-    const { projects, defaultProjectTemplate } = projectsData;
-    
-    // Check if we have detailed info for this project
-    if (projects[projectName as keyof typeof projects]) {
-      const projectData = projects[projectName as keyof typeof projects];
-      return {
-        ...projectData,
-        color: faceColors[faceKey as keyof typeof faceColors]
-      };
-    }
-
-    // Generate deterministic "random" values based on project name to avoid hydration issues
-    const hash = projectName.split('').reduce((a, b) => {
-      a = ((a << 5) - a) + b.charCodeAt(0);
-      return a & a;
-    }, 0);
-    
-    const languageIndex = Math.abs(hash) % defaultProjectTemplate.languages.length;
-    const randomLanguage = defaultProjectTemplate.languages[languageIndex];
-    
-    const starRange = defaultProjectTemplate.starRange[1] - defaultProjectTemplate.starRange[0];
-    const randomStars = (Math.abs(hash * 7) % starRange) + defaultProjectTemplate.starRange[0];
-    
-    const forkRange = defaultProjectTemplate.forkRange[1] - defaultProjectTemplate.forkRange[0];
-    const randomForks = (Math.abs(hash * 13) % forkRange) + defaultProjectTemplate.forkRange[0];
-
+  const getProjectInfo = (projectName: string, faceKey: string): ProjectInfo | null => {
+    const projectData = projectsData.projects[projectName as keyof typeof projectsData.projects];
+    if (!projectData) return null;
     return {
-      name: projectName,
-      logo: `https://img.logo.dev/${projectName.toLowerCase().replace(/\s+/g, '')}.org?token=pk_OUhUek_aRgG84RLJJpMY7A&size=40&format=png`,
-      description: defaultProjectTemplate.description.replace('{name}', projectName),
-      longDescription: defaultProjectTemplate.longDescription.replace('{name}', projectName),
-      category: defaultProjectTemplate.category,
-      language: randomLanguage,
-      stars: randomStars,
-      forks: randomForks,
-      githubUrl: `https://github.com/example/${projectName.toLowerCase().replace(/\s+/g, '-')}`,
-      websiteUrl: `https://${projectName.toLowerCase().replace(/\s+/g, '')}.org`,
-      features: [...defaultProjectTemplate.features],
+      ...projectData,
       color: faceColors[faceKey as keyof typeof faceColors]
     };
   };
@@ -220,7 +186,9 @@ const Cube3D = () => {
 
     // Open modal with project info
     const projectInfo = getProjectInfo(projectName, faceKey);
-    openModal(projectInfo);
+    if (projectInfo) {
+      openModal(projectInfo);
+    }
   };
 
   const handleMouseEnter = (projectName: string) => {
