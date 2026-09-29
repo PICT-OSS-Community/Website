@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-    metadataBase: new URL("https://oss-community.social"),
+    metadataBase: new URL("https://pictoss.social"),
     title: "OSS community",
     description: "Official website of the OSS community",
     icons: {
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     openGraph: {
         images: "/og-image.png",
         type: "website",
-        url: "https://oss-community.social",
+        url: "https://pictoss.social",
         siteName: "OSS community",
         locale: "en_US",
         title: "OSS community",
@@ -52,7 +52,7 @@ export const metadata: Metadata = {
         description: "Official website of the OSS community",
     },
     alternates: {
-        canonical: "https://oss-community.social",
+        canonical: "https://pictoss.social",
     },
     applicationName: "OSS community",
     robots: {

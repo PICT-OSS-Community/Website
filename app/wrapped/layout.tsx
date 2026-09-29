@@ -15,7 +15,7 @@ export const metadata: Metadata = {
       },
     ],
     type: "website",
-    url: "https://oss-community.social/wrapped",
+    url: "https://pictoss.social/wrapped",
     siteName: "OSS community",
     locale: "en_US",
   },
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     creator: "@oss_community",
   },
   alternates: {
-    canonical: "https://oss-community.social/wrapped",
+    canonical: "https://pictoss.social/wrapped",
   },
 };
 

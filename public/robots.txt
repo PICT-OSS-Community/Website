@@ -3,4 +3,4 @@ User-agent: *
 Allow: /
 
 # Point to the sitemap (we can add this later)
-# Sitemap: https://oss-community.social/sitemap.xml 
+# Sitemap: https://pictoss.social/sitemap.xml 
