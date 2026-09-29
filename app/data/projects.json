@@ -2,7 +2,7 @@
   "projects": {
     "React": {
       "name": "React",
-      "logo": "https://img.logo.dev/react.dev?token=pk_HJOUYljnSYebdIrq5WdAcg&size=40&format=png",
+      "logo": "https://img.logo.dev/react.dev?token=pk_OUhUek_aRgG84RLJJpMY7A&size=40&format=png",
       "description": "A JavaScript library for building user interfaces with component-based architecture.",
       "longDescription": "React makes it painless to create interactive UIs. Design simple views for each state in your application, and React will efficiently update and render just the right components when your data changes. Declarative views make your code more predictable and easier to debug.",
       "category": "Frontend Framework",
@@ -21,7 +21,7 @@
     },
     "Vue": {
       "name": "Vue.js",
-      "logo": "https://img.logo.dev/vuejs.org?token=pk_HJOUYljnSYebdIrq5WdAcg&size=40&format=png",
+      "logo": "https://img.logo.dev/vuejs.org?token=pk_OUhUek_aRgG84RLJJpMY7A&size=40&format=png",
       "description": "The Progressive JavaScript Framework for building modern web applications.",
       "longDescription": "Vue is a progressive framework for building user interfaces. It is designed from the ground up to be incrementally adoptable, and can easily scale between a library and a framework depending on different use cases.",
       "category": "Frontend Framework",
@@ -40,7 +40,7 @@
     },
     "Docker": {
       "name": "Docker",
-      "logo": "https://img.logo.dev/docker.com?token=pk_HJOUYljnSYebdIrq5WdAcg&size=40&format=png",
+      "logo": "https://img.logo.dev/docker.com?token=pk_OUhUek_aRgG84RLJJpMY7A&size=40&format=png",
       "description": "Platform for developing, shipping, and running applications using containerization.",
       "longDescription": "Docker is a set of platform as a service products that use OS-level virtualization to deliver software in packages called containers. Containers are isolated from one another and bundle their own software, libraries and configuration files.",
       "category": "DevOps & Infrastructure",
@@ -59,7 +59,7 @@
     },
     "Kubernetes": {
       "name": "Kubernetes",
-      "logo": "https://img.logo.dev/kubernetes.io?token=pk_HJOUYljnSYebdIrq5WdAcg&size=40&format=png",
+      "logo": "https://img.logo.dev/kubernetes.io?token=pk_OUhUek_aRgG84RLJJpMY7A&size=40&format=png",
       "description": "Open-source system for automating deployment, scaling, and management of containerized applications.",
       "longDescription": "Kubernetes is a portable, extensible, open-source platform for managing containerized workloads and services, that facilitates both declarative configuration and automation. It has a large, rapidly growing ecosystem.",
       "category": "Container Orchestration",
@@ -78,7 +78,7 @@
     },
     "Node.js": {
       "name": "Node.js",
-      "logo": "https://img.logo.dev/nodejs.org?token=pk_HJOUYljnSYebdIrq5WdAcg&size=40&format=png",
+      "logo": "https://img.logo.dev/nodejs.org?token=pk_OUhUek_aRgG84RLJJpMY7A&size=40&format=png",
       "description": "JavaScript runtime built on Chrome's V8 JavaScript engine for server-side development.",
       "longDescription": "Node.js is designed to build scalable network applications. It uses an event-driven, non-blocking I/O model that makes it lightweight and efficient, perfect for data-intensive real-time applications.",
       "category": "Runtime Environment",
@@ -97,7 +97,7 @@
     },
     "Express": {
       "name": "Express.js",
-      "logo": "https://img.logo.dev/expressjs.com?token=pk_HJOUYljnSYebdIrq5WdAcg&size=40&format=png",
+      "logo": "https://img.logo.dev/expressjs.com?token=pk_OUhUek_aRgG84RLJJpMY7A&size=40&format=png",
       "description": "Fast, unopinionated, minimalist web framework for Node.js applications.",
       "longDescription": "Express is a minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications. It's the de facto standard server framework for Node.js.",
       "category": "Web Framework",
@@ -116,7 +116,7 @@
     },
     "MongoDB": {
       "name": "MongoDB",
-      "logo": "https://img.logo.dev/mongodb.com?token=pk_HJOUYljnSYebdIrq5WdAcg&size=40&format=png",
+      "logo": "https://img.logo.dev/mongodb.com?token=pk_OUhUek_aRgG84RLJJpMY7A&size=40&format=png",
       "description": "Document-oriented NoSQL database for modern applications with flexible schemas.",
       "longDescription": "MongoDB is a document database with the scalability and flexibility that you want with the querying and indexing that you need. It stores data in flexible, JSON-like documents.",
       "category": "Database",
@@ -135,7 +135,7 @@
     },
     "PostgreSQL": {
       "name": "PostgreSQL",
-      "logo": "https://img.logo.dev/postgresql.org?token=pk_HJOUYljnSYebdIrq5WdAcg&size=40&format=png",
+      "logo": "https://img.logo.dev/postgresql.org?token=pk_OUhUek_aRgG84RLJJpMY7A&size=40&format=png",
       "description": "Advanced open source relational database with strong ACID compliance.",
       "longDescription": "PostgreSQL is a powerful, open source object-relational database system with over 30 years of active development that has earned it a strong reputation for reliability, feature robustness, and performance.",
       "category": "Database",

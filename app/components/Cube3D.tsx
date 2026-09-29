@@ -14,70 +14,70 @@ const Cube3D = () => {
 
   const projects = {
     front: [
-      { name: 'freeCodeCamp', logo: 'https://img.logo.dev/freecodecamp.org?token=pk_HJOUYljnSYebdIrq5WdAcg&size=40&format=png' },
-      { name: 'TensorFlow', logo: 'https://img.logo.dev/tensorflow.org?token=pk_HJOUYljnSYebdIrq5WdAcg&size=40&format=png' },
-      { name: 'React', logo: 'https://img.logo.dev/react.dev?token=pk_HJOUYljnSYebdIrq5WdAcg&size=40&format=png' },
-      { name: 'Vue', logo: 'https://img.logo.dev/vuejs.org?token=pk_HJOUYljnSYebdIrq5WdAcg&size=40&format=png' },
-      { name: 'Bootstrap', logo: 'https://img.logo.dev/getbootstrap.com?token=pk_HJOUYljnSYebdIrq5WdAcg&size=40&format=png' },
-      { name: 'Oh My Zsh', logo: 'https://img.logo.dev/ohmyz.sh?token=pk_HJOUYljnSYebdIrq5WdAcg&size=40&format=png' },
-      { name: 'Axios', logo: 'https://img.logo.dev/axios-http.com?token=pk_HJOUYljnSYebdIrq5WdAcg&size=40&format=png' },
-      { name: 'Build Your Own X', logo: 'https://img.logo.dev/github.com?token=pk_HJOUYljnSYebdIrq5WdAcg&size=40&format=png' },
-      { name: 'React Native', logo: 'https://img.logo.dev/reactnative.dev?token=pk_HJOUYljnSYebdIrq5WdAcg&size=40&format=png' }
+      { name: 'freeCodeCamp', logo: 'https://img.logo.dev/freecodecamp.org?token=pk_OUhUek_aRgG84RLJJpMY7A&size=40&format=png' },
+      { name: 'TensorFlow', logo: 'https://img.logo.dev/tensorflow.org?token=pk_OUhUek_aRgG84RLJJpMY7A&size=40&format=png' },
+      { name: 'React', logo: 'https://img.logo.dev/react.dev?token=pk_OUhUek_aRgG84RLJJpMY7A&size=40&format=png' },
+      { name: 'Vue', logo: 'https://img.logo.dev/vuejs.org?token=pk_OUhUek_aRgG84RLJJpMY7A&size=40&format=png' },
+      { name: 'Bootstrap', logo: 'https://img.logo.dev/getbootstrap.com?token=pk_OUhUek_aRgG84RLJJpMY7A&size=40&format=png' },
+      { name: 'Oh My Zsh', logo: 'https://img.logo.dev/ohmyz.sh?token=pk_OUhUek_aRgG84RLJJpMY7A&size=40&format=png' },
+      { name: 'Axios', logo: 'https://img.logo.dev/axios-http.com?token=pk_OUhUek_aRgG84RLJJpMY7A&size=40&format=png' },
+      { name: 'Build Your Own X', logo: 'https://img.logo.dev/github.com?token=pk_OUhUek_aRgG84RLJJpMY7A&size=40&format=png' },
+      { name: 'React Native', logo: 'https://img.logo.dev/reactnative.dev?token=pk_OUhUek_aRgG84RLJJpMY7A&size=40&format=png' }
     ],
     back: [
-      { name: 'Visual Studio Code', logo: 'https://img.logo.dev/code.visualstudio.com?token=pk_HJOUYljnSYebdIrq5WdAcg&size=40&format=png' },
-      { name: 'Kubernetes', logo: 'https://img.logo.dev/kubernetes.io?token=pk_HJOUYljnSYebdIrq5WdAcg&size=40&format=png' },
-      { name: 'Node.js', logo: 'https://img.logo.dev/nodejs.org?token=pk_HJOUYljnSYebdIrq5WdAcg&size=40&format=png' },
-      { name: 'Linux Kernel', logo: 'https://img.logo.dev/kernel.org?token=pk_HJOUYljnSYebdIrq5WdAcg&size=40&format=png' },
-      { name: 'Mozilla Firefox', logo: 'https://img.logo.dev/mozilla.org?token=pk_HJOUYljnSYebdIrq5WdAcg&size=40&format=png' },
-      { name: 'OpenAI Gym', logo: 'https://img.logo.dev/openai.com?token=pk_HJOUYljnSYebdIrq5WdAcg&size=40&format=png' },
-      { name: 'Apache Kafka', logo: 'https://img.logo.dev/kafka.apache.org?token=pk_HJOUYljnSYebdIrq5WdAcg&size=40&format=png' },
-      { name: 'Flutter', logo: 'https://img.logo.dev/flutter.dev?token=pk_HJOUYljnSYebdIrq5WdAcg&size=40&format=png' },
-      { name: 'Bitcoin', logo: 'https://img.logo.dev/bitcoin.org?token=pk_HJOUYljnSYebdIrq5WdAcg&size=40&format=png' }
+      { name: 'Visual Studio Code', logo: 'https://img.logo.dev/code.visualstudio.com?token=pk_OUhUek_aRgG84RLJJpMY7A&size=40&format=png' },
+      { name: 'Kubernetes', logo: 'https://img.logo.dev/kubernetes.io?token=pk_OUhUek_aRgG84RLJJpMY7A&size=40&format=png' },
+      { name: 'Node.js', logo: 'https://img.logo.dev/nodejs.org?token=pk_OUhUek_aRgG84RLJJpMY7A&size=40&format=png' },
+      { name: 'Linux Kernel', logo: 'https://img.logo.dev/kernel.org?token=pk_OUhUek_aRgG84RLJJpMY7A&size=40&format=png' },
+      { name: 'Mozilla Firefox', logo: 'https://img.logo.dev/mozilla.org?token=pk_OUhUek_aRgG84RLJJpMY7A&size=40&format=png' },
+      { name: 'OpenAI Gym', logo: 'https://img.logo.dev/openai.com?token=pk_OUhUek_aRgG84RLJJpMY7A&size=40&format=png' },
+      { name: 'Apache Kafka', logo: 'https://img.logo.dev/kafka.apache.org?token=pk_OUhUek_aRgG84RLJJpMY7A&size=40&format=png' },
+      { name: 'Flutter', logo: 'https://img.logo.dev/flutter.dev?token=pk_OUhUek_aRgG84RLJJpMY7A&size=40&format=png' },
+      { name: 'Bitcoin', logo: 'https://img.logo.dev/bitcoin.org?token=pk_OUhUek_aRgG84RLJJpMY7A&size=40&format=png' }
     ],
     right: [
-      { name: 'DefinitelyTyped', logo: 'https://img.logo.dev/typescriptlang.org?token=pk_HJOUYljnSYebdIrq5WdAcg&size=40&format=png' },
-      { name: 'Linux', logo: 'https://img.logo.dev/linux.org?token=pk_HJOUYljnSYebdIrq5WdAcg&size=40&format=png' },
-      { name: 'Prometheus', logo: 'https://img.logo.dev/prometheus.io?token=pk_HJOUYljnSYebdIrq5WdAcg&size=40&format=png' },
-      { name: 'OpenAI GPT', logo: 'https://img.logo.dev/openai.com?token=pk_HJOUYljnSYebdIrq5WdAcg&size=40&format=png' },
-      { name: 'RISC-V', logo: 'https://img.logo.dev/riscv.org?token=pk_HJOUYljnSYebdIrq5WdAcg&size=40&format=png' },
-      { name: 'Rust', logo: 'https://img.logo.dev/rust-lang.org?token=pk_HJOUYljnSYebdIrq5WdAcg&size=40&format=png' },
-      { name: 'WebAssembly', logo: 'https://img.logo.dev/webassembly.org?token=pk_HJOUYljnSYebdIrq5WdAcg&size=40&format=png' },
-      { name: 'OpenTelemetry', logo: 'https://img.logo.dev/opentelemetry.io?token=pk_HJOUYljnSYebdIrq5WdAcg&size=40&format=png' },
-      { name: 'Edge Computing', logo: 'https://img.logo.dev/azure.microsoft.com?token=pk_HJOUYljnSYebdIrq5WdAcg&size=40&format=png' }
+      { name: 'DefinitelyTyped', logo: 'https://img.logo.dev/typescriptlang.org?token=pk_OUhUek_aRgG84RLJJpMY7A&size=40&format=png' },
+      { name: 'Linux', logo: 'https://img.logo.dev/linux.org?token=pk_OUhUek_aRgG84RLJJpMY7A&size=40&format=png' },
+      { name: 'Prometheus', logo: 'https://img.logo.dev/prometheus.io?token=pk_OUhUek_aRgG84RLJJpMY7A&size=40&format=png' },
+      { name: 'OpenAI GPT', logo: 'https://img.logo.dev/openai.com?token=pk_OUhUek_aRgG84RLJJpMY7A&size=40&format=png' },
+      { name: 'RISC-V', logo: 'https://img.logo.dev/riscv.org?token=pk_OUhUek_aRgG84RLJJpMY7A&size=40&format=png' },
+      { name: 'Rust', logo: 'https://img.logo.dev/rust-lang.org?token=pk_OUhUek_aRgG84RLJJpMY7A&size=40&format=png' },
+      { name: 'WebAssembly', logo: 'https://img.logo.dev/webassembly.org?token=pk_OUhUek_aRgG84RLJJpMY7A&size=40&format=png' },
+      { name: 'OpenTelemetry', logo: 'https://img.logo.dev/opentelemetry.io?token=pk_OUhUek_aRgG84RLJJpMY7A&size=40&format=png' },
+      { name: 'Edge Computing', logo: 'https://img.logo.dev/azure.microsoft.com?token=pk_OUhUek_aRgG84RLJJpMY7A&size=40&format=png' }
     ],
     left: [
-      { name: 'Open Hub', logo: 'https://img.logo.dev/github.com?token=pk_HJOUYljnSYebdIrq5WdAcg&size=40&format=png' },
-      { name: 'SourceForge', logo: 'https://img.logo.dev/sourceforge.net?token=pk_HJOUYljnSYebdIrq5WdAcg&size=40&format=png' },
-      { name: 'Libraries.io', logo: 'https://img.logo.dev/libraries.io?token=pk_HJOUYljnSYebdIrq5WdAcg&size=40&format=png' },
-      { name: 'AlternativeTo', logo: 'https://img.logo.dev/alternativeto.net?token=pk_HJOUYljnSYebdIrq5WdAcg&size=40&format=png' },
-      { name: 'Coolify', logo: 'https://img.logo.dev/coolify.io?token=pk_HJOUYljnSYebdIrq5WdAcg&size=40&format=png' },
-      { name: 'DevToys', logo: 'https://img.logo.dev/devtoys.app?token=pk_HJOUYljnSYebdIrq5WdAcg&size=40&format=png' },
-      { name: 'Zed', logo: 'https://img.logo.dev/zed.dev?token=pk_HJOUYljnSYebdIrq5WdAcg&size=40&format=png' },
-      { name: 'STORM', logo: 'https://img.logo.dev/openai.com?token=pk_HJOUYljnSYebdIrq5WdAcg&size=40&format=png' },
-      { name: 'Co-STORM', logo: 'https://img.logo.dev/openai.com?token=pk_HJOUYljnSYebdIrq5WdAcg&size=40&format=png' }
+      { name: 'Open Hub', logo: 'https://img.logo.dev/github.com?token=pk_OUhUek_aRgG84RLJJpMY7A&size=40&format=png' },
+      { name: 'SourceForge', logo: 'https://img.logo.dev/sourceforge.net?token=pk_OUhUek_aRgG84RLJJpMY7A&size=40&format=png' },
+      { name: 'Libraries.io', logo: 'https://img.logo.dev/libraries.io?token=pk_OUhUek_aRgG84RLJJpMY7A&size=40&format=png' },
+      { name: 'AlternativeTo', logo: 'https://img.logo.dev/alternativeto.net?token=pk_OUhUek_aRgG84RLJJpMY7A&size=40&format=png' },
+      { name: 'Coolify', logo: 'https://img.logo.dev/coolify.io?token=pk_OUhUek_aRgG84RLJJpMY7A&size=40&format=png' },
+      { name: 'DevToys', logo: 'https://img.logo.dev/devtoys.app?token=pk_OUhUek_aRgG84RLJJpMY7A&size=40&format=png' },
+      { name: 'Zed', logo: 'https://img.logo.dev/zed.dev?token=pk_OUhUek_aRgG84RLJJpMY7A&size=40&format=png' },
+      { name: 'STORM', logo: 'https://img.logo.dev/openai.com?token=pk_OUhUek_aRgG84RLJJpMY7A&size=40&format=png' },
+      { name: 'Co-STORM', logo: 'https://img.logo.dev/openai.com?token=pk_OUhUek_aRgG84RLJJpMY7A&size=40&format=png' }
     ],
     top: [
-      { name: 'Budibase', logo: 'https://img.logo.dev/budibase.com?token=pk_HJOUYljnSYebdIrq5WdAcg&size=40&format=png' },
-      { name: 'GrapesJS', logo: 'https://img.logo.dev/grapesjs.com?token=pk_HJOUYljnSYebdIrq5WdAcg&size=40&format=png' },
-      { name: 'NocoBase', logo: 'https://img.logo.dev/nocobase.com?token=pk_HJOUYljnSYebdIrq5WdAcg&size=40&format=png' },
-      { name: 'Windmill', logo: 'https://img.logo.dev/windmill.dev?token=pk_HJOUYljnSYebdIrq5WdAcg&size=40&format=png' },
-      { name: 'Directus', logo: 'https://img.logo.dev/directus.io?token=pk_HJOUYljnSYebdIrq5WdAcg&size=40&format=png' },
-      { name: 'Refine', logo: 'https://img.logo.dev/refine.dev?token=pk_HJOUYljnSYebdIrq5WdAcg&size=40&format=png' },
-      { name: 'Appsmith', logo: 'https://img.logo.dev/appsmith.com?token=pk_HJOUYljnSYebdIrq5WdAcg&size=40&format=png' },
-      { name: 'Strapi', logo: 'https://img.logo.dev/strapi.io?token=pk_HJOUYljnSYebdIrq5WdAcg&size=40&format=png' },
-      { name: 'ToolJet', logo: 'https://img.logo.dev/tooljet.com?token=pk_HJOUYljnSYebdIrq5WdAcg&size=40&format=png' }
+      { name: 'Budibase', logo: 'https://img.logo.dev/budibase.com?token=pk_OUhUek_aRgG84RLJJpMY7A&size=40&format=png' },
+      { name: 'GrapesJS', logo: 'https://img.logo.dev/grapesjs.com?token=pk_OUhUek_aRgG84RLJJpMY7A&size=40&format=png' },
+      { name: 'NocoBase', logo: 'https://img.logo.dev/nocobase.com?token=pk_OUhUek_aRgG84RLJJpMY7A&size=40&format=png' },
+      { name: 'Windmill', logo: 'https://img.logo.dev/windmill.dev?token=pk_OUhUek_aRgG84RLJJpMY7A&size=40&format=png' },
+      { name: 'Directus', logo: 'https://img.logo.dev/directus.io?token=pk_OUhUek_aRgG84RLJJpMY7A&size=40&format=png' },
+      { name: 'Refine', logo: 'https://img.logo.dev/refine.dev?token=pk_OUhUek_aRgG84RLJJpMY7A&size=40&format=png' },
+      { name: 'Appsmith', logo: 'https://img.logo.dev/appsmith.com?token=pk_OUhUek_aRgG84RLJJpMY7A&size=40&format=png' },
+      { name: 'Strapi', logo: 'https://img.logo.dev/strapi.io?token=pk_OUhUek_aRgG84RLJJpMY7A&size=40&format=png' },
+      { name: 'ToolJet', logo: 'https://img.logo.dev/tooljet.com?token=pk_OUhUek_aRgG84RLJJpMY7A&size=40&format=png' }
     ],
     bottom: [
-      { name: 'Appwrite', logo: 'https://img.logo.dev/appwrite.io?token=pk_HJOUYljnSYebdIrq5WdAcg&size=40&format=png' },
-      { name: 'PocketBase', logo: 'https://img.logo.dev/pocketbase.io?token=pk_HJOUYljnSYebdIrq5WdAcg&size=40&format=png' },
-      { name: 'NocoDB', logo: 'https://img.logo.dev/nocodb.com?token=pk_HJOUYljnSYebdIrq5WdAcg&size=40&format=png' },
-      { name: 'AppFlowy', logo: 'https://img.logo.dev/appflowy.io?token=pk_HJOUYljnSYebdIrq5WdAcg&size=40&format=png' },
-      { name: 'Supabase', logo: 'https://img.logo.dev/supabase.com?token=pk_HJOUYljnSYebdIrq5WdAcg&size=40&format=png' },
-      { name: 'n8n', logo: 'https://img.logo.dev/n8n.io?token=pk_HJOUYljnSYebdIrq5WdAcg&size=40&format=png' },
-      { name: 'OpenCV', logo: 'https://img.logo.dev/opencv.org?token=pk_HJOUYljnSYebdIrq5WdAcg&size=40&format=png' },
-      { name: 'Docker', logo: 'https://img.logo.dev/docker.com?token=pk_HJOUYljnSYebdIrq5WdAcg&size=40&format=png' },
-      { name: 'PostgreSQL', logo: 'https://img.logo.dev/postgresql.org?token=pk_HJOUYljnSYebdIrq5WdAcg&size=40&format=png' }
+      { name: 'Appwrite', logo: 'https://img.logo.dev/appwrite.io?token=pk_OUhUek_aRgG84RLJJpMY7A&size=40&format=png' },
+      { name: 'PocketBase', logo: 'https://img.logo.dev/pocketbase.io?token=pk_OUhUek_aRgG84RLJJpMY7A&size=40&format=png' },
+      { name: 'NocoDB', logo: 'https://img.logo.dev/nocodb.com?token=pk_OUhUek_aRgG84RLJJpMY7A&size=40&format=png' },
+      { name: 'AppFlowy', logo: 'https://img.logo.dev/appflowy.io?token=pk_OUhUek_aRgG84RLJJpMY7A&size=40&format=png' },
+      { name: 'Supabase', logo: 'https://img.logo.dev/supabase.com?token=pk_OUhUek_aRgG84RLJJpMY7A&size=40&format=png' },
+      { name: 'n8n', logo: 'https://img.logo.dev/n8n.io?token=pk_OUhUek_aRgG84RLJJpMY7A&size=40&format=png' },
+      { name: 'OpenCV', logo: 'https://img.logo.dev/opencv.org?token=pk_OUhUek_aRgG84RLJJpMY7A&size=40&format=png' },
+      { name: 'Docker', logo: 'https://img.logo.dev/docker.com?token=pk_OUhUek_aRgG84RLJJpMY7A&size=40&format=png' },
+      { name: 'PostgreSQL', logo: 'https://img.logo.dev/postgresql.org?token=pk_OUhUek_aRgG84RLJJpMY7A&size=40&format=png' }
     ]
   };
 
@@ -189,7 +189,7 @@ const Cube3D = () => {
 
     return {
       name: projectName,
-      logo: `https://img.logo.dev/${projectName.toLowerCase().replace(/\s+/g, '')}.org?token=pk_HJOUYljnSYebdIrq5WdAcg&size=40&format=png`,
+      logo: `https://img.logo.dev/${projectName.toLowerCase().replace(/\s+/g, '')}.org?token=pk_OUhUek_aRgG84RLJJpMY7A&size=40&format=png`,
       description: defaultProjectTemplate.description.replace('{name}', projectName),
       longDescription: defaultProjectTemplate.longDescription.replace('{name}', projectName),
       category: defaultProjectTemplate.category,
