@@ -1,13 +1,10 @@
 /* Cube Animation */
 @keyframes tumble {
   0% { 
-    transform: rotateX(0deg) rotateY(0deg); 
-  }
-  50% { 
-    transform: rotateX(180deg) rotateY(180deg); 
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg); 
   }
   100% { 
-    transform: rotateX(360deg) rotateY(360deg); 
+    transform: rotateX(360deg) rotateY(720deg) rotateZ(360deg); 
   }
 }
 
@@ -39,6 +36,10 @@
 /* Face States */
 .face {
   position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -26px;
+  margin-left: -26px;
   width: 52px;
   height: 52px;
   border: 1px solid #fff;
@@ -80,6 +81,10 @@
   height: 100%;
 }
 
+.cubeWrapper:hover .cube {
+  animation-play-state: paused;
+}
+
 .cube {
   position: absolute;
   top: 0;
@@ -88,7 +93,7 @@
   height: 100%;
   transform-style: preserve-3d;
   transform-origin: center;
-  animation: tumble 12s linear infinite;
+  animation: tumble 24s linear infinite;
 }
 
 /* Tooltip */
